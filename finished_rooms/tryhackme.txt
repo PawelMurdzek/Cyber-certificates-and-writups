@@ -1,0 +1,14 @@
+Offensive Security Intro:
+https://tryhackme.com/room/offensivesecurityintro
+Defensive Security Intro:
+https://tryhackme.com/room/defensivesecurityintro
+Search skills:
+https://tryhackme.com/room/searchskills
+Learn the Linux Fundamentals Part 1:
+https://tryhackme.com/room/linuxfundamentalspart1
+Learn the Linux Fundamentals Part 2:
+https://tryhackme.com/room/linuxfundamentalspart2
+Learn the Linux Fundamentals Part 3:
+https://tryhackme.com/room/linuxfundamentalspart3
+Windows Fundamentals 1:
+https://tryhackme.com/room/windowsfundamentals1xbx

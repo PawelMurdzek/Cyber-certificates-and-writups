@@ -1,0 +1,4 @@
+FakeGPT Lab:
+https://cyberdefenders.org/blueteam-ctf-challenges/achievements/pawel.murdzek/fakegpt/
+HawkEye Lab:
+https://cyberdefenders.org/blueteam-ctf-challenges/achievements/pawel.murdzek/hawkeye/

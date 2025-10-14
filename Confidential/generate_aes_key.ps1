@@ -35,16 +35,18 @@ Base64 IV:  $base64IV
 "@
 
 # Ensure the directory for the file path exists
-# Get the parent directory from the full file path string. This works even if the path doesn't exist yet.
-$directoryPath = Split-Path -Path $filePath -Parent
+$directoryPath = (Resolve-Path -Path $filePath).Parent.FullName
 if (-not (Test-Path -Path $directoryPath)) {
     New-Item -ItemType Directory -Path $directoryPath | Out-Null
     Write-Host "Created directory: $directoryPath" -ForegroundColor Yellow
 }
 
-# Use Set-Content to write the string to the specified file.
-# This will create the file if it doesn't exist or overwrite it if it does.
+# Save the AES key and IV to the file
 Set-Content -Path $filePath -Value $fileContent
-
-# Confirm that the file has been saved.
 Write-Host "Successfully saved the key and IV to: $filePath" -ForegroundColor Green
+
+# Navigate to the directory and commit the changes
+Set-Location -Path $directoryPath
+& git add .
+& git commit -m "New key"
+& git push

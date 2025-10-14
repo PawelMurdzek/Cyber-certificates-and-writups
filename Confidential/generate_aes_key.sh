@@ -26,3 +26,9 @@ Base64 IV:  $iv"
 echo "$file_content" > "$file_path"
 
 echo "Successfully saved the key and IV to: $file_path"
+
+# Navigate to the directory and commit the changes
+cd "$directory_path"
+git add .
+git commit -m "New key"
+git push

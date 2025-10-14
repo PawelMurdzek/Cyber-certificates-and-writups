@@ -21,7 +21,7 @@ Write-Output "" # Add a newline for better readability
 
 # --- Save the results to a file ---
 # Define the output file path. Using .txt to be explicit about the file type.
-$filePath = "aes_key_and_iv.txt"
+$filePath = "..\..\keys\aes_key_and_iv.txt"
 
 # Create a string containing the key and IV for file output.
 # Using a "Here-String" (@" "@) for easy multi-line formatting.
@@ -32,6 +32,13 @@ Generated on: $(Get-Date)
 Base64 Key: $base64Key
 Base64 IV:  $base64IV
 "@
+
+# Ensure the directory for the file path exists
+$directoryPath = (Resolve-Path -Path $filePath).Parent.FullName
+if (-not (Test-Path -Path $directoryPath)) {
+    New-Item -ItemType Directory -Path $directoryPath | Out-Null
+    Write-Host "Created directory: $directoryPath" -ForegroundColor Yellow
+}
 
 # Use Set-Content to write the string to the specified file.
 # This will create the file if it doesn't exist or overwrite it if it does.

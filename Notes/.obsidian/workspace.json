@@ -62,9 +62,37 @@
               "icon": "lucide-file",
               "title": "07_post_exploitation"
             }
+          },
+          {
+            "id": "3b3079ef6a19b2ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Powershell_permissions_escalation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Powershell_permissions_escalation"
+            }
+          },
+          {
+            "id": "405024915e69ffae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -212,16 +240,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "78deb6f604b0565f",
+  "active": "405024915e69ffae",
   "lastOpenFiles": [
-    "cheatsheets/Kali/06_web_apps.md",
+    "Powershell_permissions_escalation.md",
+    "Untitled.md",
+    "Untitled.base",
+    "Tools.md",
     "cheatsheets/Kali/07_post_exploitation.md",
+    "cheatsheets/Kali/06_web_apps.md",
     "cheatsheets/red_team/Hydra.md",
     "cheatsheets/Kali/02_recon.md",
     "cheatsheets/Kali/03_scanning.md",
     "cheatsheets/Kali/04_exploitation.md",
     "cheatsheets/Kali/05_password_attacks.md",
-    "Tools.md",
     "Untitled",
     "05_password_attacks.md",
     "cheatsheets/editors/VIM.md",
@@ -246,8 +277,6 @@
     "2025-10-14.md",
     "Untitled.canvas",
     "VIM.md",
-    "Search.md",
-    "cheatsheets/Reconnaissance.md",
     "cheatsheets"
   ]
 }

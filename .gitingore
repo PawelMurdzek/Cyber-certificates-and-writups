@@ -1,4 +1,3 @@
 # Exclude only the encrypted folder and key file
-Confidential/encrypted/
+Confidential/decrypted/
 Confidential/aes_key_and_iv.txt
-

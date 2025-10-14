@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "f76cdcd7f1f75ee2",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c3a183c08d17343",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a09290e1ca4d12e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6c3ff5f3a7f96c91",
+    "type": "split",
+    "children": [
+      {
+        "id": "e54218cf7237b4ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a0f720fc1186730",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "079e99a050ebee47",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8b47554e22c9cfc7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a985bf9bce01e1ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba0ecf30d74c7501",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7921edf637e64b7a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Linux commands.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Linux commands"
+            }
+          },
+          {
+            "id": "5b4fbd708bc98595",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Linux commands.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Linux commands"
+            }
+          },
+          {
+            "id": "7fcedc0d6377edb0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0303db6aa127025d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Linux commands.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Linux commands"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6a09290e1ca4d12e",
+  "lastOpenFiles": [
+    "cheatsheets/editors/VIM.md",
+    "cheatsheets/editors",
+    "cheatsheets/systems/Linux_commands_and_concepts.md",
+    "cheatsheets/systems/Windows.md",
+    "cheatsheets/systems",
+    "cheatsheets/Hydra.md",
+    "cheatsheets/red_team/Reconnaissance.md",
+    "cheatsheets/red_team/Password_cracking.md",
+    "cheatsheets/red_team/Hydra.md",
+    "cheatsheets/red_team/Exploitation.md",
+    "cheatsheets/blue_team",
+    "cheatsheets/red_team",
+    "cheatsheets/Exploitation.md",
+    "Misc services.md",
+    "cheatsheets/Linux_commands_and_concepts.md",
+    "cheatsheets/Password_cracking.md",
+    "Tools.md",
+    "Windows.md",
+    "Untitled 1.canvas",
+    "2025-10-14.md",
+    "Untitled.canvas",
+    "VIM.md",
+    "Search.md",
+    "cheatsheets/Reconnaissance.md",
+    "Vulnerability.md",
+    "Bash Reverse Shell (on target machine).md",
+    "cheatsheets/Linux.md",
+    "cheatsheets",
+    "Welcome.md",
+    "create a link.md"
+  ]
+}

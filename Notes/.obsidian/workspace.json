@@ -11,13 +11,60 @@
             "id": "6a09290e1ca4d12e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Tools.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Tools"
+            }
+          },
+          {
+            "id": "db5f9d6ce39eeff8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cheatsheets/Kali/07_post_exploitation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "07_post_exploitation"
+            }
+          },
+          {
+            "id": "68d09d243acede1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cheatsheets/Kali/07_post_exploitation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "07_post_exploitation"
+            }
+          },
+          {
+            "id": "78deb6f604b0565f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cheatsheets/Kali/07_post_exploitation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "07_post_exploitation"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -165,17 +212,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "6a09290e1ca4d12e",
+  "active": "78deb6f604b0565f",
   "lastOpenFiles": [
+    "cheatsheets/Kali/06_web_apps.md",
+    "cheatsheets/Kali/07_post_exploitation.md",
+    "cheatsheets/red_team/Hydra.md",
+    "cheatsheets/Kali/02_recon.md",
+    "cheatsheets/Kali/03_scanning.md",
+    "cheatsheets/Kali/04_exploitation.md",
+    "cheatsheets/Kali/05_password_attacks.md",
+    "Tools.md",
+    "Untitled",
+    "05_password_attacks.md",
     "cheatsheets/editors/VIM.md",
-    "cheatsheets/editors",
-    "cheatsheets/systems/Linux_commands_and_concepts.md",
+    "cheatsheets/Kali/01_essentials.md",
     "cheatsheets/systems/Windows.md",
+    "cheatsheets/systems/Linux_commands_and_concepts.md",
+    "cheatsheets/Kali",
+    "cheatsheets/editors",
     "cheatsheets/systems",
     "cheatsheets/Hydra.md",
     "cheatsheets/red_team/Reconnaissance.md",
     "cheatsheets/red_team/Password_cracking.md",
-    "cheatsheets/red_team/Hydra.md",
     "cheatsheets/red_team/Exploitation.md",
     "cheatsheets/blue_team",
     "cheatsheets/red_team",
@@ -183,7 +241,6 @@
     "Misc services.md",
     "cheatsheets/Linux_commands_and_concepts.md",
     "cheatsheets/Password_cracking.md",
-    "Tools.md",
     "Windows.md",
     "Untitled 1.canvas",
     "2025-10-14.md",
@@ -191,11 +248,6 @@
     "VIM.md",
     "Search.md",
     "cheatsheets/Reconnaissance.md",
-    "Vulnerability.md",
-    "Bash Reverse Shell (on target machine).md",
-    "cheatsheets/Linux.md",
-    "cheatsheets",
-    "Welcome.md",
-    "create a link.md"
+    "cheatsheets"
   ]
 }

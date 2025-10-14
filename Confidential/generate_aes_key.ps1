@@ -20,8 +20,9 @@ Write-Output "Base64 IV:  $base64IV"
 Write-Output "" # Add a newline for better readability
 
 # --- Save the results to a file ---
-# Define the output file path. Using .txt to be explicit about the file type.
-$filePath = "..\..\keys\aes_key_and_iv.txt"
+# Define the output file path relative to the script's location for robustness.
+# $PSScriptRoot is an automatic variable that contains the directory of the script.
+$filePath = Join-Path -Path $PSScriptRoot -ChildPath "..\..\keys\aes_key_and_iv.txt"
 
 # Create a string containing the key and IV for file output.
 # Using a "Here-String" (@" "@) for easy multi-line formatting.
@@ -34,7 +35,8 @@ Base64 IV:  $base64IV
 "@
 
 # Ensure the directory for the file path exists
-$directoryPath = (Resolve-Path -Path $filePath).Parent.FullName
+# Get the parent directory from the full file path string. This works even if the path doesn't exist yet.
+$directoryPath = Split-Path -Path $filePath -Parent
 if (-not (Test-Path -Path $directoryPath)) {
     New-Item -ItemType Directory -Path $directoryPath | Out-Null
     Write-Host "Created directory: $directoryPath" -ForegroundColor Yellow

@@ -1,5 +1,0 @@
-AES-256 Key and IV
-Generated on: 10/14/2025 18:50:53
------------------------------
-Base64 Key: eyLgGvHLASKN7d/O+39KoEZaMfVF5muHcW0umVJ9XE4=
-Base64 IV:  U0j2jZFP2lA9LQNca55EIw==

@@ -16,6 +16,7 @@
 | `mv` | Moves or renames files or directories. | `mv old_name.txt new_name.txt` |
 | `rm` | Removes files or directories. | `rm file_to_delete.txt` |
 | `file` | Determines the type of a file. | `file my_document` |
+| `strings` | Extracts printable strings from binary files. | `strings binary_file` |
 | **Search & Filtering** | | |
 | `find` | Searches for files in a directory hierarchy. | `find . -name "*.txt"` |
 | `grep` | Searches for patterns within files. | `grep "error" logfile.log` |

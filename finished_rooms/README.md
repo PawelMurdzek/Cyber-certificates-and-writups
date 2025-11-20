@@ -25,7 +25,7 @@
 #### Windows and AD Fundamentals
 * [Windows Fundamentals 1](https://tryhackme.com/room/windowsfundamentals1xbx)
 
-## CryptoHack
+## CryptoHack challenges
 
 ### General
 * [General](https://cryptohack.org/challenges/general/)

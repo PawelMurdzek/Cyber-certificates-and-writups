@@ -26,5 +26,10 @@
 * [Windows Fundamentals 1](https://tryhackme.com/room/windowsfundamentals1xbx)
 
 ## CryptoHack
+
 ### General
 * [General](https://cryptohack.org/challenges/general/)
+### Matematics
+* [Matematics](https://cryptohack.org/challenges/maths/)
+### Symetric Cyphers
+* [AES](https://cryptohack.org/challenges/aes/)

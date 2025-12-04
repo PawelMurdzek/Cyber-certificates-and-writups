@@ -33,3 +33,5 @@
 * [Matematics](https://cryptohack.org/challenges/maths/)
 ### Symetric Cyphers
 * [AES](https://cryptohack.org/challenges/aes/)
+### Diffie-Hellman
+* [Diffie-Hellman](https://cryptohack.org/challenges/diffie-hellman/)

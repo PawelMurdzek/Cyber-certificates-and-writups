@@ -36,3 +36,30 @@
 | `mrt` | Malicious Software Removal Tool |
 | `perfmon` | Performance Monitor |
 | `resmon` | Resource Monitor |
+
+## Basic CMD / PowerShell Commands
+
+| Command | Description |
+| :--- | :--- |
+| `hostname` | Displays the computer name |
+| `whoami` | Displays the current user |
+| `cls` | Clears the screen |
+| `ipconfig` | Displays IP configuration |
+| `ipconfig /all` | Displays full configuration information |
+| `ipconfig /release` | Releases the IPv4 address |
+| `ipconfig /renew` | Renews the IPv4 address |
+| `ipconfig /flushdns` | Purges the DNS Resolver cache |
+| `netstat` | Displays network statistics |
+| `netstat -a` | Displays all connections and listening ports |
+| `netstat -b` | Displays the executable involved in creating each connection |
+| `netstat -e` | Displays Ethernet statistics |
+| `netstat -an` | Displays all connections and listening ports numerically |
+| `net user` | Adds/modifies user accounts |
+| `net localgroup` | Adds/modifies local groups |
+| `net share` | Manages shared resources |
+| `net use` | Connects/disconnects from a shared resource |
+| `net view` | Displays a list of resources being shared on a computer |
+| `net start` | Starts a service |
+| `net stop` | Stops a service |
+| `net accounts` | Updates the user accounts database and modifies password and logon requirements |
+| `net session` | Lists or disconnects sessions between the computer and other computers on the network |

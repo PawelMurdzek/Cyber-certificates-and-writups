@@ -68,3 +68,4 @@
 | `net stop` | Stops a service |
 | `net accounts` | Updates the user accounts database and modifies password and logon requirements |
 | `net session` | Lists or disconnects sessions between the computer and other computers on the network |
+| `net help <command>` | Displays help for a specific net command (e.g., `net help user`) |

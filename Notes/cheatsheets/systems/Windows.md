@@ -35,3 +35,4 @@
 | `inetcpl.cpl` | Internet Properties |
 | `mrt` | Malicious Software Removal Tool |
 | `perfmon` | Performance Monitor |
+| `resmon` | Resource Monitor |

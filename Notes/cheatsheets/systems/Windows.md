@@ -33,6 +33,9 @@
 | `sysdm.cpl` | System Properties |
 | `firewall.cpl` | Windows Defender Firewall |
 | `WF.msc` | Windows Defender Firewall with Advanced Security |
+| `gpedit.msc` | Local Group Policy Editor |
+| `secpol.msc` | Local Security Policy |
+| `lusrmgr.msc` | Local Users and Groups |
 | `inetcpl.cpl` | Internet Properties |
 | `mrt` | Malicious Software Removal Tool |
 | `perfmon` | Performance Monitor |
@@ -73,3 +76,13 @@
 | `reg` | Console Registry Tool for reading, setting, and deleting registry keys |
 | `regedit` | Opens the Registry Editor (GUI) |
 | `regedt32` | Opens the Registry Editor (Legacy) |
+
+## Shadow Copies (VSS)
+
+| Command | Description |
+| :--- | :--- |
+| `vssadmin list shadows` | Lists all existing shadow copies |
+| `vssadmin list writers` | Lists all shadow copy writers |
+| `vssadmin create shadow /for=C:` | Creates a new shadow copy for C: drive |
+| `vssadmin delete shadows /all` | Deletes all shadow copies |
+| `vssadmin delete shadows /for=C: /oldest` | Deletes the oldest shadow copy for C: drive |

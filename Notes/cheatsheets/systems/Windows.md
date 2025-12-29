@@ -32,6 +32,7 @@
 | `winver` | About Windows (Version info) |
 | `sysdm.cpl` | System Properties |
 | `firewall.cpl` | Windows Defender Firewall |
+| `WF.msc` | Windows Defender Firewall with Advanced Security |
 | `inetcpl.cpl` | Internet Properties |
 | `mrt` | Malicious Software Removal Tool |
 | `perfmon` | Performance Monitor |
@@ -69,3 +70,6 @@
 | `net accounts` | Updates the user accounts database and modifies password and logon requirements |
 | `net session` | Lists or disconnects sessions between the computer and other computers on the network |
 | `net help <command>` | Displays help for a specific net command (e.g., `net help user`) |
+| `reg` | Console Registry Tool for reading, setting, and deleting registry keys |
+| `regedit` | Opens the Registry Editor (GUI) |
+| `regedt32` | Opens the Registry Editor (Legacy) |

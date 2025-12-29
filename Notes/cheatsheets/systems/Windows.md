@@ -54,7 +54,12 @@
 | `netstat -b` | Displays the executable involved in creating each connection |
 | `netstat -e` | Displays Ethernet statistics |
 | `netstat -an` | Displays all connections and listening ports numerically |
-| `net user` | Adds/modifies user accounts |
+| `net user` | Lists all user accounts |
+| `net user <username>` | Displays information about a specific user |
+| `net user <username> <password> /add` | Adds a new user with the specified password |
+| `net user <username> /delete` | Deletes a user account |
+| `net user <username> /active:yes` | Activates a user account |
+| `net user /domain` | Lists all users in the current domain |
 | `net localgroup` | Adds/modifies local groups |
 | `net share` | Manages shared resources |
 | `net use` | Connects/disconnects from a shared resource |

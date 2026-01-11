@@ -1,98 +1,39 @@
 {
   "main": {
-    "id": "f76cdcd7f1f75ee2",
+    "id": "e3b32c11fea74876",
     "type": "split",
     "children": [
       {
-        "id": "9c3a183c08d17343",
+        "id": "066386ee62a48e77",
         "type": "tabs",
         "children": [
           {
-            "id": "6a09290e1ca4d12e",
+            "id": "83607773659bd460",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "Tools.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.10.6"
               },
-              "icon": "lucide-file",
-              "title": "Tools"
-            }
-          },
-          {
-            "id": "db5f9d6ce39eeff8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cheatsheets/Kali/07_post_exploitation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "07_post_exploitation"
-            }
-          },
-          {
-            "id": "68d09d243acede1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cheatsheets/Kali/07_post_exploitation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "07_post_exploitation"
-            }
-          },
-          {
-            "id": "78deb6f604b0565f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cheatsheets/Kali/07_post_exploitation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "07_post_exploitation"
-            }
-          },
-          {
-            "id": "3b3079ef6a19b2ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Powershell_permissions_escalation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Powershell_permissions_escalation"
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "6c3ff5f3a7f96c91",
+    "id": "da6ce99f721a2f0b",
     "type": "split",
     "children": [
       {
-        "id": "e54218cf7237b4ea",
+        "id": "9fe6f19f203732bf",
         "type": "tabs",
         "children": [
           {
-            "id": "4a0f720fc1186730",
+            "id": "50f0e52b7d8526d3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -105,7 +46,7 @@
             }
           },
           {
-            "id": "079e99a050ebee47",
+            "id": "d3e52d90479a57d0",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -122,7 +63,7 @@
             }
           },
           {
-            "id": "8b47554e22c9cfc7",
+            "id": "ca1cdc6a15b7d79c",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -138,20 +79,19 @@
     "width": 300
   },
   "right": {
-    "id": "a985bf9bce01e1ea",
+    "id": "8ae7d2d5f50db1b9",
     "type": "split",
     "children": [
       {
-        "id": "ba0ecf30d74c7501",
+        "id": "1d352d05a460fc53",
         "type": "tabs",
         "children": [
           {
-            "id": "7921edf637e64b7a",
+            "id": "9fb09abcb98717dd",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,25 +101,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Linux commands"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "5b4fbd708bc98595",
+            "id": "cfb462fe49007d6f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Linux commands"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "7fcedc0d6377edb0",
+            "id": "d489b98480e82e7f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -194,18 +133,17 @@
             }
           },
           {
-            "id": "0303db6aa127025d",
+            "id": "83bce6f51ccf8d83",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux commands.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Linux commands"
+              "title": "Outline"
             }
           }
         ]
@@ -226,45 +164,6 @@
       "bases:Create new base": false
     }
   },
-  "active": "3b3079ef6a19b2ee",
-  "lastOpenFiles": [
-    "Untitled.md",
-    "sql_injection/SQL_injection.md",
-    "sql_injection",
-    "cheatsheets/red_team/rv_shells/rv_shells.md",
-    "cheatsheets/red_team/rv_shells",
-    "Powershell_permissions_escalation.md",
-    "Untitled.base",
-    "Tools.md",
-    "cheatsheets/Kali/07_post_exploitation.md",
-    "cheatsheets/Kali/06_web_apps.md",
-    "cheatsheets/red_team/Hydra.md",
-    "cheatsheets/Kali/02_recon.md",
-    "cheatsheets/Kali/03_scanning.md",
-    "cheatsheets/Kali/04_exploitation.md",
-    "cheatsheets/Kali/05_password_attacks.md",
-    "Untitled",
-    "05_password_attacks.md",
-    "cheatsheets/editors/VIM.md",
-    "cheatsheets/Kali/01_essentials.md",
-    "cheatsheets/systems/Windows.md",
-    "cheatsheets/systems/Linux_commands_and_concepts.md",
-    "cheatsheets/Kali",
-    "cheatsheets/editors",
-    "cheatsheets/systems",
-    "cheatsheets/Hydra.md",
-    "cheatsheets/red_team/Reconnaissance.md",
-    "cheatsheets/red_team/Password_cracking.md",
-    "cheatsheets/red_team/Exploitation.md",
-    "cheatsheets/blue_team",
-    "cheatsheets/red_team",
-    "cheatsheets/Exploitation.md",
-    "Misc services.md",
-    "cheatsheets/Linux_commands_and_concepts.md",
-    "cheatsheets/Password_cracking.md",
-    "Windows.md",
-    "Untitled 1.canvas",
-    "Untitled.canvas",
-    "cheatsheets"
-  ]
+  "active": "83607773659bd460",
+  "lastOpenFiles": []
 }

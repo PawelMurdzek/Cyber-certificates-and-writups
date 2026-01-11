@@ -49,3 +49,7 @@
 ### Zero Trust
 * [Zero Trust](https://learn.snyk.io/lesson/zero-trust)
 * [False Negatives and False Positives](https://learn.snyk.io/lesson/false-negatives-and-false-positives)
+* [Personal Access Tokens](https://learn.snyk.io/lesson/personal-access-tokens)
+* [What is CVSS](https://learn.snyk.io/lesson/what-is-cvss)
+* [LLM System Prompt Leakage](https://learn.snyk.io/lesson/llm-system-prompt-leakage)
+* [Prompt Injection](https://learn.snyk.io/lesson/prompt-injection)

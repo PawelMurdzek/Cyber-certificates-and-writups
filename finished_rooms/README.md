@@ -24,14 +24,28 @@
 
 #### Windows and AD Fundamentals
 * [Windows Fundamentals 1](https://tryhackme.com/room/windowsfundamentals1xbx)
+* [Windows Fundamentals 2](https://tryhackme.com/room/windowsfundamentals2x0x)
+* [Windows Fundamentals 3](https://tryhackme.com/room/windowsfundamentals3xzx)
 
 ## CryptoHack challenges
 
 ### General
 * [General](https://cryptohack.org/challenges/general/)
-### Matematics
-* [Matematics](https://cryptohack.org/challenges/maths/)
-### Symetric Cyphers
+
+### Mathematics
+* [Mathematics](https://cryptohack.org/challenges/maths/)
+
+### Symmetric Ciphers
 * [AES](https://cryptohack.org/challenges/aes/)
+
 ### Diffie-Hellman
 * [Diffie-Hellman](https://cryptohack.org/challenges/diffie-hellman/)
+
+### RSA
+* [RSA](https://cryptohack.org/challenges/rsa/)
+
+## SNYK
+
+### Zero Trust
+* [Zero Trust](https://learn.snyk.io/lesson/zero-trust)
+* [False Negatives and False Positives](https://learn.snyk.io/lesson/false-negatives-and-false-positives)

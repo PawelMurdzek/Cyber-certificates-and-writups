@@ -18,5 +18,5 @@ This document provides a summary of and links to the SQL Injection cheat sheets 
     - _Explanation:_ A cheat sheet for exploiting SQL injection vulnerabilities in IBM DB2 databases.
 - **[Ingres SQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/ingres-sql-injection-cheat-sheet)**
     - _Explanation:_ This guide covers SQL injection techniques for the Ingres database system.
-- **[MS Access SQLi Cheat Sheet](http://nibblesec.org/files/MSAccessSQLi/MSAccessSQLi.html)**)**
+- **[MS Access SQLi Cheat Sheet](http://nibblesec.org/files/MSAccessSQLi/MSAccessSQLi.html)**
     - _Explanation:_ A resource for understanding and exploiting SQL injection vulnerabilities in Microsoft Access.

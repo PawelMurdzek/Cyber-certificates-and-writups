@@ -26,6 +26,17 @@ Tools for enumerating Server Message Block (SMB) services, common on Windows net
 | :--- | :--- |
 | `whois <domain>` | Retrieves registration and contact information for a domain. |
 | `whatweb <URL>` | Identifies different web technologies used on a website, including CMS, frameworks, and server software. |
+| `sublist3r -d <domain> -o subs.txt` | Enumerates subdomains using search engines. |
+| `theharvester -d <domain> -l 500 -b google,bing` | Gathers emails, subdomains, hosts, employee names from public sources. |
+
+#### Directory & File Bruteforcing
+
+| Command | Description |
+| :--- | :--- |
+| `gobuster dir -u <URL> -w <wordlist>` | Bruteforce directories on a web server. |
+| `gobuster dir -u <URL> -w <wordlist> -x php,txt,html` | Bruteforce files with specific extensions. |
+| `feroxbuster -u <URL> -w <wordlist>` | Fast, recursive directory bruteforcer. |
+| `dirb <URL> <wordlist>` | Web content scanner for directories. |
 
 ***
 

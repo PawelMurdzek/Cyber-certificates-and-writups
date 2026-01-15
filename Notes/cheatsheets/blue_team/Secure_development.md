@@ -22,6 +22,8 @@
 | **Kubernetes Top 10** | [owasp.org/kubernetes](https://owasp.org/www-project-kubernetes-top-ten/) | Workload security, network policies |
 | **IoT Top 10** | [owasp.org/iot](https://owasp.org/www-project-internet-of-things/) | Weak passwords, insecure network, lack of updates |
 | **ICS/OT Top 10** | [owasp.org/ics](https://owasp.org/www-project-operational-technology-top-10/) | Industrial control systems security |
+| **DevSecOps Guidelines** | [owasp.org/devsecops](https://owasp.org/www-project-devsecops-guideline/) | Secure SDLC, SAST, DAST, SCA, secrets mgmt |
+| **SAMM (Maturity Model)** | [owaspsamm.org](https://owaspsamm.org/) | Security maturity assessment for organizations |
 
 ## Cloud Security Resources
 

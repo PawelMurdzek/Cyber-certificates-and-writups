@@ -18,23 +18,38 @@
 | `file` | Determines the type of a file. | `file my_document` |
 | `strings` | Extracts printable strings from binary files. | `strings binary_file` |
 | **Search & Filtering** | | |
-| `find` | Searches for files in a directory hierarchy. | `find . -name "*.txt"` |
-| `grep` | Searches for patterns within files. | `grep "error" logfile.log` |
+| `find` | Searches for files in a directory hierarchy. | `find / -name "*.txt"`, `find . -type f -perm -4000` (SUID files), `find / -user root -writable 2>/dev/null` |
+| `grep` | Searches for patterns within files. | `grep -r "password" .` (recursive), `grep -i "error" log.txt` (case-insensitive), `grep -v "info"` (invert match) |
+| `which` | Locates a command's executable path. | `which python` |
+| `whereis` | Locates binary, source, and man page files for a command. | `whereis ls` |
+| **Text Filtering** | | |
+| `head` | Outputs the first part of a file. | `head -n 20 file.txt`, `head -c 100 file` (first 100 bytes) |
+| `tail` | Outputs the last part of a file. | `tail -n 20 file.txt`, `tail -f logfile.log` (follow live) |
+| `sort` | Sorts lines of text. | `sort file.txt`, `sort -n` (numeric), `sort -r` (reverse) |
+| `uniq` | Filters out repeated lines. | `sort file.txt \| uniq`, `uniq -c` (count occurrences) |
+| `wc` | Counts lines, words, and bytes. | `wc -l file.txt` (lines), `wc -w` (words), `wc -c` (bytes) |
+| `cut` | Removes sections from each line. | `cut -d':' -f1 /etc/passwd`, `cut -c1-10 file.txt` |
+| `awk` | Pattern scanning and processing language. | `awk '{print $1}' file`, `awk -F: '{print $1}' /etc/passwd` |
+| `sed` | Stream editor for filtering and transforming text. | `sed 's/old/new/g' file`, `sed -n '5,10p' file` (lines 5-10) |
+| `tr` | Translates or deletes characters. | `tr 'a-z' 'A-Z'` (to uppercase), `tr -d '\r'` (remove char) |
 | **User & Permissions** | | |
 | `whoami` | Displays the current username. | `whoami` |
-| `su` | Switches to another user account. | `su otheruser` |
-| `chmod` | Changes file mode bits (permissions). | `chmod 755 script.sh` |
+| `id` | Displays user and group IDs. | `id`, `id username` |
+| `su` | Switches to another user account. | `su otheruser`, `su - root` (login shell) |
+| `chmod` | Changes file mode bits (permissions). | `chmod 755 script.sh`, `chmod +x script.sh` |
 | **Networking & File Transfer** | | |
-| `ss` | A utility to investigate sockets. Shows active connections. | `ss -tuna` |
-| `netstat` | (Deprecated) Prints network connections, routing tables, etc. | `netstat -ano` |
-| `ssh` | Secure Shell client for remote login. | `ssh username@192.168.1.100` |
-| `wget` | Downloads files from the web via HTTP/HTTPS. | `wget https://example.com/file.zip` |
-| `scp` | Securely copies files between hosts on a network. | `scp file.txt user@host:/remote/dir/` |
+| `ss` | A utility to investigate sockets. Shows active connections. | `ss -tuna`, `ss -lntp` (listening ports with process) |
+| `netstat` | (Deprecated) Prints network connections, routing tables, etc. | `netstat -ano`, `netstat -tulpn` |
+| `ssh` | Secure Shell client for remote login. | `ssh username@192.168.1.100`, `ssh -L 8080:localhost:80 user@host` (port forwarding) |
+| `wget` | Downloads files from the web via HTTP/HTTPS. | `wget https://example.com/file.zip`, `wget -q -O - URL` (quiet, stdout) |
+| `curl` | Transfers data from or to a server. | `curl -X POST -d "data" URL`, `curl -s URL`, `curl -o file.txt URL` |
+| `scp` | Securely copies files between hosts on a network. | `scp file.txt user@host:/remote/dir/`, `scp -r folder/ user@host:/path/` |
 | `python3 -m http.server` | Starts a simple HTTP web server in the current directory. | `python3 -m http.server 8000` |
 | **Process Management** | | |
-| `ps` | Reports a snapshot of the current processes. | `ps aux` (shows all processes) |
-| `top` | Displays a real-time view of running system processes. | `top` |
-| `kill` | Sends a signal to a process, typically to terminate it. | `kill 12345` (sends SIGTERM), `kill -9 12345` (sends SIGKILL) |
+| `ps` | Reports a snapshot of the current processes. | `ps aux` (all processes), `ps -ef \| grep nginx`, `ps aux --sort=-%mem` (by memory) |
+| `top` | Displays a real-time view of running system processes. | `top`, `htop` (better alternative) |
+| `kill` | Sends a signal to a process, typically to terminate it. | `kill 12345` (SIGTERM), `kill -9 12345` (SIGKILL) |
+| `pkill` | Kills processes by name. | `pkill nginx`, `pkill -9 python`, `pkill -u username` |
 | **System & Service Management** | | |
 | `systemctl` | Controls the systemd system and service manager. | `systemctl start apache2` `systemctl enable ssh` |
 | `UFW` | Uncomplicated Firewall. A tool to manage the firewall. | `ufw enable`, `ufw allow 22` |
@@ -57,6 +72,22 @@
 | `>>` | Appends the output of a command to a file. |
 | `Ctrl + Z` | Suspends the current foreground process. |
 | `fg` | Resumes a suspended process and brings it to the foreground. |
+
+### Output Redirection Examples
+
+```bash
+# Hide errors (redirect stderr to /dev/null)
+command 2>/dev/null
+
+# Hide everything (stdout and stderr)
+command > /dev/null 2>&1
+
+# Save errors to a file
+command 2> errors.log
+
+# Save everything to a file
+command > output.log 2>&1
+```
 
 ## Automation with Cron
 

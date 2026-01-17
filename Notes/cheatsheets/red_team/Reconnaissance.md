@@ -1,6 +1,47 @@
-### **Reconnaissance & Enumeration**
+# Reconnaissance & Enumeration
 
-#### DNS Enumeration
+## OSINT (Open-Source Intelligence)
+
+### Google Dorking
+
+| Operator | Description |
+| :--- | :--- |
+| `filetype:pdf` | Restricts results to a specific file type. |
+| `site:github.com` | Limits search to a specific website. |
+| `"exact phrase"` | Searches for an exact phrase. |
+| `intitle:admin` | Searches for pages with keyword in title. |
+| `-keyword` | Excludes a term from search. |
+
+**More operators**: [Advanced Search Operators](https://github.com/cipher387/Advanced-search-operators-list)
+
+### Specialized Search Engines
+
+| Tool | URL | Description |
+| :--- | :--- | :--- |
+| **Shodan** | [shodan.io](https://www.shodan.io/) | Search engine for internet-connected devices. |
+| **Censys** | [search.censys.io](https://search.censys.io/) | Internet-wide scanning, certificates, hosts. |
+| **VirusTotal** | [virustotal.com](https://www.virustotal.com/) | Scan files/URLs against multiple AV engines. |
+| **Have I Been Pwned** | [haveibeenpwned.com](https://haveibeenpwned.com/) | Check if email was in a data breach. |
+
+### Username & Profile Search
+
+| Tool | Description |
+| :--- | :--- |
+| `sherlock <username>` | Searches username across 300+ sites. [GitHub](https://github.com/sherlock-project/sherlock) |
+| `maigret <username>` | Advanced Sherlock fork with more features. [GitHub](https://github.com/soxoj/maigret) |
+| [whatsmyname.app](https://whatsmyname.app/) | Web-based username search. |
+
+### Vulnerability Databases
+
+| Resource | URL |
+| :--- | :--- |
+| **CVE/NVD** | [nvd.nist.gov](https://nvd.nist.gov/) |
+| **Exploit-DB** | [exploit-db.com](https://www.exploit-db.com/) |
+| **OWASP Cheat Sheets** | [cheatsheetseries.owasp.org](https://cheatsheetseries.owasp.org/) |
+
+***
+
+## DNS Enumeration
 Tools for querying DNS servers and discovering subdomains.
 
 | Command | Description |
@@ -26,6 +67,17 @@ Tools for enumerating Server Message Block (SMB) services, common on Windows net
 | :--- | :--- |
 | `whois <domain>` | Retrieves registration and contact information for a domain. |
 | `whatweb <URL>` | Identifies different web technologies used on a website, including CMS, frameworks, and server software. |
+| `sublist3r -d <domain> -o subs.txt` | Enumerates subdomains using search engines. |
+| `theharvester -d <domain> -l 500 -b google,bing` | Gathers emails, subdomains, hosts, employee names from public sources. |
+
+#### Directory & File Bruteforcing
+
+| Command | Description |
+| :--- | :--- |
+| `gobuster dir -u <URL> -w <wordlist>` | Bruteforce directories on a web server. |
+| `gobuster dir -u <URL> -w <wordlist> -x php,txt,html` | Bruteforce files with specific extensions. |
+| `feroxbuster -u <URL> -w <wordlist>` | Fast, recursive directory bruteforcer. |
+| `dirb <URL> <wordlist>` | Web content scanner for directories. |
 
 ***
 

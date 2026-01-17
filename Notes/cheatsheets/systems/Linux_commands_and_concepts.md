@@ -41,6 +41,7 @@
 | `ss` | A utility to investigate sockets. Shows active connections. | `ss -tuna`, `ss -lntp` (listening ports with process) |
 | `netstat` | (Deprecated) Prints network connections, routing tables, etc. | `netstat -ano`, `netstat -tulpn` |
 | `ssh` | Secure Shell client for remote login. | `ssh username@192.168.1.100`, `ssh -L 8080:localhost:80 user@host` (port forwarding) |
+| `xfreerdp` | Remote Desktop Protocol client. | `xfreerdp /v:IP /u:User /p:Pass /cert:ignore /dynamic-resolution /drive:share,./` |
 | `wget` | Downloads files from the web via HTTP/HTTPS. | `wget https://example.com/file.zip`, `wget -q -O - URL` (quiet, stdout) |
 | `curl` | Transfers data from or to a server. | `curl -X POST -d "data" URL`, `curl -s URL`, `curl -o file.txt URL` |
 | `scp` | Securely copies files between hosts on a network. | `scp file.txt user@host:/remote/dir/`, `scp -r folder/ user@host:/path/` |

@@ -38,3 +38,93 @@ Active Directory uses five Flexible Single Master Operation (FSMO) roles assigne
 | **PDC Emulator** | Domain | Acts as the Primary Domain Controller for backward compatibility, manages time synchronization, and handles password changes/lockouts. |
 | **RID Master** | Domain | Allocates pools of Relative IDs (RIDs) to DCs to assign to new objects (users, computers, groups). |
 | **Infrastructure Master** | Domain | Responsible for updating references to objects in other domains (e.g., group memberships). |
+
+## Object Management
+
+### Preventing Accidental Deletion
+To protect or unprotect objects (OUs, Users, Groups) from deletion:
+1. In **Active Directory Users and Computers** (ADUC), enable `View` -> `Advanced Features`.
+2. Right-click the target object -> `Properties`.
+3. Navigate to the `Object` tab.
+4. Toggle the **Protect object from accidental deletion** checkbox.
+   - **Note**: This must be unchecked to delete a protected object.
+
+### Delegate Control
+Used to grant specific permissions to non-admin users for specific OUs (applying the Principle of Least Privilege).
+1. Right-click the OU or Container -> `Delegate Control...`.
+2. Add the User or Group you want to delegate permissions to.
+3. Select the specific tasks to delegate (e.g., "Reset user passwords and force password change at next logon", "Create, delete and manage user accounts").
+
+## PowerShell Management
+
+**Prerequisite**: Install RSAT tools or use a Domain Controller. Import module: `Import-Module ActiveDirectory`
+
+### User Management
+
+```powershell
+# Create a new user with a password
+$pass = ConvertTo-SecureString "P@ssw0rd123!" -AsPlainText -Force
+New-ADUser -Name "John Doe" -GivenName "John" -Surname "Doe" -SamAccountName "jdoe" -UserPrincipalName "jdoe@domain.com" -AccountPassword $pass -Enabled $true
+
+# Get a user and listed properties
+Get-ADUser -Identity "jdoe" -Properties *
+
+# Filter users (e.g., all enabled users)
+Get-ADUser -Filter {Enabled -eq $true} -Properties Name, EmailAddress
+
+# Modify user attributes (e.g., Department, Title)
+Set-ADUser -Identity "jdoe" -Department "IT" -Title "System Administrator"
+
+# Reset Password with prompt
+Set-ADAccountPassword "jdoe" -Reset -NewPassword (Read-Host -AsSecureString -Prompt "New Password")
+
+# Force password change at next logon
+Set-ADUser -Identity "jdoe" -ChangePasswordAtLogon $true
+
+# Disable/Enable account
+Disable-ADAccount -Identity "jdoe"
+Enable-ADAccount -Identity "jdoe"
+
+# Delete a user (with confirmation)
+Remove-ADUser -Identity "jdoe"
+```
+
+### Group Management
+
+```powershell
+# Create a new Global Security Group
+New-ADGroup -Name "IT_Admins" -GroupScope Global -GroupCategory Security
+
+# Add members to a group
+Add-ADGroupMember -Identity "IT_Admins" -Members "jdoe", "sophie"
+
+# Get group members
+Get-ADGroupMember -Identity "IT_Admins"
+
+# Remove member from group
+Remove-ADGroupMember -Identity "IT_Admins" -Members "jdoe"
+```
+
+### Computer & OU Management
+
+```powershell
+# Get all computers in the domain
+Get-ADComputer -Filter * -Properties IPv4Address
+
+# Create a new Organizational Unit
+New-ADOrganizationalUnit -Name "IT_Department" -Path "DC=domain,DC=com"
+
+# Move user to a different OU
+Move-ADObject -Identity "CN=jdoe,CN=Users,DC=domain,DC=com" -TargetPath "OU=IT_Department,DC=domain,DC=com"
+```
+
+### General Querying
+
+```powershell
+# Search for any object by name
+Get-ADObject -Filter {Name -like "*Admin*"}
+
+# Get FSMO Role Holders
+Get-ADDomain | Select-Object InfrastructureMaster, RIDMaster, PDCEmulator
+Get-ADForest | Select-Object SchemaMaster, DomainNamingMaster
+```

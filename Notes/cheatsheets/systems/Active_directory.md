@@ -10,7 +10,7 @@
 - **Organizational Unit (OU)**: A container within a domain that can hold users, groups, and computers. It is the smallest unit to which you can assign Group Policy settings or administrative permissions.
 - **Global Catalog (GC)**: A distributed data repository that contains a searchable, partial representation of every object in every domain in a multi-domain Active Directory Domain Services (AD DS) forest.
 - **LDAP (Lightweight Directory Access Protocol)**: The industry independent protocol used to access and manage directory information.
-- **Kerberos**: The default authentication protocol used by Windows which uses tickets to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner.
+- **Kerberos**: The default authentication protocol used by Windows which uses tickets to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner. See [Kerberos](Kerberos.md) for details.
 
 ## Security Groups
 
@@ -54,6 +54,37 @@ Used to grant specific permissions to non-admin users for specific OUs (applying
 1. Right-click the OU or Container -> `Delegate Control...`.
 2. Add the User or Group you want to delegate permissions to.
 3. Select the specific tasks to delegate (e.g., "Reset user passwords and force password change at next logon", "Create, delete and manage user accounts").
+
+## Group Policy Objects (GPO)
+
+Group Policy allows admins to manage configurations for users and computers in the domain.
+
+### Processing Order (LSDOU)
+Policies are applied in this order (later policies overwrite earlier ones):
+1. **L**ocal Policy
+2. **S**ite
+3. **D**omain
+4. **O**rganizational **U**nit (OU)
+
+### Key Concepts
+- **GPO (Group Policy Object)**: A collection of settings.
+- **GPC (Group Policy Container)**: Stored in AD (LDAP), contains properties/version info.
+- **GPT (Group Policy Template)**: Stored in SYSVOL, contains the actual policy data (scripts, admx types).
+- **Enforced**: Prevents a policy from being blocked or overwritten by a lower-level GPO.
+- **Block Inheritance**: Prevents policies from higher levels from applying to this OU (unless Enforced).
+
+### Common Commands
+
+```powershell
+# Force usage of new GPO immediately
+gpupdate /force
+
+# Generate report of applied policies
+gpresult /r
+
+# Generate HTML report
+gpresult /h report.html
+```
 
 ## PowerShell Management
 

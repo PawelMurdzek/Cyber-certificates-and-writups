@@ -79,6 +79,33 @@
 | `reg delete <key>` | Delete registry key |
 | `regedit` | Registry Editor (GUI) |
 
+### Registry Hives
+
+| Hive | Short | Description |
+| :--- | :--- | :--- |
+| **HKEY_CURRENT_USER** | HKCU | Config for logged-on user. Subkey of HKU. |
+| **HKEY_USERS** | HKU | All loaded user profiles. |
+| **HKEY_LOCAL_MACHINE** | HKLM | Machine-wide configuration. |
+| **HKEY_CLASSES_ROOT** | HKCR | Merges `HKLM\Software\Classes` & `HKCU\.*\Classes`. File associations. |
+| **HKEY_CURRENT_CONFIG** | HKCC | Boot hardware profile. |
+
+> **Note**: HKCR writes go to HKLM unless the key exists in HKCU.
+
+### Hive Locations
+
+| Hive Type | File Path | Mounted As |
+| :--- | :--- | :--- |
+| **System** | `C:\Windows\System32\Config\*` <br> (`SAM`, `SECURITY`, `SOFTWARE`, `SYSTEM`, `DEFAULT`) | `HKLM\*`, `HKU\.DEFAULT` |
+| **User** | `C:\Users\<user>\NTUSER.DAT` | `HKCU` |
+| **User Classes** | `C:\Users\<user>\AppData\Local\Microsoft\Windows\UsrClass.dat` | `HKCU\Software\Classes` |
+
+### Transaction Logs & Backups
+
+| Type | Path / Extension | Description |
+| :--- | :--- | :--- |
+| **Transaction Logs** | `.LOG`, `.LOG1`, `.LOG2` | Journal files for data consistency. Located alongside hives. |
+| **Backups** | `C:\Windows\System32\Config\RegBack\` | Legacy hive backups. Often empty (0kb) on modern Win10+. |
+
 ***
 
 ## PowerShell

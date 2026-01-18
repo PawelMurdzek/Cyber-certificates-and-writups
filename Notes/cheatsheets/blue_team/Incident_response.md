@@ -87,3 +87,14 @@ ls -la /etc/cron.*
 | `tshark -r capture.pcap` | CLI Wireshark |
 | `wireshark` | GUI packet analyzer |
 | `zeek` | Network security monitor |
+
+## Forensic Tools
+
+| Tool | Purpose | Key Features |
+| :--- | :--- | :--- |
+| **KAPE** | Triage & Collection | Fast target collection, parsers (modules), flexible configuration. |
+| **Autopsy** | Analysis | Open-source, GUI-based, timeline analysis, keyword search, web artifacts. |
+| **FTK Imager** | Imaging & Mounting | Create forensic images (E01, RAW), mount images, capture RAM. |
+| **Registry Viewer** | Registry Analysis | View registry hives, reporting. (AccessData). |
+| **Registry Explorer** | Registry Analysis | Eric Zimmerman's tool. Parse hives, plugins, recover deleted keys. |
+| **RegRipper** | Registry Analysis | Extract specific registry data via plugins (CLI/GUI). |

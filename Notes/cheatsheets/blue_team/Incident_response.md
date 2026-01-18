@@ -98,6 +98,8 @@ ls -la /etc/cron.*
 | **Registry Viewer** | Registry Analysis | View registry hives, reporting. (AccessData). |
 | **Registry Explorer** | Registry Analysis | Eric Zimmerman's tool. Parse hives, plugins, recover deleted keys. |
 | **RegRipper** | Registry Analysis | Extract specific registry data via plugins (CLI/GUI). |
+| **AppCompatCache Parser** | Execution Analysis | Parses ShimCache (AppCompatCache) to CSV. |
+| **EZViewer** | Viewer | Lightweight viewer for logs, CSVs, and other data files. |
 
 ## System Triage & Artifacts
 
@@ -135,8 +137,9 @@ ls -la /etc/cron.*
 | **SAM Hive** | `C:\Windows\System32\Config\SAM` | User account info (SID, groups, login count). |
 | **Last Logon** | `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI` | Username of last logged-in user. |
 | **UserAssist** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist` | GUI execution history (ROT13 encoded). |
-| **ShimCache** | `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache` | Execution history (exe name, mod time, size). |
+| **ShimCache\AppCompatCache** | `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache` | Execution history (exe name, mod time, size). |
 | **Amcache.hve** | `C:\Windows\AppCompat\Programs\Amcache.hve` | Granular execution details (SHA1 hash, timestamps). |
+| **BAM/DAM** | `HKLM\SYSTEM\CurrentControlSet\Services\bam\State\UserSettings\<SID>` | Background Activity Moderator. Execution history (full path, last run time). |
 
 ### File Access & Navigation
 
@@ -150,3 +153,24 @@ ls -la /etc/cron.*
 | **Last Visited MRU** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU` | Last folder used in Open/Save dialog. |
 | **Explorer Address** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths` | Paths typed into Explorer address bar. |
 | **Explorer Search** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery` | Search terms typed into Explorer search box. |
+
+### External Device & USB Forensics
+
+| Artifact | Source / Registry Key | Description |
+| :--- | :--- | :--- |
+| **USBSTOR** | `HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR` | Device details (Vendor, Product, Serial No). |
+| **MountedDevices** | `HKLM\SYSTEM\MountedDevices` | Maps drive letters to Device GUID/Serial. |
+| **USB Devices** | `HKLM\SYSTEM\CurrentControlSet\Enum\USB` | Information on all USB devices (not just storage). |
+| **DeviceClasses** | `HKLM\SYSTEM\CurrentControlSet\Control\DeviceClasses` | Interfaces exposed by devices. |
+| **SetupAPI Log** | `C:\Windows\INF\setupapi.dev.log` | Plug-and-Play events (First install timestamp). |
+| **ShellBags** | `HKCU` ... (See File Access) | Folder access on removable drives. |
+
+#### USB Connection Timestamps (Device Properties)
+
+Located in `HKLM\SYSTEM\CurrentControlSet\Enum\USB\<VID_PID>\<Serial>\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\...`
+
+| Value | Information | Description |
+| :--- | :--- | :--- |
+| **0064** | First Connection Time | Timestamp of when the device was first installed. |
+| **0066** | Last Connection Time | Timestamp of the most recent connection. |
+| **0067** | Last Removal Time | Timestamp of the most recent removal. |

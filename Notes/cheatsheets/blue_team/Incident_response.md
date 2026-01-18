@@ -137,3 +137,16 @@ ls -la /etc/cron.*
 | **UserAssist** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist` | GUI execution history (ROT13 encoded). |
 | **ShimCache** | `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache` | Execution history (exe name, mod time, size). |
 | **Amcache.hve** | `C:\Windows\AppCompat\Programs\Amcache.hve` | Granular execution details (SHA1 hash, timestamps). |
+
+### File Access & Navigation
+
+| Artifact | Source / Registry Key | Description |
+| :--- | :--- | :--- |
+| **Recent Files (LNK)** | `%APPDATA%\Microsoft\Windows\Recent` | Shortcuts to recently accessed files/folders. |
+| **Jumplists** | `%APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations`<br>`CustomDestinations` | Recent files per application (Taskbar/Start Menu history). |
+| **Office Recent** | `HKCU\Software\Microsoft\Office\<Ver>\<App>\File MRU` | Recent documents opened in Office apps. |
+| **ShellBags** | `HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags`<br>`...\BagMRU` (`USRCLASS.DAT`) | Folder view history. Proves folder existence/access. |
+| **Open/Save MRU** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU` | History of files opened/saved via dialog box. |
+| **Last Visited MRU** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU` | Last folder used in Open/Save dialog. |
+| **Explorer Address** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths` | Paths typed into Explorer address bar. |
+| **Explorer Search** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery` | Search terms typed into Explorer search box. |

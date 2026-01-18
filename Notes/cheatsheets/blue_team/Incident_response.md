@@ -98,3 +98,42 @@ ls -la /etc/cron.*
 | **Registry Viewer** | Registry Analysis | View registry hives, reporting. (AccessData). |
 | **Registry Explorer** | Registry Analysis | Eric Zimmerman's tool. Parse hives, plugins, recover deleted keys. |
 | **RegRipper** | Registry Analysis | Extract specific registry data via plugins (CLI/GUI). |
+
+## System Triage & Artifacts
+
+### System Information (Process First)
+
+| Artifact | Source / Registry Key | Description |
+| :--- | :--- | :--- |
+| **OS Version** | `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion` | Product name, release ID, install date. |
+| **Computer Name** | `HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName` | Active computer name. |
+| **Time Zone** | `HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation` | Active time zone & bias. |
+| **Current Control Set** | `HKLM\SYSTEM\Select` | Determine which ControlSet is `Current`. |
+| **Last Shutdown** | `HKLM\SYSTEM\CurrentControlSet\Control\Windows` | ShutdownTime timestamp. |
+
+### Network Information
+
+| Artifact | Source / Registry Key | Description |
+| :--- | :--- | :--- |
+| **Interfaces** | `HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces` | IP, Subnet, DHCP info for interfaces. |
+| **Past Networks** | `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles` | History of connected wireless/wired networks. |
+| **Network Shares** | `HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Shares` | Folders shared by the system. |
+
+### Persistence (Autoruns)
+
+| Artifact | Source / Registry Key | Description |
+| :--- | :--- | :--- |
+| **Run Keys** | `HKLM\Software\Microsoft\Windows\CurrentVersion\Run`<br>`HKCU\Software\Microsoft\Windows\CurrentVersion\Run` | Programs starting at login. |
+| **Services** | `HKLM\SYSTEM\CurrentControlSet\Services` | Background services (check Start mode 2/Auto). |
+| **Scheduled Tasks** | `C:\Windows\System32\Tasks` | Detailed task definitions (XML). |
+| **Startup Folder** | `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup`<br>`%AppData%\Microsoft\Windows\Start Menu\Programs\Startup` | Files executed at login. |
+
+### User & Execution Artifacts
+
+| Artifact | Source / Registry Key | Description |
+| :--- | :--- | :--- |
+| **SAM Hive** | `C:\Windows\System32\Config\SAM` | User account info (SID, groups, login count). |
+| **Last Logon** | `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI` | Username of last logged-in user. |
+| **UserAssist** | `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist` | GUI execution history (ROT13 encoded). |
+| **ShimCache** | `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache` | Execution history (exe name, mod time, size). |
+| **Amcache.hve** | `C:\Windows\AppCompat\Programs\Amcache.hve` | Granular execution details (SHA1 hash, timestamps). |

@@ -36,20 +36,20 @@
 | **GCP** | Security Best Practices | [cloud.google.com/security](https://cloud.google.com/security/best-practices) |
 | **GCP** | Security Command Center | [cloud.google.com/security-command-center](https://cloud.google.com/security-command-center) |
 
-## OWASP Top 10 (2021)
+## OWASP Top 10 (2025)
 
-| # | Vulnerability | Prevention |
+| # | Vulnerability | Prevention Strategy |
 | :--- | :--- | :--- |
-| A01 | **Broken Access Control** | Deny by default, validate permissions server-side |
-| A02 | **Cryptographic Failures** | Use strong encryption, don't store sensitive data unnecessarily |
-| A03 | **Injection** | Parameterized queries, input validation, escape output |
-| A04 | **Insecure Design** | Threat modeling, secure design patterns |
-| A05 | **Security Misconfiguration** | Hardened configs, remove defaults, automate verification |
-| A06 | **Vulnerable Components** | Inventory dependencies, patch regularly, use SCA tools |
-| A07 | **Auth Failures** | MFA, strong passwords, rate limiting, secure session mgmt |
-| A08 | **Data Integrity Failures** | Verify signatures, use trusted sources, CI/CD security |
-| A09 | **Logging Failures** | Log security events, protect logs, alerting |
-| A10 | **SSRF** | Validate URLs, allowlist, segment networks |
+| **A01** | **[[Broken Access Control]]** | Deny by default, enforce record-level ownership, disable directory listings. |
+| **A02** | **[[Security Misconfiguration]]** | Hardened configs, remove defaults, automate verification, lock down cloud settings. |
+| **A03** | **[[Software Supply Chain Failures]]** | SBOM generation, verify signatures, lock dependencies, scan for malicious packages. |
+| **A04** | **[[Cryptographic Failures]]** | Use modern algorithms (e.g., AES-256), encrypt data at rest/transit, manage keys securely. |
+| **A05** | **[[Injection]]** | Parameterized queries (Prepared Statements), input validation, safe APIs. |
+| **A06** | **[[Insecure Design]]** | Threat modeling, secure design patterns, "secure by default" architecture. |
+| **A07** | **[[Authentication Failures]]** | MFA, strong password policies, rate limiting, secure session management. |
+| **A08** | **[[Software & Data Integrity Failures]]** | Verify digital signatures, trusted CI/CD pipelines, signed commits. |
+| **A09** | **[[Logging & Alerting Failures]]** | Centralized logging, tamper-proof storage, real-time alerting. |
+| **A10** | **[[Mishandling of Exceptional Conditions]]** | Fail safe (closed), generic user errors, detailed admin logs, catch-all exceptions. |
 
 ## Input Validation
 

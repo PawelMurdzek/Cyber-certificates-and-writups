@@ -101,7 +101,57 @@ ls -la /etc/cron.*
 | **AppCompatCache Parser** | Execution Analysis | Parses ShimCache (AppCompatCache) to CSV. |
 | **EZViewer** | Viewer | Lightweight viewer for logs, CSVs, and other data files. |
 
+### Plaso (Log2Timeline)
+
+Plaso is a backend engine for log2timeline. It automates the creation of a super timeline from various artifacts.
+
+| Tool | Description |
+| :--- | :--- |
+| **log2timeline** | Extracts events from artifacts (disk image, folder) into a storage file (.plaso). |
+| **psort** | Filters, sorts, and processes the storage file into a readable format (CSV, JSON, Elastic). |
+| **psteal** | "Steal" everything. Combines log2timeline and psort in one command for speed. |
+| **pinfo** | Shows metadata about the storage file (OS, collected artifacts, errors). |
+
+```bash
+# List available parsers and plugins
+log2timeline.py --parsers list
+
+# Basic timeline creation from disk image (supports .dd, .E01, etc.)
+log2timeline.py --storage-file timeline.plaso image.E01
+log2timeline.py --storage-file timeline.plaso image.dd
+
+# Specific Parsing (e.g., Windows Events only)
+log2timeline.py --storage-file winevents.plaso --parsers winevt --artifact-filters WindowsEventLogSystem image.E01
+
+
+# Process storage file to CSV (timeline.csv)
+psort.py -o l2tcsv -w timeline.csv timeline.plaso
+
+# List available analysis plugins
+psort.py --analysis list
+
+# Filter by time range
+psort.py -o l2tcsv -w timeline.csv timeline.plaso --slice "2024-01-01T00:00:00" "2024-01-02T00:00:00"
+
+# Using psteal (One-shot)
+psteal.py --source image.dd -o l2tcsv -w timeline.csv
+
+# Check storage file metadata
+pinfo.py Jimmy_timeline.plaso | more
+```
+
 ## System Triage & Artifacts
+
+### Key Evidence Locations
+
+| location | Description |
+| :--- | :--- |
+| **Logs** | System/Software chronicles recording user activity and security events. |
+| **File Metadata (MACB)** | Creation, Modification, Access timestamps revealing user behavior patterns. |
+| **Network Traffic** | Data transfers showing system connections and potential intrusions. |
+| **Mount Points** | External drives or shares acting as additional evidence sources. |
+| **Temp Locations** | Temp dirs holding recent downloads, history, and activity snapshots. |
+| **Recycle Bin** | Deleted files that may contain recovered insights. |
 
 ### System Information (Process First)
 

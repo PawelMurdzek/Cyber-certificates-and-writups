@@ -123,7 +123,6 @@ log2timeline.py --storage-file timeline.plaso image.dd
 # Specific Parsing (e.g., Windows Events only)
 log2timeline.py --storage-file winevents.plaso --parsers winevt --artifact-filters WindowsEventLogSystem image.E01
 
-
 # Process storage file to CSV (timeline.csv)
 psort.py -o l2tcsv -w timeline.csv timeline.plaso
 
@@ -138,6 +137,24 @@ psteal.py --source image.dd -o l2tcsv -w timeline.csv
 
 # Check storage file metadata
 pinfo.py Jimmy_timeline.plaso | more
+```
+
+### Timesketch
+
+Open-source tool for collaborative forensic timeline analysis. It ingests Plaso files (and CSV/JSON) to visualize and search timelines.
+
+| Feature | Description |
+| :--- | :--- |
+| **Collaboration** | Multiple analysts can work on the same timeline, add comments, and star events. |
+| **Analyzers** | Automated scripts ("Sketchy") to find patterns, anomalies, and threat intel matches. |
+| **Visualization** | Charts, graphs, and heatmaps to identify spikes in activity. |
+
+```bash
+# Upload Plaso file directly to Timesketch (requires config)
+psort.py -o timesketch --name "Case 123" timeline.plaso
+
+# Import CSV/JSONL via CLI (on server)
+tsctl import --file timeline.csv --sketch_id 12
 ```
 
 ## System Triage & Artifacts

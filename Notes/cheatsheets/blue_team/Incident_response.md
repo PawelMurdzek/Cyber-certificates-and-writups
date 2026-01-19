@@ -131,7 +131,7 @@ psort.py -o l2tcsv -w timeline.csv timeline.plaso
 psort.py --analysis list
 
 # Filter by time range
-psort.py -o l2tcsv -w timeline.csv timeline.plaso --slice "2024-01-01T00:00:00" "2024-01-02T00:00:00"
+psort.py -o dynamic -w timeline.csv timeline.plaso --slice "2024-01-01T00:00:00" "2024-01-02T00:00:00"
 
 # Using psteal (One-shot)
 psteal.py --source image.dd -o l2tcsv -w timeline.csv

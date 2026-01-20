@@ -106,6 +106,15 @@
 | **Transaction Logs** | `.LOG`, `.LOG1`, `.LOG2` | Journal files for data consistency. Located alongside hives. |
 | **Backups** | `C:\Windows\System32\Config\RegBack\` | Legacy hive backups. Often empty (0kb) on modern Win10+. |
 
+### Certutil
+
+| Command | Description |
+| :--- | :--- |
+| `certutil -hashfile <file> <algo>` | Calculate hash (MD5, SHA1, SHA256) |
+| `certutil -urlcache -split -f <url> <file>` | Download file from URL |
+| `certutil -encode <in> <out>` | Encode file to Base64 |
+| `certutil -decode <in> <out>` | Decode Base64 file |
+
 ***
 
 ## PowerShell

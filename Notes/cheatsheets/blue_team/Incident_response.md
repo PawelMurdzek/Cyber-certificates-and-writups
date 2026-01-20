@@ -126,8 +126,12 @@ log2timeline.py --storage-file winevents.plaso --parsers winevt --artifact-filte
 # Process storage file to CSV (timeline.csv)
 psort.py -o l2tcsv -w timeline.csv timeline.plaso
 
+
 # List available analysis plugins
 psort.py --analysis list
+
+# Run tagging analysis (requires tagging file)
+psort.py --analysis tagging --tagging-file tag_file.txt -o dynamic -w timeline.csv timeline.plaso
 
 # Filter by time range
 psort.py -o dynamic -w timeline.csv timeline.plaso --slice "2024-01-01T00:00:00" "2024-01-02T00:00:00"
@@ -136,7 +140,7 @@ psort.py -o dynamic -w timeline.csv timeline.plaso --slice "2024-01-01T00:00:00"
 psteal.py --source image.dd -o l2tcsv -w timeline.csv
 
 # Check storage file metadata
-pinfo.py Jimmy_timeline.plaso | more
+pinfo.py timeline.plaso | more
 ```
 
 ### Timesketch
@@ -145,9 +149,10 @@ Open-source tool for collaborative forensic timeline analysis. It ingests Plaso 
 
 | Feature | Description |
 | :--- | :--- |
-| **Collaboration** | Multiple analysts can work on the same timeline, add comments, and star events. |
-| **Analyzers** | Automated scripts ("Sketchy") to find patterns, anomalies, and threat intel matches. |
-| **Visualization** | Charts, graphs, and heatmaps to identify spikes in activity. |
+| **Visualization** | Interactive interface to display events chronologically, following the sequence of events. |
+| **Search & Filter** | Search and filter events based on keywords, timestamps, and attributes. |
+| **Collaboration** | Share timelines, add comments, and create narrative "Stories" to document findings. |
+| **External Integrations** | Integrate threat intel feeds and Sigma rules to enrich data with context (IOCs, threats). |
 
 ```bash
 # Upload Plaso file directly to Timesketch (requires config)

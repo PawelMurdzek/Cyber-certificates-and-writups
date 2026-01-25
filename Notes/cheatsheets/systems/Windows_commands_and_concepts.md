@@ -36,6 +36,14 @@
 
 ## CMD Commands
 
+### System Information
+
+| Command | Description |
+| :--- | :--- |
+| `systeminfo` | Detailed configuration and hotfixes |
+| `tasklist` | List running processes |
+| `taskkill /IM <name> /F` | Force kill process by name |
+
 ### Networking
 
 | Command | Description |
@@ -135,19 +143,82 @@
 | Command | Description |
 | :--- | :--- |
 | `Get-Help <cmd>` | Get help for a command |
+| `Get-Help <cmd> -Examples` | Show command examples |
 | `Get-Command *keyword*` | Find commands |
+| `Get-Command -CommandType <Type>` | Find specific types |
 | `Get-Process` | List running processes |
 | `Stop-Process -Name <name>` | Kill process by name |
 | `Get-Service` | List services |
 | `Start-Service <name>` | Start a service |
 | `Get-LocalUser` | List local users |
+| `New-LocalUser <name>` | Create local user |
 | `Get-HotFix` | List installed patches |
 | `Get-ComputerInfo` | Detailed system info |
-| `Get-NetIPAddress` | IP configuration |
-| `Get-ChildItem` (`ls`) | List files |
-| `Get-Content` (`cat`) | Read file |
+| `Get-Date` | Get current date/time |
+| `Get-NetIPAddress` | IP configuration (Detailed) |
+| `Get-NetIPConfiguration` (`gip`) | IP configuration (Like ipconfig) |
+| `Get-NetTCPConnection` | Network connections (netstat) |
+| `Get-ChildItem` (`ls`, `dir`) | List files |
+| `Get-Content` (`cat`, `type`) | Read file |
+| `Get-FileHash <file> -Algorithm SHA256` | Checksum/Hash file |
+| `New-Item <path>` | Create file (default) |
+| `New-Item <path> -ItemType Directory` | Create directory |
+| `Remove-Item <path>` (`rm`, `del`, `rmdir`) | Delete file/dir |
+| `Remove-Item <path> -Recurse -Force` | Delete folder recursively |
+| `Copy-Item <src> <dst>` (`cp`, `copy`) | Copy file/dir |
+| `Copy-Item <src> <dst> -Recurse` | Copy folder recursively |
+| `Move-Item <src> <dst>` (`mv`, `move`) | Move file/dir |
+| `Set-Location` (`cd`) | Change directory |
+| `Write-Output` (`echo`) | Print text |
+| `Sort-Object -Property <prop>` | Sort by property |
+| `Select-String <pattern>` (`sls`) | Search text (grep) |
+| `Invoke-Command -ScriptBlock { ... }` | Run commands (remote/local) |
 | `Invoke-WebRequest <URL> -OutFile <file>` | Download file |
 | `Test-NetConnection <host> -Port <port>` | Test TCP connection |
+
+### Aliases
+
+For example, `dir` is an alias for `Get-ChildItem`, and `cd` is an alias for `Set-Location`.
+
+| Command | Description |
+| :--- | :--- |
+| `Get-Alias` | List aliases |
+
+### Piping & Filtering
+
+PowerShell passes **objects** (not text) between commands using the pipe (`|`).
+
+| Command | Description |
+| :--- | :--- |
+| `cmd1 | cmd2` | Pass output of cmd1 to cmd2 |
+| `Select-Object <prop1>, <prop2>` | Select specific properties |
+| `Where-Object { $_.<prop> -eq "val" }` | Filter objects |
+| `Where-Object { $_.<prop> -like "*val*" }` | Filter with wildcard |
+
+**Comparison Operators**:
+
+| Operator | Description |
+| :--- | :--- |
+| `-eq` | Equal to |
+| `-ne` | Not equal to |
+| `-gt` | Greater than |
+| `-ge` | Greater than or equal to |
+| `-lt` | Less than |
+| `-le` | Less than or equal to |
+| `-like` | Filter by pattern (wildcard) |
+
+### Modules
+
+To search for modules (collections of cmdlets) in online repositories like the PowerShell Gallery, use `Find-Module`.
+
+If you don't know the exact name, search with a wildcard (`*`) on the Name property.
+Standard syntax: `Cmdlet -Property "pattern*"`.
+
+| Command | Description |
+| :--- | :--- |
+| `Find-Module` | Search for modules |
+| `Find-Module -Name "*pattern*"` | Search by partial name |
+| `Install-Module <name>` | Install a module |
 
 ***
 

@@ -36,13 +36,37 @@
 
 ## CMD Commands
 
-### System Information
+### System & Environment
 
 | Command | Description |
 | :--- | :--- |
-| `systeminfo` | Detailed configuration and hotfixes |
-| `tasklist` | List running processes |
-| `taskkill /IM <name> /F` | Force kill process by name |
+| `ver` | Display operating system version |
+| `set` | Display, set, or remove environment variables |
+| `systeminfo` | Detailed system configuration |
+| `cls` | Clear console screen |
+| `driverquery` | Displays a list of installed device drivers |
+| `chkdsk` | Checks the file system and disk volumes for errors and bad sectors |
+| `sfc /scannow` | Scans system files for corruption and repairs them if possible |
+| `shutdown /s` | Shutdown computer |
+| `shutdown /r` | Restart computer |
+| `shutdown /a` | Abort shutdown |
+| `help` | List supported commands |
+| `\| more` | Pagination (e.g. `help \| more`) |
+
+
+### Process Management
+
+| Command | Description |
+| :--- | :--- |
+| `tasklist` | List all running processes |
+| `tasklist /svc` | Show services for each process |
+| `tasklist /v` | Verbose output (User, Window Title) |
+| `tasklist /fi "STATUS eq RUNNING"` | Filter by status |
+| `tasklist /fi "IMAGENAME eq note*"` | Filter by image name |
+| `taskkill /pid <pid>` | Kill process by PID |
+| `taskkill /im <name>` | Kill process by image name |
+| `taskkill /f` | Force terminate process |
+| `taskkill /t` | Terminate process and any child processes |
 
 ### Networking
 
@@ -51,10 +75,41 @@
 | `ipconfig` | Display IP configuration |
 | `ipconfig /all` | Full network configuration |
 | `ipconfig /flushdns` | Purge DNS cache |
-| `netstat -ano` | All connections with PIDs |
-| `netstat -b` | Show executable per connection |
+| `netstat -a` | Displays all established connections and listening ports |
+| `netstat -b` | Shows the program associated with each listening port and established connection |
+| `netstat -o` | Reveals the process ID (PID) associated with the connection |
+| `netstat -n` | Uses a numerical form for addresses and port numbers |
+| `netstat -ano` | All connections with PIDs (Common combo) |
 | `net view` | List shared resources |
 | `net use` | Connect to network share |
+| `tracert` | Trace route to host |
+| `nslookup` | Query DNS nameservers |
+
+### File Operations
+
+| Command | Description |
+| :--- | :--- |
+| `dir` | List files and directories |
+| `dir /a` | List all files, including hidden and system |
+| `dir /s` | List files in current directory and subdirectories |
+| `cd` | Change directory |
+| `mkdir` | Make directory |
+| `rmdir` | Remove directory |
+| `copy` | Copy files |
+| `move` | Move files |
+| `del` | Delete files |
+| `erase` | Delete files (same as del) |
+| `ren` | Rename files |
+| `type` | Display file contents |
+| `more` | Display file contents page by page |
+| `find` | Search for text in files |
+| `findstr` | Search for text in files (regex support) |
+| `fc` | Compare files |
+| `comp` | Compare files |
+| `attrib` | Display or change file attributes |
+| `icacls` | Display or modify access control lists |
+| `takeown` | Take ownership of files |
+| `cacls` | Display or modify access control lists |
 
 ### User Management
 

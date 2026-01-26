@@ -44,6 +44,7 @@
 | `set` | Display, set, or remove environment variables |
 | `systeminfo` | Detailed system configuration |
 | `cls` | Clear console screen |
+| `doskey /history` | Display command history |
 | `driverquery` | Displays a list of installed device drivers |
 | `chkdsk` | Checks the file system and disk volumes for errors and bad sectors |
 | `sfc /scannow` | Scans system files for corruption and repairs them if possible |
@@ -199,6 +200,7 @@
 | :--- | :--- |
 | `Get-Help <cmd>` | Get help for a command |
 | `Get-Command *keyword*` | Find commands |
+| `Get-History` (`history`) | List command history |
 | `Get-Process` | List running processes |
 | `Stop-Process -Name <name>` | Kill process by name |
 | `Get-Service` | List services |

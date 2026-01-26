@@ -15,8 +15,10 @@
 | `cp` | Copies files or directories. | `cp source.txt destination.txt` |
 | `mv` | Moves or renames files or directories. | `mv old_name.txt new_name.txt` |
 | `rm` | Removes files or directories. | `rm file_to_delete.txt` |
+| `du` | Estimates file space usage. | `du -sh` (directory summary), `du -h` |
 | `file` | Determines the type of a file. | `file my_document` |
 | `strings` | Extracts printable strings from binary files. | `strings binary_file` |
+| `size` | Lists section sizes of binary files. | `size /bin/ls` |
 | **Search & Filtering** | | |
 | `find` | Searches for files in a directory hierarchy. | `find / -name "*.txt"`, `find . -type f -perm -4000` (SUID files), `find / -user root -writable 2>/dev/null` |
 | `grep` | Searches for patterns within files. | `grep -r "password" .` (recursive), `grep -i "error" log.txt` (case-insensitive), `grep -v "info"` (invert match) |

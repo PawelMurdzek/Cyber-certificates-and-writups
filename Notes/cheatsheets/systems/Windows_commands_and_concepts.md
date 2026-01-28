@@ -85,6 +85,8 @@
 | `net use` | Connect to network share |
 | `tracert` | Trace route to host |
 | `nslookup` | Query DNS nameservers |
+| `telnet <host> <port>` | Connect to host on specific port |
+| `ftp <host>` | Interactive file transfer |
 
 ### File Operations
 

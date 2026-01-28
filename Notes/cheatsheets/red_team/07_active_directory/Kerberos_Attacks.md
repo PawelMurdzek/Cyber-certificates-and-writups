@@ -2,6 +2,10 @@
 
 Exploiting Kerberos authentication in Active Directory.
 
+> [!TIP]
+> For Kerberos System Architecture & Concepts, see [Kerberos System Concepts](../../systems/Kerberos.md)
+
+
 ## Understanding Kerberos
 
 ```

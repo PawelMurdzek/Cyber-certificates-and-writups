@@ -2,6 +2,10 @@
 
 Techniques for discovering AD structure and finding attack paths.
 
+> [!TIP]
+> For Active Directory System Concepts & Blue Team, see [AD System Concepts](../../systems/Active_directory.md)
+
+
 ## Initial Enumeration
 
 ### Domain Information

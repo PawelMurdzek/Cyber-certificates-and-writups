@@ -1,4 +1,8 @@
-﻿# Active Directory
+﻿# Active Directory (Blue Team / Systems)
+
+> [!TIP]
+> For Offensive AD Attacks & Enumeration, see [Red Team AD Enumeration](../red_team/07_active_directory/AD_Enumeration.md)
+
 
 ## Core Concepts
 

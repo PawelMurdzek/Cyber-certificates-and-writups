@@ -1,4 +1,8 @@
-# Kerberos
+# Kerberos (System Concepts)
+
+> [!TIP]
+> For Offensive Kerberos Attacks, see [Red Team Kerberos Attacks](../red_team/07_active_directory/Kerberos_Attacks.md)
+
 
 ## Core Concepts
 

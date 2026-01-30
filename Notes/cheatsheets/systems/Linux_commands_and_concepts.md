@@ -67,6 +67,7 @@
 | **Miscellaneous** | | |
 | `echo` | Displays a line of text. | `echo "Hello, World!"` |
 | `man` | Displays the on-line manual pages for commands. | `man ls` |
+| `history` | Displays command history list. | `history 10` (last 10), `!5` (run cmd 5), `!!` (run last) |
 
 ## FTP & SFTP Interactive Commands
 
@@ -109,6 +110,20 @@ command 2> errors.log
 # Save everything to a file
 command > output.log 2>&1
 ```
+
+## Shell Scripting
+
+| Command / Concept | Syntax / Description | Example |
+| :--- | :--- | :--- |
+| **Input** | | |
+| `read` | Read user input into a variable. | `read -p "Enter name: " name`<br>`echo "Hello $name"` |
+| **Conditionals** | | |
+| `if` statement | Execute commands based on a condition. | `if [ "$a" -gt "$b" ]; then`<br>&nbsp;&nbsp;`echo "Greater"`<br>`fi` |
+| `if-else` | Handle true and false cases. | `if [ -f "file.txt" ]; then`<br>&nbsp;&nbsp;`echo "Exists"`<br>`else`<br>&nbsp;&nbsp;`echo "Missing"`<br>`fi` |
+| Comparison Ops | Integers: `-eq`, `-ne`, `-gt`, `-lt`. Strings: `=`, `!=`, `-z` (empty). Files: `-f` (file), `-d` (dir) | `[ "$a" -eq 10 ]`, `[ -z "$var" ]` |
+| **Loops** | | |
+| `for` loop | Iterate over a list or range. | `for i in {1..5}; do`<br>&nbsp;&nbsp;`echo "Num: $i"`<br>`done` |
+| `while` loop | Repeat while condition is true. | `while [ "$x" -lt 5 ]; do`<br>&nbsp;&nbsp;`((x++))`<br>`done` |
 
 ## Automation with Cron
 

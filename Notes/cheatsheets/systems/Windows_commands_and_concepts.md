@@ -44,6 +44,7 @@
 | `set` | Display, set, or remove environment variables |
 | `systeminfo` | Detailed system configuration |
 | `cls` | Clear console screen |
+| `doskey /history` | Display command history |
 | `driverquery` | Displays a list of installed device drivers |
 | `chkdsk` | Checks the file system and disk volumes for errors and bad sectors |
 | `sfc /scannow` | Scans system files for corruption and repairs them if possible |
@@ -84,6 +85,8 @@
 | `net use` | Connect to network share |
 | `tracert` | Trace route to host |
 | `nslookup` | Query DNS nameservers |
+| `telnet <host> <port>` | Connect to host on specific port |
+| `ftp <host>` | Interactive file transfer |
 
 ### File Operations
 
@@ -201,6 +204,7 @@
 | `Get-Help <cmd> -Examples` | Show command examples |
 | `Get-Command *keyword*` | Find commands |
 | `Get-Command -CommandType <Type>` | Find specific types |
+| `Get-History` (`history`) | List command history |
 | `Get-Process` | List running processes |
 | `Stop-Process -Name <name>` | Kill process by name |
 | `Get-Service` | List services |

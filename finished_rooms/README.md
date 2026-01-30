@@ -28,6 +28,19 @@
 * [Windows Fundamentals 3](https://tryhackme.com/room/windowsfundamentals3xzx)
 * [Windows AD Fundamentals](https://tryhackme.com/room/winadbasics)
 
+#### Command Line
+* [Windows Command Line](https://tryhackme.com/room/windowscommandline)
+* [Windows PowerShell](https://tryhackme.com/room/windowspowershell)
+* [Linux Shells](https://tryhackme.com/room/linuxshells)
+
+#### Networking
+
+### Incident Response & Forensics
+* [Disk Analysis & Autopsy](https://tryhackme.com/room/autopsy2ze0)
+* [Windows Forensics 1](https://tryhackme.com/room/windowsforensics1)
+* [IR Timeline Analysis](https://tryhackme.com/room/dfirtimelineanalysis)
+* [Incident Response Process](https://tryhackme.com/room/incidentresponseprocess)
+
 ## CryptoHack challenges
 
 ### General

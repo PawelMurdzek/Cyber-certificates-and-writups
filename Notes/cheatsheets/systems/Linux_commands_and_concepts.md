@@ -47,6 +47,9 @@
 | `wget` | Downloads files from the web via HTTP/HTTPS. | `wget https://example.com/file.zip`, `wget -q -O - URL` (quiet, stdout) |
 | `curl` | Transfers data from or to a server. | `curl -X POST -d "data" URL`, `curl -s URL`, `curl -o file.txt URL` |
 | `scp` | Securely copies files between hosts on a network. | `scp file.txt user@host:/remote/dir/`, `scp -r folder/ user@host:/path/` |
+| `ftp` | Interactive File Transfer Protocol client. | `ftp 192.168.1.100` |
+| `sftp` | Secure File Transfer Protocol client. | `sftp user@host` |
+| `GET`, `POST` | Simple command line HTTP agents. | `GET http://example.com` |
 | `python3 -m http.server` | Starts a simple HTTP web server in the current directory. | `python3 -m http.server 8000` |
 | **Process Management** | | |
 | `ps` | Reports a snapshot of the current processes. | `ps aux` (all processes), `ps -ef \| grep nginx`, `ps aux --sort=-%mem` (by memory) |
@@ -64,6 +67,21 @@
 | **Miscellaneous** | | |
 | `echo` | Displays a line of text. | `echo "Hello, World!"` |
 | `man` | Displays the on-line manual pages for commands. | `man ls` |
+
+## FTP & SFTP Interactive Commands
+
+| Command | Description |
+| :--- | :--- |
+| `get` | Download file from server. |
+| `put` | Upload file to server. |
+| `mget` | Download multiple files. |
+| `mput` | Upload multiple files. |
+| `ls` | List directory on server. |
+| `cd` | Change directory on server. |
+| `lcd` | Change local directory. |
+| `binary` | Switch to binary transfer mode. |
+| `ascii` | Switch to ascii transfer mode. |
+| `bye` | Exit the client. |
 
 ## Shell Operators and Job Control
 

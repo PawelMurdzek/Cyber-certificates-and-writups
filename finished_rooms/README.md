@@ -87,3 +87,11 @@
 * [My Solution](https://github.com/PawelMurdzek/task4_TBO)
 
 ## MSLearn
+
+### Introduction to Cloud Infrastructure: Describe Cloud Concepts
+* [Introduction to Cloud Infrastructure: Describe Cloud Concepts](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+#### Describe cloud computing
+* [Describe cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/)
+#### Describe benefits and use cloud services
+* [Describe benefits and use cloud services](https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/)
+

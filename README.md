@@ -15,3 +15,4 @@ Repository containing my certificates, articles, writeups, and notes from variou
 - [Cyber Defenders](https://cyberdefenders.org/p/pawel.murdzek)
 - [TryHackMe](https://tryhackme.com/p/PawelMurdzek)
 - [CryptoHack](https://cryptohack.org/user/pmurdzek/)
+- [MSLearn](https://learn.microsoft.com/pl-pl/users/pawelmurdzek/)

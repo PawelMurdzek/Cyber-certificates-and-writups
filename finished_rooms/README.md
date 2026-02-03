@@ -66,3 +66,24 @@
 * [What is CVSS](https://learn.snyk.io/lesson/what-is-cvss)
 * [LLM System Prompt Leakage](https://learn.snyk.io/lesson/llm-system-prompt-leakage)
 * [Prompt Injection](https://learn.snyk.io/lesson/prompt-injection)
+
+## Mixeway Academy
+### Security By Design
+
+#### Domain-Driven Design (DDD), Application Input Validation
+* [Task Repository](https://github.com/Mixeway-Academy/task1)
+* [My Solution](https://github.com/PawelMurdzek/TBO_task1)
+
+#### Sensitive Data Leak Verification, Secrets Leak Detection, and Security Verification of Open Source Libraries (SCA)
+* [Task Repository](https://github.com/Mixeway-Academy/task2)
+* [My Solution](https://github.com/PawelMurdzek/task2)
+
+#### Preparation of an Extended Unit Test Suite, JWT Vulnerability Exploitation and Remediation, and Security Verification of Open Source Libraries
+* [Task Repository](https://github.com/Mixeway-Academy/task3)
+* [My Solution](https://github.com/PawelMurdzek/tbo_task3)
+
+#### Trivy Scanning on a Locally Built Docker Image, SAST using Semgrep, Implementation of a CI/CD Pipeline with Trivy and Semgrep, Local Application Deployment + DAST using OWASP ZAP
+* [Task Repository](https://github.com/Mixeway-Academy/task4)
+* [My Solution](https://github.com/PawelMurdzek/task4_TBO)
+
+## MSLearn

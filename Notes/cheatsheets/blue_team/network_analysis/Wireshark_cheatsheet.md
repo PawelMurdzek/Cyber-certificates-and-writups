@@ -184,16 +184,34 @@ Visualize traffic over time with customizable filters.
 
 ---
 
-## Expert Info (`Analyze → Expert Information`)
+## Expert Info
 
-Shows issues found in the capture:
+Wireshark detects specific states of protocols to help analysts easily spot possible anomalies and problems. Note that these are only suggestions, and there is always a chance of having false positives/negatives.
 
-| Severity | Description |
-|----------|-------------|
-| **Error** | Serious problems (malformed packets, checksum errors) |
-| **Warning** | Notable issues (retransmissions, out-of-order) |
-| **Note** | Informational (connection setup/teardown) |
-| **Chat** | Normal protocol operations |
+### Severities
+
+| Severity | Color | Info |
+|----------|-------|------|
+| **Error** | Red | Problems like malformed packets. |
+| **Warn** | Yellow | Warnings like unusual error codes or problem statements. |
+| **Note** | Cyan | Notable events like application error codes. |
+| **Chat** | Blue | Information on usual workflow. |
+
+### Common Information Groups
+
+| Group | Info | Group | Info |
+|-------|------|-------|------|
+| **Checksum** | Checksum errors | **Deprecated** | Deprecated protocol usage |
+| **Comment** | Packet comment detection | **Malformed** | Malformed packet detection |
+
+### Accessing Expert Information
+
+You can use the "lower left bottom section" in the status bar or `Analyze → Expert Information` menu to view all entries via a dialogue box. It shows:
+- Packet number
+- Summary
+- Group protocol
+- Total occurrence
+
 
 ---
 

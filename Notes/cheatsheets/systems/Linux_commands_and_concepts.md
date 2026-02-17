@@ -73,7 +73,7 @@ Host: target.com
 
 ## Network Reconnaissance
 
-See [[Nmap]] for detailed usage.
+See [Nmap](../red_team/01_reconnaissance/Nmap.md) for detailed usage.
 | **Process Management** | | |
 | `ps` | Reports a snapshot of the current processes. | `ps aux` (all processes), `ps -ef \| grep nginx`, `ps aux --sort=-%mem` (by memory) |
 | `top` | Displays a real-time view of running system processes. | `top`, `htop` (better alternative) |

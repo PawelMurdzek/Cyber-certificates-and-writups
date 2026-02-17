@@ -114,8 +114,12 @@ Nmap (Network Mapper) is a free and open-source utility for network discovery an
 | `nmap -oX <file>` | XML output to file. |
 | `nmap -oG <file>` | Grepable output to file. |
 | `nmap -oA <basename>` | Output in all three major formats (N, X, G). |
-| `nmap -v` | Increase verbosity level. |
-| `nmap -d` | Increase debugging level. |
+| `nmap -v` | Increase verbosity level (use `-vv` or more for greater effect). |
+| `nmap -d` | Increase debugging level (use `-dd` or more for greater effect). |
+| `nmap -d[level]` | Set debugging level (e.g. `-d9` for max). |
+| `nmap --packet-trace` | Trace all packets sent and received. |
+| `nmap --reason` | Display the reason a port is in a particular state. |
+| `nmap --open` | Only show open (or possibly open) ports. |
 
 ## Useful Examples
 

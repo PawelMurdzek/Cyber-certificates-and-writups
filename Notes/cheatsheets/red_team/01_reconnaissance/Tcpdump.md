@@ -13,6 +13,7 @@ Tcpdump is a powerful command-line packet analyzer. For Red Teamers, it is essen
 | `tcpdump -nn` | Disable hostname and port resolution (even faster). |
 | `tcpdump -c <count>` | Stop after capturing `<count>` packets. |
 | `tcpdump -v / -vv / -vvv` | Increase output verbosity. |
+| `tcpdump -q` | Quick output (print brief packet information). |
 
 ## File Operations
 
@@ -36,20 +37,50 @@ Tcpdump is a powerful command-line packet analyzer. For Red Teamers, it is essen
 
 ## Logical Operators
 
-| Operator | Description | Example |
-| :--- | :--- | :--- |
-| `and` | Both conditions must be true. | `tcpdump host 1.1.1.1 and tcp` |
-| `or` | Either condition can be true. | `tcpdump udp or icmp` |
-| `not` | Condition must not be true. | `tcpdump not tcp` |
+| Operator | Symbol | Description | Example |
+| :--- | :--- | :--- | :--- |
+| `and` | `&&` | Both conditions must be true. | `host 1.1.1.1 and tcp` |
+| `or` | `\|\|` | Either condition can be true. | `udp or icmp` |
+| `not` | `!` | Condition must not be true. | `not tcp` |
+
+## Packet Size Filtering
+
+| Command | Description |
+| :--- | :--- |
+| `greater <length>` | Filters packets >= specified length. |
+| `less <length>` | Filters packets <= specified length. |
 
 ## Packet Content Analysis
 
 | Command | Description |
 | :--- | :--- |
-| `tcpdump -A` | Show packet content in ASCII (useful for cleartext protocols). |
-| `tcpdump -X` | Show packet content in both Hex and ASCII. |
+| `tcpdump -q` | Quick output; print brief packet information. |
+| `tcpdump -e` | Print the link-level header (e.g., Ethernet). |
+| `tcpdump -A` | Show packet data in ASCII (useful for cleartext protocols). |
+| `tcpdump -xx` | Show packet data in hexadecimal format (hex). |
+| `tcpdump -X` | Show packet headers and data in hex and ASCII. |
 | `tcpdump -S` | Show absolute TCP sequence numbers. |
-| `tcpdump -e` | Show link-level (Ethernet) headers. |
+
+## Advanced Header Filtering
+
+BPF allows for granular inspection of protocol headers using the syntax: `proto[expr:size]`.
+
+- `proto`: The protocol (e.g., `arp`, `ether`, `icmp`, `ip`, `ip6`, `tcp`, `udp`).
+- `expr`: The byte offset (starting at 0).
+- `size`: The number of bytes to inspect (1, 2, or 4). Defaults to 1.
+
+## TCP Flags Analysis
+
+You can use `tcp[tcpflags]` to reference the flags field. Available flags:
+- `tcp-syn`, `tcp-ack`, `tcp-fin`, `tcp-rst`, `tcp-push`
+
+### Flag Patterns
+
+| Command | Description |
+| :--- | :--- |
+| `tcpdump "tcp[tcpflags] == tcp-syn"` | Capture packets with **only** the SYN flag set. |
+| `tcpdump "tcp[tcpflags] & tcp-syn != 0"` | Capture packets with **at least** the SYN flag set. |
+| `tcpdump "tcp[tcpflags] & (tcp-syn\|tcp-ack) != 0"` | Capture packets with **at least** SYN or ACK set. |
 
 ## Useful Recon One-Liners
 

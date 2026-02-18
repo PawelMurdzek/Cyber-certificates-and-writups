@@ -142,3 +142,8 @@ nmap -p- -sV -oA scan_result 10.10.10.10
 ```bash
 nmap --script vuln 10.10.10.10
 ```
+
+## See Also
+
+- [Tcpdump Cheat Sheet](Tcpdump.md) - Passive network discovery and traffic analysis.
+- [Detailed Wireshark Guide](../../blue_team/network_analysis/Wireshark_cheatsheet.md) - Deep packet inspection and protocol analysis.

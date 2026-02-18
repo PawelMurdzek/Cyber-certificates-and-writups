@@ -34,6 +34,14 @@ Tcpdump is a powerful command-line packet analyzer. For Red Teamers, it is essen
 | `dst <IP>` | Traffic to a specific destination. |
 | `tcp`, `udp`, `icmp` | Protocol-specific filtering. |
 
+## Logical Operators
+
+| Operator | Description | Example |
+| :--- | :--- | :--- |
+| `and` | Both conditions must be true. | `tcpdump host 1.1.1.1 and tcp` |
+| `or` | Either condition can be true. | `tcpdump udp or icmp` |
+| `not` | Condition must not be true. | `tcpdump not tcp` |
+
 ## Packet Content Analysis
 
 | Command | Description |

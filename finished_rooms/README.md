@@ -43,6 +43,7 @@
 * [Nmap: The Basics](https://tryhackme.com/room/nmap)
 
 #### Cryptography
+* [Cryptography Basics](https://tryhackme.com/room/cryptographybasics)
 
 #### Web Hacking
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)

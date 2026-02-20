@@ -447,3 +447,10 @@ tcpdump -i eth0 -w - 2>/dev/null | pv -r > /dev/null
 - [Tcpdump Man Page](https://www.tcpdump.org/manpages/tcpdump.1.html)
 - [BPF Filter Reference](https://biot.com/capstats/bpf.html)
 - [Tcpdump Examples](https://danielmiessler.com/p/tcpdump/)
+
+---
+
+## See Also
+
+- [Red Team Tcpdump Guide](../../red_team/01_reconnaissance/Tcpdump.md) - Focused on reconnaissance and stealth.
+- [Wireshark Cheatsheet](Wireshark_cheatsheet.md) - GUI alternative for deep analysis.

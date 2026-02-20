@@ -34,6 +34,18 @@
 * [Linux Shells](https://tryhackme.com/room/linuxshells)
 
 #### Networking
+* [Networking Concepts](https://tryhackme.com/room/networkingconcepts)
+* [Networking Essentials](https://tryhackme.com/room/networkingessentials)
+* [Networking Core Protocols](https://tryhackme.com/room/networkingcoreprotocols)
+* [Networking Secure Protocols](https://tryhackme.com/room/networkingsecureprotocols)
+* [Wireshark: The Basics](https://tryhackme.com/room/wiresharkthebasics)
+* [Tcpdump: The Basics](https://tryhackme.com/room/tcpdump)
+* [Nmap: The Basics](https://tryhackme.com/room/nmap)
+
+#### Cryptography
+
+#### Web Hacking
+* [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)
 
 ### Incident Response & Forensics
 * [Disk Analysis & Autopsy](https://tryhackme.com/room/autopsy2ze0)

@@ -117,3 +117,5 @@
 #### Topics
 * [Introduction](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/1-introduction)
 * [Microsoft cloud security benchmark: Identity management and privileged access](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/2-identity-management-privileged-access)
+* [What is Microsoft Entra ID?](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/3-microsoft-entra-id-overview)
+* [Secure Microsoft Entra users](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/4-secure-microsoft-entra-users)

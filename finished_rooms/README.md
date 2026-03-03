@@ -119,3 +119,5 @@
 * [Microsoft cloud security benchmark: Identity management and privileged access](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/2-identity-management-privileged-access)
 * [What is Microsoft Entra ID?](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/3-microsoft-entra-id-overview)
 * [Secure Microsoft Entra users](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/4-secure-microsoft-entra-users)
+* [Create a new user in Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/5-create-new-user)
+* [Secure Microsoft Entra groups](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/6-secure-microsoft-entra-groups)

@@ -105,7 +105,15 @@
 ### Introduction to Cloud Infrastructure: Describe Cloud Concepts
 * [Introduction to Cloud Infrastructure: Describe Cloud Concepts](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
 
+#### Topics
 * [Describe cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/)
 * [Describe benefits and use cloud services](https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/)
 * [Describe cloud service types](https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/)
 
+### Protect identity and access in Azure
+
+#### Manage security controls for identity and access
+* [Manage security controls for identity and access](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/)
+#### Topics
+* [Introduction](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/1-introduction)
+* [Microsoft cloud security benchmark: Identity management and privileged access](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/2-identity-management-privileged-access)

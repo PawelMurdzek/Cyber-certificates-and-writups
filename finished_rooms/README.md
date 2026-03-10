@@ -145,3 +145,11 @@
 * [AI security controls](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/)
 #### Topics
 * [Introduction](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/1-introduction)
+* [Review AI open source libraries](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/2-review-ai-open-source-libraries)
+* [Content filters](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/3-content-filters)
+* [Implement AI data security](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/4-implement-ai-data-security)
+* [Create metaprompts](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/5-create-metaprompts)
+* [Ground AI systems](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/6-ground-ai-systems)
+* [Implement application security best practices for AI-enabled applications](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/7-implement-application-security-best-practices-for-ai-enabled-applications)
+* [Knowledge check](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/8-knowledge-check)
+* [Summary](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/9-summary)

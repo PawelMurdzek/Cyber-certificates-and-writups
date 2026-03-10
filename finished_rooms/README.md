@@ -141,3 +141,7 @@
 * [Knowledge check](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/9-knowledge-check)
 * [Summary](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/10-summary)
 
+#### AI security controls
+* [AI security controls](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/)
+#### Topics
+* [Introduction](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/1-introduction)

@@ -136,3 +136,8 @@
 * [AI jailbreaking](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/4-ai-jailbreaking)
 * [AI prompt injection](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/5-ai-prompt-injection)
 * [AI model manipulation](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/6-ai-model-manipulation)
+* [Data exfiltration](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/7-data-exfiltration)
+* [AI overreliance](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/8-ai-overreliance)
+* [Knowledge check](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/9-knowledge-check)
+* [Summary](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/10-summary)
+

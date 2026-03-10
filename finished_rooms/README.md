@@ -45,6 +45,7 @@
 #### Cryptography
 * [Cryptography Basics](https://tryhackme.com/room/cryptographybasics)
 * [Public Key Cryptography Basics](https://tryhackme.com/room/publickeycrypto)
+* [Hashing Basics](https://tryhackme.com/room/hashingbasics)
 
 #### Web Hacking
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)

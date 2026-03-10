@@ -135,3 +135,4 @@
 * [AI architecture layers](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/3-ai-architecture-layers)
 * [AI jailbreaking](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/4-ai-jailbreaking)
 * [AI prompt injection](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/5-ai-prompt-injection)
+* [AI model manipulation](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/6-ai-model-manipulation)

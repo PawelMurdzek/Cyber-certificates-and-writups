@@ -122,3 +122,15 @@
 * [Create a new user in Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/5-create-new-user)
 * [Secure Microsoft Entra groups](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/6-secure-microsoft-entra-groups)
 * [Recommend when to use external identities](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/7-recommend-when-use-external-identities)
+
+
+### AI security fundamentals
+* [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)
+#### Fundamentals of AI security
+* [Fundamentals of AI security](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/)
+#### Topics
+* [Introduction](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/1-introduction)
+* [Basic concepts of AI security](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/2-basic-concepts-of-ai-security)
+* [AI architecture layers](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/3-ai-architecture-layers)
+* [AI jailbreaking](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/4-ai-jailbreaking)
+* [AI prompt injection](https://learn.microsoft.com/en-us/training/modules/fundamentals-ai-security/5-ai-prompt-injection)

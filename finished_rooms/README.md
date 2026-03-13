@@ -153,3 +153,9 @@
 * [Implement application security best practices for AI-enabled applications](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/7-implement-application-security-best-practices-for-ai-enabled-applications)
 * [Knowledge check](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/8-knowledge-check)
 * [Summary](https://learn.microsoft.com/en-us/training/modules/ai-security-controls/9-summary)
+
+#### Introduction to AI security testing
+* [Introduction to AI security testing](https://learn.microsoft.com/en-us/training/modules/introduction-ai-security-testing/)
+
+#### Topics
+* [What is AI red-teaming?](https://learn.microsoft.com/en-us/training/modules/introduction-ai-security-testing/1-what-is-ai-red-teaming)

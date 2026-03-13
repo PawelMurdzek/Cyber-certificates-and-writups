@@ -159,3 +159,4 @@
 
 #### Topics
 * [What is AI red-teaming?](https://learn.microsoft.com/en-us/training/modules/introduction-ai-security-testing/1-what-is-ai-red-teaming)
+* [The three categories of AI red-teaming](https://learn.microsoft.com/en-us/training/modules/introduction-ai-security-testing/2-the-three-categories-of-ai-red-teaming)

@@ -55,6 +55,12 @@ Burp's custom fuzzing and brute-forcing engine.
 - **Grep - Extract**: Extract CSRF tokens or useful data from the response to use in manual analysis.
 - **Performance tuning**: Adjust concurrent requests under Intruder's **Resource Pool** settings based on the target server's limitations.
 
+**Essential SecLists for Intruder**:
+- **Fuzzing Parameters**: `SecLists/Fuzzing/LFI/LFI-gracefulsecurity-linux.txt`, `SecLists/Fuzzing/SQLi/`
+- **Directory Brute-forcing**: `SecLists/Discovery/Web-Content/raft-medium-directories.txt`
+- **API Fuzzing**: `SecLists/Discovery/Web-Content/api/api-endpoints.txt`
+*(Tip: Keep your SecLists cloned outside your Obsidian vault, e.g., in `C:\tools\SecLists`, to prevent vault lag.)*
+
 ### Sequencer
 Analyzes the quality of randomness in sample data items.
 - **Use Case**: Testing session tokens, anti-CSRF tokens, or password reset tokens to see if they are predictable or mathematically sound.

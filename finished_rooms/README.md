@@ -123,6 +123,7 @@
 * [Create a new user in Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/5-create-new-user)
 * [Secure Microsoft Entra groups](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/6-secure-microsoft-entra-groups)
 * [Recommend when to use external identities](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/7-recommend-when-use-external-identities)
+* [Secure external identities](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/8-secure-external-microsoft-entra-identities)
 
 
 ### AI security fundamentals

@@ -124,7 +124,7 @@
 * [Secure Microsoft Entra groups](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/6-secure-microsoft-entra-groups)
 * [Recommend when to use external identities](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/7-recommend-when-use-external-identities)
 * [Secure external identities](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/8-secure-external-microsoft-entra-identities)
-
+* [Implement Microsoft Entra Identity Protection](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/9-microsoft-entra-identity-protection)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

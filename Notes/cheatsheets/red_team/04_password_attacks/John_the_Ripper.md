@@ -201,6 +201,178 @@ john --show hashes.txt
 
 ---
 
+## john.conf
+
+John reads configuration from `john.conf` (or `john.ini` on some builds).
+
+### File Locations
+
+| Location | Description |
+|:---------|:------------|
+| `/etc/john/john.conf` | System-wide (Kali/Debian) |
+| `/usr/share/john/john.conf` | Default bundled config |
+| `~/.john/john.conf` | User-level overrides |
+| `./john.conf` | Local directory (highest priority) |
+
+```bash
+# Check which config john is using
+john --config=/path/to/john.conf --list=rules
+```
+
+### Key Sections in john.conf
+
+```ini
+[Options]
+# Max memory for wordlist (MB)
+WordlistMemory = 16
+
+# Default incremental mode
+Incremental = ASCII
+
+[Incremental:ASCII]
+File = $JOHN/ascii.chr
+MinLen = 1
+MaxLen = 13
+CharCount = 95
+
+[Incremental:Digits]
+File = $JOHN/digits.chr
+MinLen = 1
+MaxLen = 20
+CharCount = 10
+
+# Custom rule sections
+[List.Rules:MyRules]
+# ... rule directives here ...
+
+[List.Rules:Wordlist]  # Default wordlist rules
+# ... built-in mangling rules ...
+```
+
+---
+
+## Custom Rules
+
+Rules are defined in `john.conf` under `[List.Rules:<RuleName>]` sections.
+
+### Rule Syntax Overview
+
+Each line is a **rule string** — a sequence of commands applied left-to-right to each wordlist candidate.
+
+```
+[List.Rules:MyRules]
+<command><command>...
+```
+
+### Preprocessor Directives
+
+| Directive | Meaning |
+|:----------|:--------|
+| `-c` | Case-sensitive mode only |
+| `-8` | 8-bit character mode |
+| `Az"[chars]"` | Append from charset |
+| `A0"[chars]"` | Prepend from charset |
+
+### Common Rule Commands
+
+| Command | Description | Example |
+|:--------|:------------|:--------|
+| `:` | No-op (pass through) | `:` |
+| `l` | Lowercase all | `l` → `password` |
+| `u` | Uppercase all | `u` → `PASSWORD` |
+| `c` | Capitalize first letter | `c` → `Password` |
+| `r` | Reverse the word | `r` → `drowssap` |
+| `d` | Duplicate | `d` → `passpass` |
+| `f` | Reflect (word + reverse) | `f` → `passworddrowssap` |
+| `$X` | Append char X | `$1` → `password1` |
+| `^X` | Prepend char X | `^!` → `!password` |
+| `[` | Delete first character | `[` → `assword` |
+| `]` | Delete last character | `]` → `passwor` |
+| `{` | Rotate left | `{` → `asswordp` |
+| `}` | Rotate right | `}` → `dpasswor` |
+| `sXY` | Substitute X with Y | `so0` → `passw0rd` |
+| `p` | Pluralize | `p` → `passwords` |
+| `T N` | Toggle case at position N | `T0` → `Password` |
+| `D N` | Delete character at N | `D0` → `assword` |
+| `i N X` | Insert X at position N | `i4!` → `pass!word` |
+| `o N X` | Overwrite position N with X | `o0A` → `Aassword` |
+| `'N` | Truncate to length N | `'6` → `passwo` |
+| `<N` | Reject if length < N | `<8` |
+| `>N` | Reject if length > N | `>12` |
+| `=NX` | Reject unless char N is X | `=0a` |
+| `!X` | Reject if word contains X | `!digit` |
+
+### Writing Custom Rules
+
+Add to `~/.john/john.conf` or a local `john.conf`:
+
+```ini
+[List.Rules:MyCustom]
+# Pass through as-is
+:
+# Append common suffixes
+$1
+$2
+$!
+$@
+$#
+# Prepend year
+^0^2^0^2
+# Capitalize + append digit
+c$1
+c$2
+# Leet speak substitutions
+so0se3sa@
+# Reverse + capitalize
+rc
+# Duplicate + append special
+d$!
+# Common password patterns (word + year range)
+Az"[0-9][0-9][0-9][0-9]"
+# Append 1-3 digits
+Az"[0-9]"
+Az"[0-9][0-9]"
+Az"[0-9][0-9][0-9]"
+```
+
+### Using Custom Rules
+
+```bash
+# Apply your custom rule set
+john --wordlist=words.txt --rules=MyCustom hashes.txt
+
+# Combine multiple rule sets (comma-separated in some builds)
+john --wordlist=words.txt --rules=MyCustom hashes.txt
+
+# Test rules output (print candidates, don't crack)
+john --wordlist=words.txt --rules=MyCustom --stdout | head -20
+
+# Count candidates a rule set would generate
+john --wordlist=words.txt --rules=MyCustom --stdout | wc -l
+```
+
+### Built-in Rule Sets
+
+| Rule Set | Description |
+|:---------|:------------|
+| `Wordlist` | Default wordlist mangling |
+| `Single` | Single crack mode rules |
+| `Extra` | Extra wordlist rules |
+| `Jumbo` | Extended Jumbo pack rules |
+| `KoreLogic` | KoreLogic competition rules |
+| `best64` | Top 64 most effective rules |
+| `d3ad0ne` | Community rule set |
+
+```bash
+# List all available rule sets
+john --list=rules
+
+# Preview what best64 generates from a word
+echo "password" | john --stdin --rules=best64 --stdout
+```
+
+---
+
 ## Hash File Format
 
 ```

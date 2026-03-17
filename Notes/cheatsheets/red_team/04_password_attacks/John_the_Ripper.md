@@ -84,37 +84,50 @@ john unshadowed.txt
 ### From ZIP Files
 ```bash
 zip2john archive.zip > zip_hash.txt
-john zip_hash.txt
+
+# Step 1: crack (must run this first)
+john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
+
+# Step 2: show cracked password (reads from .pot file)
+john --show zip_hash.txt
 ```
+
+> **Note:** `--show` returns *0 cracked* if you haven't run a wordlist/incremental attack first.
+> John stores results in `~/.john/john.pot` — `--show` just reads from there.
 
 ### From RAR Files
 ```bash
 rar2john archive.rar > rar_hash.txt
-john rar_hash.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt
+john --show rar_hash.txt
 ```
 
 ### From PDF Files
 ```bash
 pdf2john doc.pdf > pdf_hash.txt
-john pdf_hash.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt pdf_hash.txt
+john --show pdf_hash.txt
 ```
 
 ### SSH Private Keys
 ```bash
 ssh2john id_rsa > ssh_hash.txt
-john ssh_hash.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt ssh_hash.txt
+john --show ssh_hash.txt
 ```
 
 ### KeePass Databases
 ```bash
 keepass2john database.kdbx > keepass_hash.txt
-john keepass_hash.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt keepass_hash.txt
+john --show keepass_hash.txt
 ```
 
 ### Office Documents
 ```bash
 office2john document.docx > office_hash.txt
-john office_hash.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt office_hash.txt
+john --show office_hash.txt
 ```
 
 ---
@@ -166,15 +179,20 @@ john --max-run-time=3600 hashes.txt
 
 ## Viewing Results
 
+> **Important:** `--show` reads from `~/.john/john.pot`. Always run a cracking
+> command first (`--wordlist`, `--incremental`, etc.), then use `--show` to display results.
+
 ```bash
-# Show all cracked passwords
+# Typical workflow
+john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 john --show hashes.txt
 
-# Show in user:pass format
+# Show with explicit format (required if auto-detect was not used)
 john --show --format=nt hashes.txt
-
-# Show specific format
 john --show --format=raw-md5 hashes.txt
+
+# Show location of the pot file
+cat ~/.john/john.pot
 ```
 
 ---

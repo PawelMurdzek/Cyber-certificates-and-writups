@@ -49,7 +49,7 @@
 * [John the Ripper Basics](https://tryhackme.com/room/johntheripperbasics)
 
 #### Exploitation Basics
-<!-- * [Moniker Link (CVE-2024-21413)](https://tryhackme.com/room/monikerlink) -->
+* [Moniker Link (CVE-2024-21413)](https://tryhackme.com/room/monikerlink)
 
 #### Web Hacking
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)

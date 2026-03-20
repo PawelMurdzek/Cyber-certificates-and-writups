@@ -178,3 +178,18 @@ umount /mnt/share
 | Writable Shares | Upload malicious files |
 | EternalBlue (MS17-010) | Remote code execution |
 | Sensitive Files | Look for passwords.txt, config files |
+
+---
+
+## Rogue SMB Server / Listener
+
+### Responder
+Start a rogue SMB server listener to capture NTLM hashes from incoming authentications.
+
+```bash
+# Start responder on a specific interface (e.g., ens5)
+responder -I ens5
+
+# Start responder with SMB/HTTP servers enabled, but LLMNR/NBT-NS/mDNS disabled (analyze mode / pure listener)
+responder -I ens5 -A
+```

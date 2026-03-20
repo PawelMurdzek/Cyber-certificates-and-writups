@@ -41,6 +41,7 @@
 | `chmod` | Changes file mode bits (permissions). | `chmod 755 script.sh`, `chmod +x script.sh` |
 | **Networking & File Transfer** | | |
 | `ss` | A utility to investigate sockets. Shows active connections. | `ss -tuna`, `ss -lntp` (listening ports with process) |
+| `lsof` | Lists open files and the processes that opened them. | `lsof -i` (active connections), `lsof -i :80` (port 80), `lsof -iTCP -sTCP:LISTEN` |
 | `netstat` | (Deprecated) Prints network connections, routing tables, etc. | `netstat -ano`, `netstat -tulpn` |
 | `ssh` | Secure Shell client for remote login. | `ssh username@192.168.1.100`, `ssh -L 8080:localhost:80 user@host` (port forwarding) |
 | `xfreerdp` | Remote Desktop Protocol client. | `xfreerdp /v:IP /u:User /p:Pass /cert:ignore /dynamic-resolution /drive:share,./` |

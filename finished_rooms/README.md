@@ -131,6 +131,7 @@
 * [Implement Microsoft Entra Identity Protection](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/9-microsoft-entra-identity-protection)
 * [Microsoft Entra Connect](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/10-microsoft-entra-connect)
 * [Microsoft Entra Cloud Sync](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/11-microsoft-entra-cloud-sync)
+* [Authentication options](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/12-authentication-options)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

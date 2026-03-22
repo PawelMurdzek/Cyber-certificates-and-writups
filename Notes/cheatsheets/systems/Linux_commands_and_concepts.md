@@ -40,6 +40,7 @@
 | `su` | Switches to another user account. | `su otheruser`, `su - root` (login shell) |
 | `chmod` | Changes file mode bits (permissions). | `chmod 755 script.sh`, `chmod +x script.sh` |
 | **Networking & File Transfer** | | |
+| `ping` | Sends ICMP echo requests to network hosts. | `ping 8.8.8.8`, `ping -c 4` (count), `ping -i 0.5` (interval) |
 | `ss` | A utility to investigate sockets. Shows active connections. | `ss -tuna`, `ss -lntp` (listening ports with process) |
 | `lsof` | Lists open files and the processes that opened them. | `lsof -i` (active connections), `lsof -i :80` (port 80), `lsof -iTCP -sTCP:LISTEN` |
 | `netstat` | (Deprecated) Prints network connections, routing tables, etc. | `netstat -ano`, `netstat -tulpn` |

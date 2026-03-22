@@ -50,6 +50,7 @@
 
 #### Exploitation Basics
 * [Moniker Link (CVE-2024-21413)](https://tryhackme.com/room/monikerlink)
+* [Metasploit Intro](https://tryhackme.com/room/metasploitintro)
 
 #### Web Hacking
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)

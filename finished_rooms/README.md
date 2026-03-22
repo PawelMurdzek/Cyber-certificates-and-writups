@@ -132,6 +132,7 @@
 * [Microsoft Entra Connect](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/10-microsoft-entra-connect)
 * [Microsoft Entra Cloud Sync](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/11-microsoft-entra-cloud-sync)
 * [Authentication options](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/12-authentication-options)
+* [Password hash synchronization with Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/13-password-hash-synchronization-with-microsoft-entra-id)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

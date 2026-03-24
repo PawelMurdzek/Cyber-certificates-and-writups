@@ -135,6 +135,8 @@
 * [Authentication options](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/12-authentication-options)
 * [Password hash synchronization with Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/13-password-hash-synchronization-with-microsoft-entra-id)
 * [Microsoft Entra pass-through authentication](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/14-microsoft-entra-pass-through-authentication)
+* [Federation with Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/15-federation-with-microsoft-entra-id)
+* [What is Microsoft Entra authentication](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/16-what-microsoft-entra-authentication)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

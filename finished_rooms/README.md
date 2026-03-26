@@ -139,6 +139,7 @@
 * [Federation with Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/15-federation-with-microsoft-entra-id)
 * [What is Microsoft Entra authentication](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/16-what-microsoft-entra-authentication)
 * [Implement multifactor authentication (MFA)](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/17-configure-microsoft-entra-multifactor-authentication-settings)
+* [Kerberos authentication](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/18-kerberos-authentication)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

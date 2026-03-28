@@ -141,6 +141,7 @@
 * [Implement multifactor authentication (MFA)](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/17-configure-microsoft-entra-multifactor-authentication-settings)
 * [Kerberos authentication](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/18-kerberos-authentication)
 * [New Technology Local Area Network Manager (NTLM)](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/19-new-technology-local-area-network-manager)
+* [Passwordless authentication options for Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/20-passwordless-authentication-options)
  
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

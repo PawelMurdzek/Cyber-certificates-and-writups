@@ -142,7 +142,7 @@
 * [Kerberos authentication](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/18-kerberos-authentication)
 * [New Technology Local Area Network Manager (NTLM)](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/19-new-technology-local-area-network-manager)
 * [Passwordless authentication options for Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/20-passwordless-authentication-options)
- 
+* [Implement passwordless authentication](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/21-passwordless-authentication)
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)
 #### Fundamentals of AI security

@@ -52,6 +52,7 @@
 * [Moniker Link (CVE-2024-21413)](https://tryhackme.com/room/monikerlink)
 * [Metasploit: Introduction](https://tryhackme.com/room/metasploitintro)
 * [Metasploit: Exploitation](https://tryhackme.com/room/metasploitexploitation)
+* [Metasploit: Meterpreter](https://tryhackme.com/room/meterpreter)
 
 #### Web Hacking
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)

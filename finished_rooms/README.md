@@ -53,6 +53,7 @@
 * [Metasploit: Introduction](https://tryhackme.com/room/metasploitintro)
 * [Metasploit: Exploitation](https://tryhackme.com/room/metasploitexploitation)
 * [Metasploit: Meterpreter](https://tryhackme.com/room/meterpreter)
+* [Blue](https://tryhackme.com/room/blue)
 
 #### Web Hacking
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)

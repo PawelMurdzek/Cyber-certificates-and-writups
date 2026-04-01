@@ -144,6 +144,8 @@
 * [New Technology Local Area Network Manager (NTLM)](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/19-new-technology-local-area-network-manager)
 * [Passwordless authentication options for Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/20-passwordless-authentication-options)
 * [Implement passwordless authentication](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/21-passwordless-authentication)
+* [Implement password protection](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/22-enforce-premises-microsoft-entra-password-protection)
+
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)
 #### Fundamentals of AI security

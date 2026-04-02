@@ -147,6 +147,7 @@
 * [Implement passwordless authentication](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/21-passwordless-authentication)
 * [Implement password protection](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/22-enforce-premises-microsoft-entra-password-protection)
 * [Microsoft Entra ID single sign-on](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/23-microsoft-entra-id-single-sign-on)
+* [Implement single sign-on (SSO)](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/24-configure-microsoft-entra-single-sign-on)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

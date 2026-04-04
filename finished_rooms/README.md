@@ -56,6 +56,7 @@
 * [Blue](https://tryhackme.com/room/blue)
 
 #### Web Hacking
+* [Web Application Basics](https://tryhackme.com/room/webapplicationbasics)
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)
 
 ### Incident Response & Forensics

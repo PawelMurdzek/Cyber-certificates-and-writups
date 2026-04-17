@@ -149,6 +149,10 @@
 * [Implement password protection](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/22-enforce-premises-microsoft-entra-password-protection)
 * [Microsoft Entra ID single sign-on](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/23-microsoft-entra-id-single-sign-on)
 * [Implement single sign-on (SSO)](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/24-configure-microsoft-entra-single-sign-on)
+* [Integrate single sign-on (SSO) and identity providers](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/25-integrate-applications-with-microsoft-entra-id)
+* [Introduction to Microsoft Entra Verified ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/26-microsoft-entra-verified-id)
+* [Configure Microsoft Entra Verified ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/27-configure-microsoft-entra-verified-id)
+* [Recommend and enforce modern authentication protocols](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/28-microsoft-entra-id-authentication-verification-methods)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

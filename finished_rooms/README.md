@@ -58,6 +58,7 @@
 #### Web Hacking
 * [Web Application Basics](https://tryhackme.com/room/webapplicationbasics)
 * [JavaScript Essentials](https://tryhackme.com/room/javascriptessentials)
+* [SQL Fundamentals](https://tryhackme.com/room/sqlfundamentals)
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)
 
 ### Incident Response & Forensics

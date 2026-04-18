@@ -61,6 +61,8 @@
 * [SQL Fundamentals](https://tryhackme.com/room/sqlfundamentals)
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)
 
+#### Offensive Security Tooling
+
 ### Incident Response & Forensics
 * [Disk Analysis & Autopsy](https://tryhackme.com/room/autopsy2ze0)
 * [Windows Forensics 1](https://tryhackme.com/room/windowsforensics1)

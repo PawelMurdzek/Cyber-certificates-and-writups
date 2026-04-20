@@ -62,6 +62,7 @@
 * [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics)
 
 #### Offensive Security Tooling
+* [Hydra](https://tryhackme.com/room/hydra)
 
 ### Incident Response & Forensics
 * [Disk Analysis & Autopsy](https://tryhackme.com/room/autopsy2ze0)

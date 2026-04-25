@@ -161,7 +161,8 @@
 * [Recommend and enforce modern authentication protocols](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/28-microsoft-entra-id-authentication-verification-methods)
 * [Azure management groups](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/29-azure-management-groups)
 * [Configure Azure role permissions for management groups, subscriptions, resource groups, and resources](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/30-configure-azure-role-permissions)
-
+* [Azure role-based access control](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/31-azure-role-based-access-control)
+* [Azure built-in roles](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/32-azure-built-in-roles)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

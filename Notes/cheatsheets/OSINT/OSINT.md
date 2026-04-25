@@ -39,18 +39,53 @@ Top-level hub for open-source intelligence: passive recon, social-media analysis
 | [[Regional_Arabic]] | Arabic-language internet across MENA — country-by-country, conflict OSINT, MSA vs dialect |
 
 ### Country Deep-Dives
+
+**Eurasia & Conflict:**
 | File | Country |
 |:-----|:--------|
-| [[Country_Iran]] | Persian-language ecosystem, Aparat, Eitaa, regime news vs exile |
+| [[Country_Ukraine]] | Most OSINT-active conflict zone in history — Bellingcat / DeepState / GeoConfirmed methodology |
 | [[Country_Belarus]] | Distinct from RUNet — Cyber Partisans, NEXTA, exile media |
+| [[Country_Iran]] | Persian-language ecosystem, Aparat, Eitaa, regime news vs exile |
+| [[Country_Turkey]] | Eksi Sözlük, MERSIS, exile media post-2016 |
+| [[Country_Israel]] | Hebrew + surveillance-tech industry, [[Regional_Arabic]] cross-reference |
+
+**EU + UK:**
+| File | Country |
+|:-----|:--------|
 | [[Country_Poland]] | KRS / CEIDG / MSiG, Polish media, Wykop |
-| [[Country_USA]] | PACER, SEC EDGAR, 50 state ecosystems, gated PI tools |
+| [[Country_Germany]] | Handelsregister + Bundesanzeiger, strict privacy regime |
+| [[Country_France]] | Pappers + Mediapart + francophone-Africa bridge |
+| [[Country_Italy]] | Antimafia public registries, IRPI investigative |
+| [[Country_Spain]] | Latin-America bridge, BORME, Civio |
+| [[Country_Netherlands]] | KVK transparency, Bellingcat / Lighthouse Reports HQ |
 | [[Country_UK]] | Companies House (the gold standard), Land Registry, BAILII |
+
+**Americas:**
+| File | Country |
+|:-----|:--------|
+| [[Country_USA]] | PACER, SEC EDGAR, 50 state ecosystems, gated PI tools |
+| [[Country_Canada]] | Citizen Lab HQ, federal + provincial registries, PIPEDA |
+| [[Country_Mexico]] | Narco-OSINT, INAI / FOIA, ABS-Pegasus deployment |
+| [[Country_Brazil]] | WhatsApp dominance, CNPJ open registry, election OSINT |
+| [[Country_Argentina]] | Capital flight, AMIA, vibrant investigative culture |
+
+**Asia & Pacific:**
+| File | Country |
+|:-----|:--------|
 | [[Country_Japan]] | LINE, 5ch, Mixi, Niconico, Pixiv, Naver-Pawoo Mastodon |
 | [[Country_SouthKorea]] | Naver / Kakao / DC Inside, real-name verification challenge |
 | [[Country_NorthKorea]] | Outside-in methodology — KCNA, satellite imagery, defector sources |
 | [[Country_India]] | Multilingual, Aadhaar context, MCA21, ShareChat |
-| [[Country_Brazil]] | WhatsApp dominance, CNPJ open registry, election OSINT |
+| [[Country_Pakistan]] | Distinct from India, CPEC + counter-terrorism context |
+| [[Country_Indonesia]] | WhatsApp + Kaskus + Zalo-adjacent, world's largest Muslim population |
+| [[Country_Vietnam]] | Zalo, Voz Forums, South China Sea OSINT |
+| [[Country_Australia]] | ASIC + AustLII, Pacific-region analyst hub |
+
+**Africa:**
+| File | Country |
+|:-----|:--------|
+| [[Country_Nigeria]] | Largest African pop., Premium Times investigative, BEC / Yahoo-boys context |
+| [[Country_SouthAfrica]] | Sub-Saharan analyst hub, amaBhungane, Daily Maverick, Gupta Leaks |
 
 ---
 

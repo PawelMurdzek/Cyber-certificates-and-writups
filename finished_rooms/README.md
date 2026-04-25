@@ -163,7 +163,8 @@
 * [Configure Azure role permissions for management groups, subscriptions, resource groups, and resources](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/30-configure-azure-role-permissions)
 * [Azure role-based access control](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/31-azure-role-based-access-control)
 * [Azure built-in roles](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/32-azure-built-in-roles)
-
+* [Assign Azure role permissions for management groups, subscriptions, resource groups, and resources](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/33-assign-azure-role-permissions)
+* [Microsoft Entra built-in roles](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/34-microsoft-entra-built-in-roles)
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)
 #### Fundamentals of AI security

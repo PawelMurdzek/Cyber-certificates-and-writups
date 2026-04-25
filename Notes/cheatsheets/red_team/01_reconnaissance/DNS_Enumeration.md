@@ -89,8 +89,11 @@ theHarvester -d example.com -b google,bing,crtsh
 ```
 
 ### Active (Brute Force)
+
+> Full gobuster reference: [[gobuster]] · web-fuzzer alternative: [[ffuf]]
+
 ```bash
-# Gobuster DNS mode
+# Gobuster DNS mode — see [[gobuster]] for all flags / cloud / vhost modes
 gobuster dns -d example.com -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
 
 # ffuf

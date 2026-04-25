@@ -193,7 +193,7 @@ ffuf -u http://target.com/user/FUZZ -w <(seq 1 1000) -fc 404
 | Tool | Speed | Features |
 |:-----|:------|:---------|
 | **ffuf** | Very Fast | Flexible, multiple fuzzing points |
-| **gobuster** | Fast | Simple, reliable |
+| [[gobuster]] | Fast | Simple, reliable, multi-mode (dir/dns/vhost/cloud) |
 | **feroxbuster** | Fast | Recursive by default |
 | **dirb** | Slow | Classic, simple |
 | **dirbuster** | Medium | GUI available |

@@ -164,8 +164,10 @@ zbdump -c 15 -w cap.pcap  # Capture traffic
 
 ## Web Interface Testing
 
+> Brute-force tooling reference: [[gobuster]] · alternative: [[ffuf]]
+
 ```bash
-# Find hidden pages
+# Find hidden pages — see [[gobuster]] for full flag list
 gobuster dir -u http://<device_ip> -w /usr/share/seclists/Discovery/Web-Content/common.txt
 
 # Check default creds

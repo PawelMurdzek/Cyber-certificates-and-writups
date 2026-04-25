@@ -28,7 +28,7 @@ flowchart LR
 | Tool | Purpose |
 |:-----|:--------|
 | `nmap` | Network scanning and service detection |
-| `gobuster/ffuf` | Directory and subdomain brute-forcing |
+| [[gobuster]] / [[ffuf]] | Directory and subdomain brute-forcing |
 | `theHarvester` | Email and subdomain enumeration |
 | `shodan` | Internet-connected device search |
 
@@ -96,7 +96,7 @@ flowchart LR
 ## Methodology Checklists
 
 ### Web Application Testing
-- [ ] Run directory brute-force (`gobuster`, `ffuf`)
+- [ ] Run directory brute-force ([[gobuster]], [[ffuf]])
 - [ ] Check for default credentials
 - [ ] Test for SQL injection
 - [ ] Test for XSS

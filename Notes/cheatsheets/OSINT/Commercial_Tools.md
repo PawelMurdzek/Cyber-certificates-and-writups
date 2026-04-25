@@ -2,10 +2,43 @@
 
 Paid software, vetted-access aggregators, and commercial threat-intelligence platforms — the **gated end** of investigation tradecraft.
 
-Sister page: [[OSS_Tools]] for free / open-source equivalents.
+Sister pages: [[OSS_Tools]] for free / open-source equivalents (in `automated/`), [[Public_Databases_APIs]] (in `automated/`) and [[Public_Databases_Web]] (in `manual/`) for the underlying data layer.
 
 > [!IMPORTANT]
 > Many tools below require **professional licensing** (PI licence, attorney bar, LEO badge) or **vetted-customer status** (KYC for sanctions / fraud / threat-intel applications). Vendors verify; falsifying credentials triggers civil and criminal cases. The compliance regimes most commonly invoked: **FCRA, GLBA, DPPA** (US); **GDPR Art. 6 / Art. 9** + national exemptions (EU/UK).
+
+---
+
+## Manual vs Automated — quick map
+
+This file stays at the top level because almost every commercial product offers **both** a UI for analyst-driven work and some form of programmatic access. Use this map to pick the right counterpart for the job:
+
+### Primarily UI / analyst-driven (*OSINT jako człowiek* → see `manual/`)
+- **Link analysis (graph-by-hand):** Maltego Classic / XL, IBM i2 Analyst's Notebook, Sentinel Visualizer
+  - Free counterpart: Maltego CE → [[OSS_Tools]]
+- **Public-records aggregators (web search UIs):** TLO / TLOxp, LexisNexis Accurint, IDI Core, CLEAR, IRBSearch, LocatePLUS, Pipl Pro, Skopenow, Babel X
+  - Free counterpart equivalents: country pages under `manual/regional/` + [[Public_Databases_Web]]
+- **Evidence chain (browser-driven capture):** Hunchly → [[Browser_Extensions]] (in `manual/`) for the extension side
+- **Face / image search (UI):** PimEyes, Clearview AI (LEO), FaceCheck.id, GeoSpy, Picarta
+  - Free counterpart: Yandex / Google reverse-image, see [[Geolocation]] (in `manual/`)
+- **Mobile / digital forensics:** Cellebrite UFED, Magnet AXIOM, MSAB XRY, Oxygen Forensic Detective, Belkasoft, GrayKey
+
+### Primarily API / programmatic (*OSINT jako komputer* → see `automated/`)
+- **Threat-intel platforms with documented APIs:** Recorded Future, Mandiant Advantage, Flashpoint, Intel471, DarkOwl, CrowdStrike Falcon Intel, Anomali, ZeroFox, Echosec
+  - Free counterpart equivalents: [[Public_Databases_APIs]] (GDELT, OCCRP Aleph, OpenSanctions API)
+- **BO / corporate-network APIs:** Sayari Graph API, OpenCorporates Pro API, Quantexa, Kharon, Castellum.AI, C4ADS Sayari Sentry, DueDil / Artesian, Beauhurst
+  - Free counterpart: OpenCorporates free tier, OpenOwnership, GLEIF — all in [[Public_Databases_APIs]]
+- **Maltego transforms (paid Hub Items):** ShadowDragon, Pipl, OCCRP Aleph, etc. — programmatic graph building from inside Maltego
+  - Free counterpart: Maltego CE transforms + community ones, see [[OSS_Tools]]
+- **Hosted scanners:** SpiderFoot HX (paid hosted version of OSS SpiderFoot)
+  - Free counterpart: SpiderFoot OSS → [[OSS_Tools]]
+- **Commercial maritime / aviation feeds:** Lloyd's List Intelligence, MarineTraffic paid API, FlightRadar24 Business
+  - Free counterpart: OpenSky, ADS-B Exchange free tier — [[Public_Databases_APIs]]
+
+### Hybrid (both, depending on workflow)
+- **OSINT.industries** — UI-first selector pivoting, also API
+- **ShadowDragon SocialNet** — runs as Maltego transforms (programmatic) but the analyst review is UI
+- **Brand24 / Mention / Talkwalker / Pulsar** — dashboard UI + webhook / export APIs
 
 ---
 

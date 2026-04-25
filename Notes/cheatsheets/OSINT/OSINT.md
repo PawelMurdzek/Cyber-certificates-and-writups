@@ -8,29 +8,43 @@ Top-level hub for open-source intelligence: passive recon, social-media analysis
 
 ## Folder Layout
 
-### Methodology & Tradecraft
+> **Split:** the folder is divided by **how you work**, not by what you investigate:
+> - **`manual/`** — *OSINT jako człowiek* — clicking through web UIs, browsing forums, persona-driven access, visual analysis
+> - **`automated/`** — *OSINT jako komputer* — APIs, web-scrapers, programmatic queries, bulk data
+> - **`systems/`** — host OSes, VMs, distros, and the CLI/GUI toolchain shipped with them
+>
+> Files at the top level are cross-cutting (paid tools, sock-puppet recipes, this index).
+
+### Top-level (cross-cutting)
 | File | Purpose |
 |:-----|:--------|
 | [[OSINT]] | This file — index and methodology |
+| [[Commercial_Tools]] | Paid + vetted-access stack — Maltego, i2, Accurint, TLO, Skopenow, ShadowDragon, TI platforms; cross-references manual vs automated tools |
+| [[Sock_Puppet_Recipes]] | Persona provisioning — network/email/phone, ageing, per-platform recipes (used by both manual and automated workflows) |
+
+### `systems/` — host OSes, VMs, distro toolchains
+| File | Purpose |
+|:-----|:--------|
 | [[VMs_and_Compartmentalization]] | Qubes / Whonix / VirtualBox setup, snapshot hygiene, sock-puppet identity, browser fingerprint hardening |
-| [[Geolocation]] | Pinpointing photo / video locations — Bellingcat methodology, sun position, satellite imagery, reverse image search |
-| [[Darkweb_Forums]] | Tor / I2P primer, forum taxonomy, threat-intel sourcing, OPSEC (educational, no live `.onion` URLs) |
-
-### Tooling
-| File | Purpose |
-|:-----|:--------|
-| [[Browser_Extensions]] | Firefox / Chrome extensions used by TraceLabs and analysts |
-| [[Tools_Kali_Tracelabs]] | CLI / GUI tools shipped with Kali and TraceLabs OSINT VM — Sherlock, Maigret, theHarvester, Recon-ng, etc. |
-| [[Commercial_Tools]] | Paid + vetted-access stack — Maltego (paid), i2, LexisNexis Accurint, TLO, Skopenow, ShadowDragon, threat-intel platforms |
-| [[OSS_Tools]] | Free / open-source — Maltego CE, SpiderFoot OSS, Recon-ng, Sherlock, Trufflehog, curated tool-launchers |
-| [[Social_Media_APIs]] | Extensive matrix: official APIs, scraping difficulty, account requirements, the locked-down landscape as of 2026, federated platforms (Mastodon, Bluesky, Lemmy) |
-| [[Sock_Puppet_Recipes]] | Concrete platform-by-platform sock-puppet provisioning — persona building, network/email/phone, ageing, per-platform recipes |
-
-### Operating Systems
-| File | Purpose |
-|:-----|:--------|
 | [[Distros]] | TraceLabs OSINT VM, Kali, CSI Linux, Tsurugi, Whonix, Tails, Qubes, Parrot |
 | [[Parrot_OS]] | Deep-dive on Parrot Security tools that don't ship with TraceLabs / Kali (AnonSurf, Pandora, MAT2, Ricochet) |
+| [[Tools_Kali_Tracelabs]] | CLI / GUI tools shipped with Kali and TraceLabs OSINT VM — Sherlock, Maigret, theHarvester, Recon-ng, etc. |
+
+### `manual/` — *OSINT jako człowiek* (UI / browser / human judgement)
+| File | Purpose |
+|:-----|:--------|
+| [[Geolocation]] | Pinpointing photo / video locations — Bellingcat methodology, sun position, satellite imagery, reverse image search |
+| [[Darkweb_Forums]] | Tor / I2P primer, forum taxonomy, threat-intel sourcing, OPSEC (educational, no live `.onion` URLs) |
+| [[Browser_Extensions]] | Firefox / Chrome extensions used by TraceLabs and analysts |
+| [[Public_Databases_Web]] | Web-only / UI-only databases — Justia, BAILII, ResearchGate, Equasis, Interpol Red Notices, WikiLeaks, archive.today, etc. |
+| `manual/regional/` | Country / regional pages — jurisdiction-specific registries and sources |
+
+### `automated/` — *OSINT jako komputer* (API / programmatic)
+| File | Purpose |
+|:-----|:--------|
+| [[OSS_Tools]] | Free / open-source — Maltego CE, SpiderFoot OSS, Recon-ng, Sherlock, Trufflehog, curated tool-launchers |
+| [[Social_Media_APIs]] | Official APIs, scraping difficulty, account requirements, the locked-down landscape as of 2026, federated platforms (Mastodon, Bluesky, Lemmy) |
+| [[Public_Databases_APIs]] | Programmatic-access catalogue — ORCID, OpenAlex, OpenSanctions, Aleph, ICIJ, Lens, OpenSky, GDELT, Common Crawl, Wikidata SPARQL, etc. |
 
 ### Regional Ecosystems
 | File | Coverage |
@@ -41,9 +55,9 @@ Top-level hub for open-source intelligence: passive recon, social-media analysis
 
 ### Country Deep-Dives
 
-> Now organised under `regional/<region>/` subfolders. Wiki-links resolve by basename, so `[[Country_Poland]]` works regardless of which subfolder it sits in.
+> Now organised under `manual/regional/<region>/` subfolders. Wiki-links resolve by basename, so `[[Country_Poland]]` works regardless of which subfolder it sits in.
 
-**`regional/europe/` (17 countries):**
+**`manual/regional/europe/` (17 countries):**
 | File | Country |
 |:-----|:--------|
 | [[Country_Ukraine]] | Most OSINT-active conflict zone in history — Bellingcat / DeepState / GeoConfirmed methodology |
@@ -64,14 +78,14 @@ Top-level hub for open-source intelligence: passive recon, social-media analysis
 | [[Country_Denmark]] | CVR free transparency, Danske Bank case |
 | [[Country_Switzerland]] | Banking secrecy + commodity-trading + sanctions evasion |
 
-**`regional/middleeast/` (3 countries):**
+**`manual/regional/middleeast/` (3 countries):**
 | File | Country |
 |:-----|:--------|
 | [[Country_Iran]] | Persian-language ecosystem, Aparat, Eitaa, regime news vs exile |
 | [[Country_Turkey]] | Eksi Sözlük, MERSIS, exile media post-2016 |
 | [[Country_Israel]] | Hebrew + surveillance-tech industry, [[Regional_Arabic]] cross-reference |
 
-**`regional/americas/` (9 countries):**
+**`manual/regional/americas/` (9 countries):**
 | File | Country |
 |:-----|:--------|
 | [[Country_USA]] | PACER, SEC EDGAR, 50 state ecosystems, gated PI tools |
@@ -84,7 +98,7 @@ Top-level hub for open-source intelligence: passive recon, social-media analysis
 | [[Country_Peru]] | Lava Jato Peru, mining-conflict OSINT |
 | [[Country_Venezuela]] | Sanctions evasion, mass migration, exile-press ecosystem |
 
-**`regional/asia/` (11 countries):**
+**`manual/regional/asia/` (11 countries):**
 | File | Country |
 |:-----|:--------|
 | [[Country_Japan]] | LINE, 5ch, Mixi, Niconico, Pixiv, Naver-Pawoo Mastodon |
@@ -99,12 +113,12 @@ Top-level hub for open-source intelligence: passive recon, social-media analysis
 | [[Country_Thailand]] | Lèse-majesté constraints, Pantip forum, royal+military OSINT |
 | [[Country_Philippines]] | Rappler / Maria Ressa context, WPS disputes, Marcos-era OSINT |
 
-**`regional/oceania/` (1 country):**
+**`manual/regional/oceania/` (1 country):**
 | File | Country |
 |:-----|:--------|
 | [[Country_Australia]] | ASIC + AustLII, Pacific-region analyst hub |
 
-**`regional/africa/` (6 countries):**
+**`manual/regional/africa/` (6 countries):**
 | File | Country |
 |:-----|:--------|
 | [[Country_Nigeria]] | Largest African pop., Premium Times, BEC / Yahoo-boys context |

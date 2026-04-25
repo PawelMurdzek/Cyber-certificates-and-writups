@@ -21,7 +21,8 @@ Top-level hub for open-source intelligence: passive recon, social-media analysis
 |:-----|:--------|
 | [[Browser_Extensions]] | Firefox / Chrome extensions used by TraceLabs and analysts |
 | [[Tools_Kali_Tracelabs]] | CLI / GUI tools shipped with Kali and TraceLabs OSINT VM — Sherlock, Maigret, theHarvester, Recon-ng, etc. |
-| [[Detective_Tools]] | Maltego, i2 Analyst's Notebook, LexisNexis Accurint, TLO, Skopenow, ShadowDragon — the gated PI / investigator stack |
+| [[Commercial_Tools]] | Paid + vetted-access stack — Maltego (paid), i2, LexisNexis Accurint, TLO, Skopenow, ShadowDragon, threat-intel platforms |
+| [[OSS_Tools]] | Free / open-source — Maltego CE, SpiderFoot OSS, Recon-ng, Sherlock, Trufflehog, curated tool-launchers |
 | [[Social_Media_APIs]] | Extensive matrix: official APIs, scraping difficulty, account requirements, the locked-down landscape as of 2026, federated platforms (Mastodon, Bluesky, Lemmy) |
 
 ### Operating Systems
@@ -93,7 +94,7 @@ Top-level hub for open-source intelligence: passive recon, social-media analysis
 | **IP** | Shodan, Censys, GreyNoise, AbuseIPDB |
 | **Image** | Yandex Images (best for faces), Google, TinEye, PimEyes — see [[Geolocation]] |
 | **Document** | Metagoofil, [[Tools_Kali_Tracelabs#ExifTool\|ExifTool]], FOCA |
-| **Person (US)** | TLO, Accurint, BeenVerified — see [[Detective_Tools]] |
+| **Person (US)** | TLO, Accurint, BeenVerified — see [[Commercial_Tools]] |
 | **Person (UK)** | Companies House, electoral roll, 192.com — see [[Country_UK]] |
 | **Person (PL)** | KRS, CEIDG, REGON — see [[Country_Poland]] |
 | **Company (global)** | OpenCorporates, Sayari Graph, regional registries |

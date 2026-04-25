@@ -29,7 +29,7 @@ The discipline of pinpointing where a photo, video, or claim was made — using 
 | **TinEye** ([tineye.com](https://tineye.com/)) | Best for finding the **earliest** posted version of an image |
 | **Bing Visual Search** | Sometimes catches what Google missed |
 | **Baidu Images** | Best for Chinese-hosted content — see [[Regional_China]] |
-| **PimEyes** (paid) | Face-only, very effective — see [[Detective_Tools]] |
+| **PimEyes** (paid) | Face-only, very effective — see [[Commercial_Tools]] |
 
 **RevEye** / **Search by Image** browser extensions ([[Browser_Extensions#Reverse Image Search & Visual]]) right-click the same image into all engines simultaneously.
 
@@ -217,7 +217,8 @@ Read these to see methodology in action:
 - [[Browser_Extensions]] — RevEye, Map Switcher, InVID-WeVerify, Wayback
 - [[Tools_Kali_Tracelabs]] — ExifTool, Photon, Metagoofil
 - [[VMs_and_Compartmentalization]] — Always investigate from a clean VM
-- [[Detective_Tools]] — GeoSpy, Picarta, ShadowDragon
+- [[Commercial_Tools]] — GeoSpy, Picarta, ShadowDragon, PimEyes
+- [[OSS_Tools]] — InVID-WeVerify, FotoForensics, ExifTool, Sentinel Hub
 - [[Country_USA]] — Capitol-riot crowd-source case
 - [[Country_Belarus]] — Ryanair flight FR4978 hijack case
 - [[Country_Iran]] — Mahsa Amini protest verification

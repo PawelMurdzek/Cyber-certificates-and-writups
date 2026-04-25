@@ -102,7 +102,7 @@ The richest public-records ecosystem in the world. Federal + 50 state + 3000+ co
 - **Pipl** (now restricted to vetted use)
 
 ### Professional / investigator-only (gated)
-> See [[Detective_Tools]] for full coverage.
+> See [[Commercial_Tools]] for full coverage.
 - **TLO / TransUnion TLOxp** — restricted to PIs, lawyers, LEO
 - **LexisNexis Accurint** — same
 - **IDI Core / Cognyte LIRX** — same
@@ -187,7 +187,8 @@ The richest public-records ecosystem in the world. Federal + 50 state + 3000+ co
 
 ## See Also
 
-- [[Detective_Tools]] — TLO, Accurint, IDI, Maltego — the gated-access end of US OSINT
+- [[Commercial_Tools]] — TLO, Accurint, IDI, Maltego paid — the gated-access end of US OSINT
+- [[OSS_Tools]] — Free counterparts where the data is reachable
 - [[Country_UK]] — Companies House contrast — UK transparency exceeds most US states
 - [[Social_Media_APIs]] — API access notes for US-headquartered platforms
 - [[OSINT]] — Folder index

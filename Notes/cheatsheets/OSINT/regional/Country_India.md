@@ -152,6 +152,6 @@ Each region has dominant language papers — e.g., **Eenadu** (Telugu), **Mathru
 ## See Also
 
 - [[Country_USA]] — Indian diaspora OSINT often spans both jurisdictions
-- [[Detective_Tools]] — Skopenow / IDI Core have moderate India coverage
+- [[Commercial_Tools]] — Skopenow / IDI Core have moderate India coverage
 - [[Social_Media_APIs]] — ShareChat, Moj, Koo API specifics
 - [[OSINT]] — Folder index

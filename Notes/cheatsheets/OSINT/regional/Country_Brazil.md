@@ -151,5 +151,5 @@ Latin America's largest country, Portuguese-speaking (Brazilian Portuguese), hea
 
 - [[Country_USA]] — Brazilian diaspora large in US (FL, MA); cross-border OSINT common
 - [[Country_Poland]] — Both have surprisingly rich free corporate registries
-- [[Detective_Tools]] — Maltego works well on CNPJ data; Brazilian shell-company structures are tractable with link-analysis
+- [[OSS_Tools]] / [[Commercial_Tools]] — Maltego works well on CNPJ data; Brazilian shell-company structures are tractable with link-analysis
 - [[OSINT]] — Folder index

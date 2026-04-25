@@ -167,5 +167,5 @@ curl -u "API_KEY:" \
 
 - [[Country_USA]] — UK Companies House transparency contrasts with most US states
 - [[Country_Poland]] — Both have rich free corporate registries; similar EU/UK GDPR regime
-- [[Detective_Tools]] — Maltego heavily used on Companies House data; UK-developed too
+- [[OSS_Tools]] / [[Commercial_Tools]] — Maltego heavily used on Companies House data; UK-developed too
 - [[OSINT]] — Folder index

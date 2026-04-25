@@ -429,7 +429,8 @@ Tools to mitigate:
 - [[VMs_and_Compartmentalization]] — Sock-puppet hygiene, fingerprint hardening
 - [[Browser_Extensions]] — Extensions for capture / scraping / fingerprint defence
 - [[Tools_Kali_Tracelabs]] — CLI tools that wrap many of these APIs
-- [[Detective_Tools]] — Commercial monitoring platforms that operate at API scale
+- [[Commercial_Tools]] — Commercial monitoring platforms that operate at API scale
+- [[OSS_Tools]] — Free scraping / API client libraries
 - [[Regional_RUNet]] / [[Regional_China]] / [[Regional_Arabic]] — Regional platforms with their own auth quirks
 - [[Country_Japan]] / [[Country_SouthKorea]] / [[Country_India]] / [[Country_Brazil]] — Country-specific platform notes
 - [[OSINT]] — Folder index

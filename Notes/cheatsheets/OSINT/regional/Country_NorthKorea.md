@@ -147,5 +147,5 @@ Despite limited internet access, DPRK regime entities use the internet extensive
 
 - [[Country_SouthKorea]] — Most NK-focused tooling and journalism is Seoul-based
 - [[Regional_China]] — DPRK-China border is the operational reality (sanctions, defectors, IT workers)
-- [[Detective_Tools]] — Maltego + sanctions list integrations
+- [[Commercial_Tools]] — Maltego paid + sanctions-list integrations (Sayari, Castellum.AI, Kharon)
 - [[OSINT]] — Folder index

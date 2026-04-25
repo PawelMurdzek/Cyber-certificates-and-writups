@@ -124,5 +124,5 @@ OSINT resources for Poland. Strong public-records access compared to neighbours,
 
 - [[Country_Belarus]] — Many BY exile media operate from Poland
 - [[Regional_RUNet]] — Russian-language content overlap, especially eastern Poland and refugee community
-- [[Detective_Tools]] — Maltego, etc., for working KRS/MSiG link analysis
+- [[OSS_Tools]] / [[Commercial_Tools]] — Maltego, etc., for working KRS/MSiG link analysis
 - [[OSINT]] — Folder index

@@ -78,6 +78,34 @@ DFIR distro with strong OSINT chapter. Italian project.
 
 ---
 
+## Parrot Security OS
+
+Debian-based; **privacy / anti-forensics first**, OSINT and pentest second. Strong overlap with Kali but with a different posture.
+
+| Property | Detail |
+|:---------|:-------|
+| Base | Debian |
+| Download | [parrotsec.org](https://www.parrotsec.org/) |
+| Format | ISO / OVA / Docker |
+| Default user | `user` / install-time password |
+| Editions | Home (daily-driver privacy), Security (pentest+OSINT), HTB (HackTheBox) |
+
+**What sets Parrot apart for OSINT:**
+- **AnonSurf** — one-command system-wide Tor routing (more comprehensive than `proxychains`)
+- **Pandora** — RAM wiping on shutdown (anti-cold-boot)
+- **MAT2** — metadata stripping (preinstalled)
+- **Ricochet Refresh** — anonymous IM over Tor hidden services
+- **i2p, Tor, OnionShare** — preinstalled and integrated
+- **Lighter on resources** than Kali — runs reasonably on older hardware
+
+**Trade-off vs TraceLabs:** Parrot does *not* ship with the curated OSINT browser stack, bookmark folders, or Hunchly preinstalled — those need manual setup. But its **anonymity tooling** is stronger out-of-box.
+
+**When to use it:** OSINT involving sensitive sources, dissident or political research, or any investigation where the device might face seizure. Often combined with Whonix Workstation for layered anonymity.
+
+> Full deep-dive: [[Parrot_OS]]
+
+---
+
 ## Buscador (legacy — unmaintained)
 
 Once the standard before TraceLabs OSINT VM. Last released around 2019, **no longer updated**, kept here as a historical pointer. Don't use it for new investigations.
@@ -140,6 +168,7 @@ See [[VMs_and_Compartmentalization#Qubes OS|VMs and Compartmentalization → Qub
 |:-----|:-----|
 | First OSINT distro, general use | [[#TraceLabs OSINT VM]] |
 | Already work in pentesting | [[#Kali Linux]] |
+| Privacy + anti-forensics first | [[Parrot_OS]] |
 | Heavy dark-web / crypto / IR | [[#CSI Linux]] |
 | Forensics with OSINT phase | [[#Tsurugi Linux]] |
 | Strong anonymity (dark-web sources) | [[#Whonix]] inside [[#Qubes OS]] |

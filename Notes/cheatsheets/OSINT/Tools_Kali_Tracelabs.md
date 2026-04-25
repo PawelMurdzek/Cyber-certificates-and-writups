@@ -111,16 +111,18 @@ maltego
 
 ## Social Media
 
-> APIs for X/Twitter and Instagram have been heavily restricted since 2023. Many old tools (Twint, Instaloader's anonymous mode) are partially or fully broken — check current status before relying on them.
+> APIs for X/Twitter and Instagram have been heavily restricted since the 2023 closures and have only tightened through 2024-2026. Many old tools (Twint, Instaloader's anonymous mode, snscrape Twitter mode) are fully broken — check current status before relying on them.
 
 | Tool | Platform | Status (as of 2026) |
 |:-----|:---------|:-------------------|
-| `snscrape` | Twitter/X, Reddit, Mastodon, Telegram, VK | Twitter mostly broken since API closure; works on others |
-| `instaloader` | Instagram | Works for public profiles; logged-in scraping risks ban |
-| `Osintgram` | Instagram | Works, requires login |
+| `snscrape` | Reddit, Mastodon, Telegram, VK, Weibo | Twitter mode dead; works on the others |
+| `twscrape` | Twitter/X | Auth-required (sock-puppet rotation); current best-effort Twitter scraper |
+| `instaloader` | Instagram | Public profiles only; logged-in scraping risks ban |
+| `Osintgram` | Instagram | Works, requires login; ban risk |
 | `Toutatis` | Instagram | Pulls obfuscated email/phone hints from public profiles |
 | `tweepy` (with API key) | Twitter/X | Paid API only |
-| `telethon` / `tg-archive` | Telegram | Works — Telegram's API is open |
+| `telethon` / `tg-archive` | Telegram | Works — Telegram's API remains open |
+| `atproto` SDK | Bluesky | Public read endpoints work without auth |
 
 ### Quick examples
 ```bash

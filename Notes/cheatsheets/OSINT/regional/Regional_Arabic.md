@@ -37,7 +37,7 @@ Arabic search needs both:
 
 - Country-specific trending: `twitter.com/explore/tabs/trending` with location set
 - Arabic hashtag investigation: hashtags often mix MSA and dialect
-- Tools: snscrape (limited since 2023 API closure), commercial Twitter monitoring (Brandwatch, Talkwalker)
+- Tools: `twscrape` (sock-puppet auth, current best-effort), commercial Twitter monitoring (Brandwatch, Talkwalker, Pulsar) — `snscrape` Twitter mode is dead since 2023
 
 ### Telegram
 **Heavy use across MENA** — especially Iraq, Iran's Arabic-speaking minorities, Syria, Lebanon, Yemen, Egypt. Channels for news, militia communications, dissidents, and everyday community.

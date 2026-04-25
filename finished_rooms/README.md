@@ -63,6 +63,7 @@
 
 #### Offensive Security Tooling
 * [Hydra](https://tryhackme.com/room/hydra)
+* [Gobuster: The Basics](https://tryhackme.com/room/gobusterthebasics)
 
 ### Incident Response & Forensics
 * [Disk Analysis & Autopsy](https://tryhackme.com/room/autopsy2ze0)

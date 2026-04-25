@@ -40,16 +40,16 @@
 
 | # | Vulnerability | Prevention Strategy |
 | :--- | :--- | :--- |
-| **A01** | **[[Broken Access Control]]** | Deny by default, enforce record-level ownership, disable directory listings. |
-| **A02** | **[[Security Misconfiguration]]** | Hardened configs, remove defaults, automate verification, lock down cloud settings. |
-| **A03** | **[[Software Supply Chain Failures]]** | SBOM generation, verify signatures, lock dependencies, scan for malicious packages. |
-| **A04** | **[[Cryptographic Failures]]** | Use modern algorithms (e.g., AES-256), encrypt data at rest/transit, manage keys securely. |
-| **A05** | **[[Injection]]** | Parameterized queries (Prepared Statements), input validation, safe APIs. |
-| **A06** | **[[Insecure Design]]** | Threat modeling, secure design patterns, "secure by default" architecture. |
-| **A07** | **[[Authentication Failures]]** | MFA, strong password policies, rate limiting, secure session management. |
-| **A08** | **[[Software & Data Integrity Failures]]** | Verify digital signatures, trusted CI/CD pipelines, signed commits. |
-| **A09** | **[[Logging & Alerting Failures]]** | Centralized logging, tamper-proof storage, real-time alerting. |
-| **A10** | **[[Mishandling of Exceptional Conditions]]** | Fail safe (closed), generic user errors, detailed admin logs, catch-all exceptions. |
+| **A01** | **Broken Access Control** | Deny by default, enforce record-level ownership, disable directory listings. |
+| **A02** | **Security Misconfiguration** | Hardened configs, remove defaults, automate verification, lock down cloud settings. |
+| **A03** | **Software Supply Chain Failures** | SBOM generation, verify signatures, lock dependencies, scan for malicious packages. |
+| **A04** | **Cryptographic Failures** | Use modern algorithms (e.g., AES-256), encrypt data at rest/transit, manage keys securely. |
+| **A05** | **Injection** | Parameterized queries (Prepared Statements), input validation, safe APIs. |
+| **A06** | **Insecure Design** | Threat modeling, secure design patterns, "secure by default" architecture. |
+| **A07** | **Authentication Failures** | MFA, strong password policies, rate limiting, secure session management. |
+| **A08** | **Software & Data Integrity Failures** | Verify digital signatures, trusted CI/CD pipelines, signed commits. |
+| **A09** | **Logging & Alerting Failures** | Centralized logging, tamper-proof storage, real-time alerting. |
+| **A10** | **Mishandling of Exceptional Conditions** | Fail safe (closed), generic user errors, detailed admin logs, catch-all exceptions. |
 
 ## Input Validation
 

@@ -189,3 +189,13 @@ hashcat -m <mode> hashes.txt -o cracked.txt
 2. Use `-w 3` for maximum GPU usage
 3. Use smaller, targeted wordlists with rules
 4. Check `hashcat -b` to benchmark your system
+
+---
+
+## See Also
+
+- [[John_the_Ripper]] — CPU-based alternative; better for niche formats and `*2john` extractors
+- [[Wordlists]] — RockYou, SecLists, custom wordlists with CeWL/Crunch
+- [[Kerberos_Attacks]] — Source of `-m 18200` (AS-REP) and `-m 13100` (Kerberoast) hashes
+- [[Hydra]] — Online brute-forcing (when you can't get hashes offline)
+- [[Impacket]] — `secretsdump` produces NTLM (`-m 1000`) hashes

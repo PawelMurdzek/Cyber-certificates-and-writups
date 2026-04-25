@@ -57,7 +57,7 @@ Access attacker's services from the target network.
 # Server (attacker)
 ./chisel server -p 8080
 
-# Client (target) - forward local:3333 to attacker's 4444
+# Client (target) - forward local:3333 to attacker's 4444 (see [[Proxychains]] / [[SSH_Tunneling]] for related techniques)
 ./chisel client <attacker>:8080 3333:127.0.0.1:4444
 ```
 
@@ -166,10 +166,19 @@ proxychains ssh user@internal-host
 
 ## Comparison with SSH
 
-| Feature | Chisel | SSH Tunnel |
+| Feature | Chisel | [[SSH_Tunneling|SSH Tunnel]] |
 |:--------|:-------|:-----------|
 | Requires SSH | No | Yes |
 | Single binary | Yes | No |
 | HTTP/HTTPS tunnel | Yes | No |
 | Reverse SOCKS | Native | Requires -R |
 | Firewall bypass | Better | Limited |
+
+---
+
+## See Also
+
+- [[SSH_Tunneling]] — When SSH access is available
+- [[Proxychains]] — Chain commands through Chisel's SOCKS proxy
+- [[Nmap]] — Scanning over the tunnel (`-sT -Pn` only)
+- [[File_Transfer]] — Get the chisel binary onto the target

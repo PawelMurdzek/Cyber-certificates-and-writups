@@ -83,3 +83,12 @@ level: high
 | **Persistence** | 7045 (new service), 4698 (scheduled task) |
 | **Data Exfil** | Large outbound transfers, DNS tunneling |
 | **Malware** | Known bad hashes, unusual process parents |
+
+---
+
+## See Also
+
+- [[SIEM_and_YARA]] — SPL / KQL syntax in depth, YARA rule writing
+- [[Threat_Hunting_Tools]] — Sigma, Hayabusa, Chainsaw, DeepBlueCLI
+- [[Incident_response]] — Phases and Windows Event ID reference
+- [[IDS_IPS_Tools]] — Snort/Suricata/Zeek as alert sources

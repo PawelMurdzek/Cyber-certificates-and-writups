@@ -288,3 +288,13 @@ Standard syntax: `Cmdlet -Property "pattern*"`.
 | `vssadmin list shadows` | List all shadow copies |
 | `vssadmin create shadow /for=C:` | Create shadow copy |
 | `vssadmin delete shadows /all` | Delete all shadows |
+
+***
+
+## See Also
+
+- [[Windows_PrivEsc]] — Offensive Windows privilege escalation
+- [[Active_directory]] — Domain context (AD architecture)
+- [[AD_Enumeration]] — Offensive AD recon
+- [[Kerberos_Attacks]] — Domain credential / ticket attacks
+- [[Incident_response]] — Windows event ID and forensics reference

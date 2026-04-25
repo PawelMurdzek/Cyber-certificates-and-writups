@@ -521,3 +521,13 @@ cat dns.log | zeek-cut query | grep -E '[A-Za-z0-9+/=]{20,}'
 - [Zeek Script Reference](https://docs.zeek.org/en/current/script-reference/)
 - [Zeek Log Formats](https://docs.zeek.org/en/current/script-reference/log-files.html)
 - [CORELIGHT Zeek Cheatsheet](https://github.com/corelight/bro-cheatsheets)
+
+---
+
+## See Also
+
+- [[IDS_IPS_Tools]] — Snort / Suricata as alternative IDS engines
+- [[Wireshark_cheatsheet]] / [[Tshark_cheatsheet]] — Packet-level analysis
+- [[Tcpdump_cheatsheet]] — Capture PCAPs that Zeek consumes
+- [[SIEM_and_YARA]] — Forward Zeek logs into a SIEM
+- [[Threat_Hunting_Tools]] — Hunt across Zeek conn/http/dns logs

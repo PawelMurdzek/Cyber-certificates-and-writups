@@ -53,3 +53,13 @@ PowerShell script for threat hunting via Windows Event Logs.
 # Analyze evtx file
 ./DeepBlue.ps1 C:\logs\Security.evtx
 ```
+
+---
+
+## See Also
+
+- [[SIEM_and_YARA]] — Splunk/ELK queries and YARA rule writing
+- [[Log_analysis]] — Parsing logs surfaced during a hunt
+- [[IDS_IPS_Tools]] — Snort/Suricata/Zeek as detection sources
+- [[Incident_response]] — Where hunting feeds into the IR phase
+- [[Malware_Analysis_Basics]] — Confirming hunted artifacts

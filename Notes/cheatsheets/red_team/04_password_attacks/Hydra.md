@@ -179,3 +179,15 @@ Full list: `hydra -h`
 | RockYou | `/usr/share/wordlists/rockyou.txt` |
 | Common passwords | `/usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt` |
 | Default credentials | `/usr/share/seclists/Passwords/Default-Credentials/` |
+
+> Full wordlist reference: [[Wordlists]]
+
+---
+
+## See Also
+
+- [[Wordlists]] — Where to find / how to build custom lists (CeWL, Crunch)
+- [[Hashcat]] / [[John_the_Ripper]] — Offline cracking once you have hashes
+- [[CrackMapExec]] — Smarter SMB/AD spraying (`--continue-on-success`)
+- [[Burp_Suite]] — Intruder for HTTP form brute-forcing with stateful sessions
+- [[SMB_Enumeration]] — Map SMB before spraying

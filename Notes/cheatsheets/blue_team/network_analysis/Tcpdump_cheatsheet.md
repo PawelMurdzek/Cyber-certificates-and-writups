@@ -452,5 +452,9 @@ tcpdump -i eth0 -w - 2>/dev/null | pv -r > /dev/null
 
 ## See Also
 
-- [Red Team Tcpdump Guide](../../red_team/01_reconnaissance/Tcpdump.md) - Focused on reconnaissance and stealth.
-- [Wireshark Cheatsheet](Wireshark_cheatsheet.md) - GUI alternative for deep analysis.
+- [[Tcpdump|Red Team Tcpdump Guide]] — Focused on reconnaissance and stealth
+- [[Wireshark_cheatsheet]] — GUI alternative for deep analysis
+- [[Tshark_cheatsheet]] — CLI Wireshark with display filters
+- [[Zeek_cheatsheet]] — Protocol-aware analysis on top of PCAPs
+- [[IDS_IPS_Tools]] — Snort/Suricata detection layer
+- [[Nmap]] — Active discovery to pair with passive capture

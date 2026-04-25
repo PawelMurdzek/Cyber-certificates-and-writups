@@ -1,7 +1,7 @@
 ﻿# Active Directory (Blue Team / Systems)
 
 > [!TIP]
-> For Offensive AD Attacks & Enumeration, see [Red Team AD Enumeration](../red_team/07_active_directory/AD_Enumeration.md)
+> For Offensive AD Attacks & Enumeration, see [[AD_Enumeration|Red Team AD Enumeration]].
 
 
 ## Core Concepts
@@ -14,7 +14,7 @@
 - **Organizational Unit (OU)**: A container within a domain that can hold users, groups, and computers. It is the smallest unit to which you can assign Group Policy settings or administrative permissions.
 - **Global Catalog (GC)**: A distributed data repository that contains a searchable, partial representation of every object in every domain in a multi-domain Active Directory Domain Services (AD DS) forest.
 - **LDAP (Lightweight Directory Access Protocol)**: The industry independent protocol used to access and manage directory information.
-- **Kerberos**: The default authentication protocol used by Windows which uses tickets to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner. See [Kerberos](Kerberos.md) for details.
+- **Kerberos**: The default authentication protocol used by Windows which uses tickets to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner. See [[Kerberos]] for details.
 
 ## Security Groups
 
@@ -163,3 +163,13 @@ Get-ADObject -Filter {Name -like "*Admin*"}
 Get-ADDomain | Select-Object InfrastructureMaster, RIDMaster, PDCEmulator
 Get-ADForest | Select-Object SchemaMaster, DomainNamingMaster
 ```
+
+---
+
+## See Also
+
+- [[Kerberos]] — AD's default authentication protocol
+- [[AD_Enumeration]] — Offensive AD recon (PowerView, BloodHound, ldapsearch)
+- [[Kerberos_Attacks]] — AS-REP roasting, Kerberoasting, Golden/Silver tickets
+- [[CrackMapExec]] / [[Impacket]] — Tooling that interacts with AD over the wire
+- [[Windows_commands_and_concepts]] — Underlying Windows reference

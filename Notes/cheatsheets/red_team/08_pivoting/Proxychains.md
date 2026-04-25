@@ -56,6 +56,8 @@ proxychains nmap -sT -Pn 192.168.1.100
 ## With SOCKS Proxies
 
 ### With SSH Dynamic Tunnel
+> See [[SSH_Tunneling]] for full SSH `-D` / `-L` / `-R` reference.
+
 ```bash
 # Create SOCKS proxy
 ssh -D 1080 user@pivot
@@ -68,7 +70,7 @@ ssh -D 1080 user@pivot
 proxychains curl http://internal:80
 ```
 
-### With Chisel
+### With [[Chisel]]
 ```bash
 # Server (attacker)
 chisel server -p 8080 --reverse
@@ -131,3 +133,12 @@ With `strict_chain`, all must be reachable.
 # Suppress proxychains output
 proxychains -q <command>
 ```
+
+---
+
+## See Also
+
+- [[SSH_Tunneling]] — Most common SOCKS proxy source (`ssh -D`)
+- [[Chisel]] — Tunnel over HTTP when SSH is blocked
+- [[Nmap]] — `-sT -Pn` is the only scan type that works through SOCKS
+- [[Metasploit]] — `auxiliary/server/socks_proxy` + `autoroute` for MSF-internal pivoting

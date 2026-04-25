@@ -129,3 +129,18 @@ git clone https://github.com/danielmiessler/SecLists.git /usr/share/seclists
 | Assetnote Wordlists | [wordlists.assetnote.io](https://wordlists.assetnote.io/) |
 | FuzzDB | [github.com/fuzzdb-project](https://github.com/fuzzdb-project/fuzzdb) |
 | PayloadsAllTheThings | [github.com/swisskyrepo](https://github.com/swisskyrepo/PayloadsAllTheThings) |
+
+---
+
+## See Also
+
+### Password cracking
+- [[Hashcat]] — GPU-accelerated cracker; consume password lists with rules
+- [[John_the_Ripper]] — CPU cracker; rich `--rules` ecosystem
+- [[Hydra]] — Online brute-forcing
+
+### Web / DNS fuzzing
+- [[gobuster]] — Directory, DNS, vhost brute-forcing
+- [[ffuf]] — Flexible fuzzer with multiple FUZZ points
+- [[DNS_Enumeration]] — Subdomain discovery workflow
+- [[Burp_Suite]] — Intruder consumes SecLists payloads

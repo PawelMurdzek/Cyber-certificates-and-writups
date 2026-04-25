@@ -405,3 +405,13 @@ user2:hash2
 # Linux shadow format
 username:$6$salt$hash:...
 ```
+
+---
+
+## See Also
+
+- [[Hashcat]] — GPU-accelerated alternative; faster for large hash sets
+- [[Wordlists]] — RockYou, SecLists, custom-built wordlists
+- [[Kerberos_Attacks]] — Source of `krb5tgs` hashes for cracking
+- [[Hydra]] — Online (network) brute-forcing
+- [[Impacket]] — Produces hashes (`secretsdump`, `GetNPUsers`, `GetUserSPNs`)

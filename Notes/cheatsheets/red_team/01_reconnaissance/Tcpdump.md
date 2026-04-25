@@ -106,5 +106,8 @@ tcpdump -i eth0 udp port 53
 
 ## See Also
 
-- [Nmap Cheat Sheet](Nmap.md) - Active network discovery and security auditing.
-- [Detailed Tcpdump Guide](../../blue_team/network_analysis/Tcpdump_cheatsheet.md) - Comprehensive BPF and deep analysis reference.
+- [[Nmap]] — Active network discovery and security auditing
+- [[Tcpdump_cheatsheet]] — Comprehensive BPF and deep analysis reference (blue-team companion)
+- [[Wireshark_cheatsheet]] — GUI deep packet inspection
+- [[Tshark_cheatsheet]] — CLI Wireshark for scripted analysis
+- [[DNS_Enumeration]] — Pair UDP-53 captures with active enumeration

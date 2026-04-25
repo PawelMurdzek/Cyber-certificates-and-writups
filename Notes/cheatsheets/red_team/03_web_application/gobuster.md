@@ -2,7 +2,7 @@
 
 Fast brute-force discovery tool written in Go. Used for **directories/files**, **DNS subdomains**, **virtual hosts**, **cloud buckets**, and **generic fuzzing**. Simple, reliable, and the de-facto starting point for web/DNS enumeration alongside [[ffuf]].
 
-> **Phase:** [[01_reconnaissance|Reconnaissance]] / [[03_web_application|Web Application]]
+> **Phase:** Reconnaissance / Web Application
 > **Sibling tool:** [[ffuf]] — more flexible, multi-point fuzzing
 > **Related notes:** [[DNS_Enumeration]], [[SMB_Enumeration]], [[Getting_Started]]
 

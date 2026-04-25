@@ -1,7 +1,7 @@
 # Kerberos (System Concepts)
 
 > [!TIP]
-> For Offensive Kerberos Attacks, see [Red Team Kerberos Attacks](../red_team/07_active_directory/Kerberos_Attacks.md)
+> For Offensive Kerberos Attacks, see [[Kerberos_Attacks|Red Team Kerberos Attacks]].
 
 
 ## Core Concepts
@@ -78,3 +78,13 @@ setspn -L domain\user
 # Register a new SPN
 setspn -S SQL/server1.domain.com domain\sql_svc
 ```
+
+---
+
+## See Also
+
+- [[Active_directory]] — How Kerberos fits into the wider AD environment
+- [[Kerberos_Attacks]] — Kerberoasting, AS-REP roasting, Golden/Silver tickets, delegation abuse
+- [[AD_Enumeration]] — Find SPN-holders and pre-auth-disabled accounts
+- [[Impacket]] — `getTGT`, `getST`, `ticketer`, `GetUserSPNs`, `GetNPUsers`
+- [[Hashcat]] — Crack Kerberos hashes (`-m 13100`, `-m 18200`)

@@ -41,3 +41,13 @@ Memory forensics framework.
 - **Network**: `netstat -antup`, `ss -lntp`
 - **Open Files**: `lsof -p <PID>`
 - **Persistence**: Cron jobs (`/var/spool/cron`, `/etc/cron*`), Systemd services (`/etc/systemd/system`)
+
+---
+
+## See Also
+
+- [[Incident_response]] — Phases, Windows event IDs, and triage workflow
+- [[Malware_Analysis_Basics]] — Static / dynamic malware analysis pairing with `malfind`
+- [[Log_analysis]] — Parsing and correlating logs surfaced from memory
+- [[SIEM_and_YARA]] — YARA rules to scan dumped processes
+- [[Linux_commands_and_concepts]] — Underlying Linux reference

@@ -72,6 +72,8 @@ ls -la /etc/shadow
 
 ## Kernel Exploits
 
+> Use [[Searchsploit]] to look up CVEs by kernel version.
+
 ```bash
 # Check kernel version
 uname -a
@@ -245,3 +247,13 @@ docker run -v /:/mnt --rm -it alpine chroot /mnt bash
 - [GTFOBins](https://gtfobins.github.io/)
 - [HackTricks Linux PrivEsc](https://book.hacktricks.wiki/linux-hardening/privilege-escalation)
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
+
+---
+
+## See Also
+
+- [[Linux_LOTL]] — Living-off-the-land binaries and abuse paths
+- [[Linux_commands_and_concepts]] — Core Linux reference
+- [[File_Transfer]] — Get LinPEAS / kernel exploits onto target
+- [[Shell_Upgrade]] — Stabilise the shell before privesc
+- [[Searchsploit]] — Look up kernel/userland CVEs

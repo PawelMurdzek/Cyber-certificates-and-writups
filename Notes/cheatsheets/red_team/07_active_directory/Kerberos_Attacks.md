@@ -3,7 +3,7 @@
 Exploiting Kerberos authentication in Active Directory.
 
 > [!TIP]
-> For Kerberos System Architecture & Concepts, see [Kerberos System Concepts](../../systems/Kerberos.md)
+> For Kerberos System Architecture & Concepts, see [[Kerberos|Kerberos System Concepts]].
 
 
 ## Understanding Kerberos
@@ -218,5 +218,17 @@ impacket-getST -spn 'cifs/target.domain.local' -impersonate Administrator 'domai
 |:-----|:---------|:--------|
 | **Rubeus** | Windows | Kerberos interaction |
 | **Mimikatz** | Windows | Credential extraction |
-| **Impacket** | Linux | Python toolkit |
+| [[Impacket]] | Linux | Python toolkit |
 | **kerbrute** | Both | User enumeration |
+
+---
+
+## See Also
+
+- [[Kerberos]] — Underlying protocol concepts
+- [[Active_directory]] — AD architecture
+- [[AD_Enumeration]] — Find SPN / pre-auth-disabled users
+- [[Impacket]] — `GetNPUsers`, `GetUserSPNs`, `getTGT`, `ticketer`
+- [[CrackMapExec]] — `--asreproast` / `--kerberoasting` modules
+- [[Hashcat]] — Crack `-m 18200` (AS-REP) and `-m 13100` (Kerberoast)
+- [[John_the_Ripper]] — Alternative for `krb5tgs` cracking

@@ -203,3 +203,13 @@ crackmapexec smb <target> -u Administrator -H aad3b435b51404eeaad3b435b51404ee:h
 | `ssh` | 22 | Linux access |
 | `mssql` | 1433 | Database access |
 | `rdp` | 3389 | Desktop (enum only) |
+
+---
+
+## See Also
+
+- [[Impacket]] — Lower-level Python toolkit (psexec, secretsdump, GetUserSPNs)
+- [[SMB_Enumeration]] — Pre-auth SMB enumeration with smbclient/smbmap
+- [[AD_Enumeration]] — Broader AD recon workflow
+- [[Kerberos_Attacks]] — Pair `--kerberoasting` / `--asreproast` output with [[Hashcat]]
+- [[Active_directory]] — Architecture context

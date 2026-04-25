@@ -64,6 +64,8 @@ ssh -R 0.0.0.0:8080:localhost:80 user@remote_server
 
 Create a SOCKS proxy for flexible routing.
 
+> See [[Proxychains]] for the chain config and quirks (SYN/UDP scans don't work over SOCKS).
+
 ```bash
 # Create SOCKS proxy on local port 1080
 ssh -D 1080 user@pivot
@@ -167,3 +169,11 @@ nc -lvnp 4444
 | Connection refused | Verify target is reachable from SSH server |
 | Tunnel not working | Check firewall on all hosts |
 | Slow connection | Consider using compression: `ssh -C` |
+
+---
+
+## See Also
+
+- [[Proxychains]] — Chain commands through the SOCKS proxy
+- [[Chisel]] — TCP/UDP tunnel over HTTP, when SSH isn't available
+- [[Nmap]] — Scanning through tunnels (`-sT -Pn` only)

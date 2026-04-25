@@ -49,3 +49,13 @@ rule Suspicious_Strings {
 
 ### Usage
 `yara -r my_rules.yar /path/to/scan`
+
+---
+
+## See Also
+
+- [[Log_analysis]] — More SPL/KQL examples and detection patterns
+- [[Threat_Hunting_Tools]] — Sigma → SIEM rule conversion
+- [[Malware_Analysis_Basics]] — Where YARA fits in the malware workflow
+- [[Incident_response]] — Detection feeding the IR phase
+- [[IDS_IPS_Tools]] — Network detection that feeds SIEMs

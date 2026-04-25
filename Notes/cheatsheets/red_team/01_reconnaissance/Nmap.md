@@ -145,5 +145,10 @@ nmap --script vuln 10.10.10.10
 
 ## See Also
 
-- [Tcpdump Cheat Sheet](Tcpdump.md) - Passive network discovery and traffic analysis.
-- [Detailed Wireshark Guide](../../blue_team/network_analysis/Wireshark_cheatsheet.md) - Deep packet inspection and protocol analysis.
+- [[Tcpdump]] — Passive network discovery and traffic analysis
+- [[Wireshark_cheatsheet]] — Deep packet inspection and protocol analysis
+- [[gobuster]] / [[ffuf]] — Web/DNS brute-forcing follow-up after `-p 80,443`
+- [[SMB_Enumeration]] — Deep dive after `nmap -p 445`
+- [[DNS_Enumeration]] — Pair with `nmap -p 53 --script dns-*`
+- [[Metasploit]] — `db_nmap` integration to feed scan data into the MSF DB
+- [[Searchsploit]] — Look up exploits for discovered services / versions

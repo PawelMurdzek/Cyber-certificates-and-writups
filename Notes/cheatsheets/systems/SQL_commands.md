@@ -289,3 +289,11 @@ Returns the maximum or minimum value in a selected column.
 SELECT MAX(column_name) FROM table_name;
 SELECT MIN(column_name) FROM table_name;
 ```
+
+---
+
+## See Also
+
+- [[XSS_SQLi_Basics]] — Manual SQL injection payloads and theory
+- [[SQLMap]] — Automated SQL injection exploitation
+- [[Burp_Suite]] — Capture / replay SQL-bearing requests

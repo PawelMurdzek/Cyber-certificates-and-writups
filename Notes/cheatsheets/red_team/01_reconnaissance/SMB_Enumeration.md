@@ -11,7 +11,7 @@ Server Message Block (SMB) enumeration for Windows networks.
 
 ---
 
-## Nmap SMB Scripts
+## [[Nmap]] SMB Scripts
 
 ```bash
 # Enumerate SMB version
@@ -108,7 +108,7 @@ smbmap -H <target> -u 'admin' -p 'password' -x 'ipconfig'
 
 ---
 
-## CrackMapExec / NetExec
+## [[CrackMapExec]] / NetExec
 
 Swiss army knife for SMB (and more).
 
@@ -176,7 +176,7 @@ umount /mnt/share
 | Null Session | Anonymous access to shares/enumeration |
 | Default Credentials | admin:admin, guest:guest |
 | Writable Shares | Upload malicious files |
-| EternalBlue (MS17-010) | Remote code execution |
+| [[EternalBlue]] (MS17-010) | Remote code execution |
 | Sensitive Files | Look for passwords.txt, config files |
 
 ---
@@ -193,3 +193,14 @@ responder -I ens5
 # Start responder with SMB/HTTP servers enabled, but LLMNR/NBT-NS/mDNS disabled (analyze mode / pure listener)
 responder -I ens5 -A
 ```
+
+---
+
+## See Also
+
+- [[Nmap]] — `--script=smb-*` for fingerprinting and vuln checks
+- [[CrackMapExec]] — Authenticated SMB enumeration / spraying / dumping
+- [[Impacket]] — `smbclient.py`, `smbserver.py`, `secretsdump`
+- [[EternalBlue]] — MS17-010 exploitation
+- [[AD_Enumeration]] — Domain context once you have creds
+- [[Kerberos_Attacks]] — Lateral movement after SMB foothold

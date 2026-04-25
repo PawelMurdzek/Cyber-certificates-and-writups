@@ -543,3 +543,12 @@ tshark -x
 - [Wireshark User Guide](https://www.wireshark.org/docs/wsug_html/)
 - [Tshark Man Page](https://www.wireshark.org/docs/man-pages/tshark.html)
 - [BPF Capture Filter Syntax](https://biot.com/capstats/bpf.html)
+
+---
+
+## See Also
+
+- [[Wireshark_cheatsheet]] — GUI counterpart, same display filters
+- [[Tcpdump_cheatsheet]] — Lighter CLI capture tool (BPF only)
+- [[Zeek_cheatsheet]] — Higher-level protocol-aware logs
+- [[IDS_IPS_Tools]] — Detection layer above the wire

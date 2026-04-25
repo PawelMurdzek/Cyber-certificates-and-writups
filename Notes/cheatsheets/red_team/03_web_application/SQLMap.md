@@ -19,7 +19,7 @@ sqlmap -r request.txt
 | Option | Description |
 |:-------|:------------|
 | `-u <URL>` | Target URL with parameter |
-| `-r <file>` | Load request from file (Burp) |
+| `-r <file>` | Load request from file ([[Burp_Suite|Burp]]) |
 | `-g <dork>` | Google dork target |
 | `--data=<data>` | POST data |
 | `--cookie=<cookie>` | HTTP cookie |
@@ -214,3 +214,12 @@ sqlmap -r request.txt --level=5 --risk=3 --batch
 5. Get columns: -D dbname -T tablename --columns
 6. Dump data: -D dbname -T tablename --dump
 ```
+
+---
+
+## See Also
+
+- [[XSS_SQLi_Basics]] — Manual SQLi/XSS payloads and theory
+- [[Burp_Suite]] — Capture requests with `-r request.txt`
+- [[SQL_commands]] — Underlying SQL syntax reference
+- [[ffuf]] / [[gobuster]] — Find injection points (parameters, endpoints) first

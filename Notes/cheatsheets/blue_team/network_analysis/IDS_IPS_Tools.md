@@ -35,5 +35,15 @@ alert http any any -> any any (msg:"Suspicious User-Agent"; content:"User-Agent:
 - **Test Config**: `suricata -T -c /etc/suricata/suricata.yaml`
 - **Run**: `suricata -c /etc/suricata/suricata.yaml -i eth0`
 
-## Zeal / Bro (See Zeek_cheatsheet.md)
-Reference `Zeek_cheatsheet.md` in this folder for Zeek specifics.
+## Zeek / Bro
+See [[Zeek_cheatsheet]] for Zeek-specific syntax, scripts, and log parsing.
+
+---
+
+## See Also
+
+- [[Zeek_cheatsheet]] — Zeek deep dive
+- [[Wireshark_cheatsheet]] / [[Tshark_cheatsheet]] — Packet inspection
+- [[Tcpdump_cheatsheet]] — CLI capture
+- [[Threat_Hunting_Tools]] — Detection workflow context
+- [[SIEM_and_YARA]] — Correlation and pattern matching

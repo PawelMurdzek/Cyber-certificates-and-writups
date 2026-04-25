@@ -215,3 +215,14 @@ impacket-wmiexec -k -no-pass domain.local/user@target.domain.local
 | `ntlmrelayx` | NTLM relay |
 | `getTGT/getST` | Kerberos ticket tools |
 | `mssqlclient` | MSSQL interaction |
+
+---
+
+## See Also
+
+- [[CrackMapExec]] — Higher-level wrapper for many of the same protocols
+- [[Kerberos_Attacks]] — `GetNPUsers` / `GetUserSPNs` workflow
+- [[AD_Enumeration]] — Where Impacket fits in the AD recon chain
+- [[SMB_Enumeration]] — `smbclient.py` / `smbserver.py`
+- [[File_Transfer]] — `impacket-smbserver` as a delivery mechanism
+- [[Hashcat]] — Crack the hashes Impacket extracts (`-m 18200`, `-m 13100`)

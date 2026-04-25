@@ -3,7 +3,7 @@
 Techniques for discovering AD structure and finding attack paths.
 
 > [!TIP]
-> For Active Directory System Concepts & Blue Team, see [AD System Concepts](../../systems/Active_directory.md)
+> For Active Directory System Concepts & Blue Team, see [[Active_directory|AD System Concepts]].
 
 
 ## Initial Enumeration
@@ -237,3 +237,16 @@ net group "Domain Admins" /domain
 | **ldapsearch** | LDAP queries |
 | **kerbrute** | User enumeration |
 | **enum4linux-ng** | SMB/RPC enumeration |
+| [[CrackMapExec]] | Multi-protocol AD swiss-army knife |
+| [[Impacket]] | Python toolkit for AD interaction |
+
+---
+
+## See Also
+
+- [[Active_directory]] — Architecture and blue-team perspective
+- [[Kerberos_Attacks]] — AS-REP roasting, Kerberoasting, Golden/Silver tickets
+- [[Kerberos]] — Underlying Kerberos protocol
+- [[CrackMapExec]] — Enumerate / spray / dump across the domain
+- [[Impacket]] — `GetADUsers`, `secretsdump`, `psexec`, `wmiexec`
+- [[SMB_Enumeration]] — Pre-auth SMB/RPC enumeration of DCs

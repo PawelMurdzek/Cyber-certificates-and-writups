@@ -407,3 +407,14 @@ wireshark -i eth0 -a duration:60 -w output.pcap -k
 - [Display Filter Reference](https://www.wireshark.org/docs/dfref/)
 - [Sample Captures](https://wiki.wireshark.org/SampleCaptures)
 - [Wireshark Wiki](https://wiki.wireshark.org/)
+
+---
+
+## See Also
+
+- [[Tshark_cheatsheet]] — CLI counterpart, scriptable analysis
+- [[Tcpdump_cheatsheet]] — Lightweight CLI capture (BPF reference)
+- [[Tcpdump]] — Recon-focused tcpdump usage
+- [[Zeek_cheatsheet]] — Higher-level protocol logs from PCAPs
+- [[IDS_IPS_Tools]] — Snort/Suricata pattern context
+- [[Nmap]] — Active discovery to pair with passive analysis

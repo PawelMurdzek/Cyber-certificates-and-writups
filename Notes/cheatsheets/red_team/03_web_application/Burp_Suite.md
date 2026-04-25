@@ -207,3 +207,13 @@ Configure automatic re-authentication
 
 ---
 
+## See Also
+
+- [[SQLMap]] — Automate SQLi after spotting it in Repeater (`-r request.txt`)
+- [[XSS_SQLi_Basics]] — Manual payloads to drop into Repeater
+- [[ffuf]] / [[gobuster]] — Faster directory/parameter brute-forcing than Intruder Community
+- [[Hydra]] — Auth brute-forcing for non-web protocols
+- [[Wordlists]] — Wordlists to feed Intruder
+
+---
+

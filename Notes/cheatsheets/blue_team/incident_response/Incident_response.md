@@ -88,6 +88,8 @@ ls -la /etc/cron.*
 | `wireshark` | GUI packet analyzer |
 | `zeek` | Network security monitor |
 
+> Deep dives: [[Tcpdump_cheatsheet]] · [[Tshark_cheatsheet]] · [[Wireshark_cheatsheet]] · [[Zeek_cheatsheet]] · [[IDS_IPS_Tools]]
+
 ## Forensic Tools
 
 | Tool | Purpose | Key Features |

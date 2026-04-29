@@ -64,6 +64,7 @@
 #### Offensive Security Tooling
 * [Hydra](https://tryhackme.com/room/hydra)
 * [Gobuster: The Basics](https://tryhackme.com/room/gobusterthebasics)
+* [Shells Overview](https://tryhackme.com/room/shellsoverview)
 
 ### Incident Response & Forensics
 * [Disk Analysis & Autopsy](https://tryhackme.com/room/autopsy2ze0)
@@ -165,6 +166,11 @@
 * [Azure built-in roles](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/32-azure-built-in-roles)
 * [Assign Azure role permissions for management groups, subscriptions, resource groups, and resources](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/33-assign-azure-role-permissions)
 * [Microsoft Entra built-in roles](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/34-microsoft-entra-built-in-roles)
+* [Assign built-in roles in Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/35-built-roles-microsoft-entra-id)
+* [Microsoft Entra role-based access control](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/36-microsoft-entra-role-based-access-control)
+* [Create and assign a custom role in Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/37-create-new-custom-roles-microsoft-entra-id)
+* [Zero Trust security](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/38-zero-trust-security)
+
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)
 #### Fundamentals of AI security

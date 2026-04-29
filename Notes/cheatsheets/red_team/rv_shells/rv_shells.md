@@ -170,13 +170,17 @@ powershell -nop -w hidden -enc <BASE64_BLOB>
 Trigger: `http://target/upload/shell.php?c=id`
 
 ### Pre-made web shells
-| Name | Path / Source |
-|:-----|:--------------|
-| `php-reverse-shell.php` | `/usr/share/webshells/php/` (Kali) |
-| `cmd.aspx` | `/usr/share/webshells/aspx/` |
-| `cmd.jsp` | `/usr/share/webshells/jsp/` |
-| Weevely (stealth PHP) | `weevely generate <pass> shell.php` |
-| antSword / Behinder | GUI-based, encrypted traffic |
+| Name | Path / Source | Notes |
+|:-----|:--------------|:------|
+| `php-reverse-shell.php` | `/usr/share/webshells/php/` (Kali) | Pentestmonkey classic, opens reverse connection |
+| `cmd.aspx` | `/usr/share/webshells/aspx/` | Drop-in command exec for IIS |
+| `cmd.jsp` | `/usr/share/webshells/jsp/` | Tomcat / JBoss targets |
+| Weevely (stealth PHP) | `weevely generate <pass> shell.php` | Obfuscated, password-gated traffic |
+| antSword / Behinder | GUI-based, encrypted traffic | Full file manager + tunneling |
+| **p0wny-shell** | [github.com/flozz/p0wny-shell](https://github.com/flozz/p0wny-shell) | Minimalist single-file PHP — just command exec |
+| **b374k** | [github.com/b374k/b374k](https://github.com/b374k/b374k) | Feature-rich: file manager, DB browser, command exec |
+| **c99** | [r57shell.net](https://www.r57shell.net/index.php) | Classic full-feature PHP shell — file ops, DB, network tools |
+| **r57** | [r57shell.net](https://www.r57shell.net/index.php) | Sister to c99, similar capability set |
 
 ---
 
@@ -258,6 +262,7 @@ nc <TARGET> 4444
 - **HighOn.Coffee** — [highon.coffee/blog/reverse-shell-cheat-sheet/](https://highon.coffee/blog/reverse-shell-cheat-sheet/)
 - **GTFOBins** — [gtfobins.github.io](https://gtfobins.github.io/) — reverse shells via SUID/sudo binaries
 - **PayloadsAllTheThings** — [github.com/swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+- **r57shell.net** — [r57shell.net](https://www.r57shell.net/index.php) — repository / mirror for classic PHP shells (c99, r57, etc.)
 
 ---
 

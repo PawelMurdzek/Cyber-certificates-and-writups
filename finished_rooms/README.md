@@ -65,6 +65,7 @@
 * [Hydra](https://tryhackme.com/room/hydra)
 * [Gobuster: The Basics](https://tryhackme.com/room/gobusterthebasics)
 * [Shells Overview](https://tryhackme.com/room/shellsoverview)
+* [Sqlmap: The Basics](https://tryhackme.com/room/sqlmapthebasics)
 
 ### Incident Response & Forensics
 * [Disk Analysis & Autopsy](https://tryhackme.com/room/autopsy2ze0)

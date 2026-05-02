@@ -172,6 +172,7 @@
 * [Create and assign a custom role in Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/37-create-new-custom-roles-microsoft-entra-id)
 * [Zero Trust security](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/38-zero-trust-security)
 * [Microsoft Entra Privileged Identity Management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/39-microsoft-entra-privileged-identity-management)
+* [Configure Privileged Identity Management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/40-configure-privileged-identity-management)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

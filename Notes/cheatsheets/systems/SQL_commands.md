@@ -294,6 +294,6 @@ SELECT MIN(column_name) FROM table_name;
 
 ## See Also
 
-- [[XSS_SQLi_Basics]] — Manual SQL injection payloads and theory
+- [[SQL_Injection]] — Manual SQL injection payloads and theory
 - [[SQLMap]] — Automated SQL injection exploitation
 - [[Burp_Suite]] — Capture / replay SQL-bearing requests

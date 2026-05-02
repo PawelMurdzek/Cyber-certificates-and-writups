@@ -228,7 +228,8 @@ sqlmap -r request.txt --level=5 --risk=3 --batch
 
 ## See Also
 
-- [[XSS_SQLi_Basics]] — Manual SQLi/XSS payloads and theory
+- [[SQL_Injection]] — Manual SQLi payloads and theory
+- [[XSS]] — Manual XSS payloads and theory
 - [[Burp_Suite]] — Capture requests with `-r request.txt`
 - [[SQL_commands]] — Underlying SQL syntax reference
 - [[ffuf]] / [[gobuster]] — Find injection points (parameters, endpoints) first

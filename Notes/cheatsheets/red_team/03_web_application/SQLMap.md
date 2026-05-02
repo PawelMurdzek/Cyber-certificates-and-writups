@@ -186,6 +186,15 @@ sqlmap -u "http://target.com/page?id=1" --batch --dbs --dump-all
 
 ---
 
+## Interactive Wizard
+
+```bash
+# Guided wizard for beginners — prompts step-by-step for target and options
+sqlmap --wizard
+```
+
+---
+
 ## Examples
 
 ```bash

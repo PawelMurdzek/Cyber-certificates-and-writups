@@ -73,6 +73,10 @@
 * [IR Timeline Analysis](https://tryhackme.com/room/dfirtimelineanalysis)
 * [Incident Response Process](https://tryhackme.com/room/incidentresponseprocess)
 
+### Defensive Security
+* [Defensive Security Intro](https://tryhackme.com/room/defensivesecurityintro)
+* [SOC Fundamentals](https://tryhackme.com/room/socfundamentals/)
+
 ## CryptoHack challenges
 
 ### General

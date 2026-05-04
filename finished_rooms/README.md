@@ -174,6 +174,7 @@
 * [Microsoft Entra Privileged Identity Management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/39-microsoft-entra-privileged-identity-management)
 * [Configure Privileged Identity Management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/40-configure-privileged-identity-management)
 * [Microsoft Entra ID Governance](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/41-microsoft-entra-id-governance)
+* [Identity lifecycle management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/42-identity-lifecycle-management)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

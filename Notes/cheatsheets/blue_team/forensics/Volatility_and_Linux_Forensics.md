@@ -1,6 +1,18 @@
 # Volatility Cheatsheet
 Memory forensics framework.
 
+## Memory Acquisition (Windows)
+
+Volatility analyzes a memory image — it does not capture one. Common acquisition tools:
+
+| Tool | Notes |
+|:-----|:------|
+| **DumpIt** (Comae/Magnet) | Single-binary, one-click raw dump of physical RAM to `.raw`/`.dmp`. Run as Administrator, ideally from removable media so the target disk stays untouched. Output is directly consumable by Volatility 3. |
+| **FTK Imager** | GUI tool; *File → Capture Memory* writes a `memdump.mem`. Also handles disk imaging (E01/RAW) and mounting. |
+| **WinPmem / MAGNET RAM Capture** | Alternative open-source / vendor RAM capturers when DumpIt is unavailable. |
+
+> Always hash the dump (SHA-256) immediately after acquisition and preserve the original — work on a copy.
+
 ## Volatility 3 Usage
 
 ### Basic Command Structure

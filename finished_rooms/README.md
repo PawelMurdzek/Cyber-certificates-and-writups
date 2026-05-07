@@ -168,7 +168,8 @@
 * [Azure management groups](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/29-azure-management-groups)
 * [Configure Azure role permissions for management groups, subscriptions, resource groups, and resources](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/30-configure-azure-role-permissions)
 * [Azure role-based access control](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/31-azure-role-based-access-control)
-* [Azure built-in roles](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/32-azure-built-in-roles)
+* [Azure built-in roles](https://Entitlement management
+learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/32-azure-built-in-roles)
 * [Assign Azure role permissions for management groups, subscriptions, resource groups, and resources](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/33-assign-azure-role-permissions)
 * [Microsoft Entra built-in roles](https://learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-access/34-microsoft-entra-built-in-roles)
 * [Assign built-in roles in Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/35-built-roles-microsoft-entra-id)
@@ -180,6 +181,8 @@
 * [Microsoft Entra ID Governance](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/41-microsoft-entra-id-governance)
 * [Identity lifecycle management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/42-identity-lifecycle-management)
 * [Lifecycle workflows](https://learn.microsoft.com/pl-pl/training/modules/manage-security-controls-identity-access/43-lifecycle-workflows)
+* [Entitlement management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/44-entitlement-management)
+
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)
 #### Fundamentals of AI security

@@ -184,7 +184,7 @@ learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-acc
 * [Identity lifecycle management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/42-identity-lifecycle-management)
 * [Lifecycle workflows](https://learn.microsoft.com/pl-pl/training/modules/manage-security-controls-identity-access/43-lifecycle-workflows)
 * [Entitlement management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/44-entitlement-management)
-
+* [Delegation and roles in entitlement management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/45-delegation-roles-entitlement-management)
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)
 #### Fundamentals of AI security

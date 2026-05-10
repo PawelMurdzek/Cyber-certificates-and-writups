@@ -77,6 +77,7 @@
 * [Defensive Security Intro](https://tryhackme.com/room/defensivesecurityintro)
 * [SOC Fundamentals](https://tryhackme.com/room/socfundamentals/)
 * [Digital Forensics Fundamentals](https://tryhackme.com/room/digitalforensicsfundamentals)
+* [Incident Response Fundamentals](https://tryhackme.com/room/incidentresponsefundamentals)
 
 ## CryptoHack challenges
 

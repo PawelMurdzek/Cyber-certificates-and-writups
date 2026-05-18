@@ -15,14 +15,20 @@
 
 | Event ID | Log | Description |
 | :--- | :--- | :--- |
-| 4624 | Security | Successful logon |
-| 4625 | Security | Failed logon |
+| 1102 | Security | Audit log cleared |
+| 4624 | Security | Successful logon (A user account successfully logged in) |
+| 4625 | Security | Failed logon (A user account failed to login) |
+| 4634 | Security | A user account successfully logged off |
 | 4648 | Security | Explicit credential logon |
 | 4672 | Security | Admin/special privileges assigned |
 | 4688 | Security | Process created |
 | 4697 | Security | Service installed |
+| 4720 | Security | A user account was created |
+| 4722 | Security | A user account was enabled |
+| 4724 | Security | An attempt was made to reset an account’s password |
+| 4725 | Security | A user account was disabled |
+| 4726 | Security | A user account was deleted |
 | 7045 | System | New service installed |
-| 1102 | Security | Audit log cleared |
 
 ### Useful Commands
 

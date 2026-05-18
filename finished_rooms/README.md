@@ -186,6 +186,12 @@ learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-acc
 * [Entitlement management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/44-entitlement-management)
 * [Delegation and roles in entitlement management](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/45-delegation-roles-entitlement-management)
 * [Access reviews](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/46-access-reviews)
+* [Configure role management and access reviews by using Microsoft Entra ID governance](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/47-configure-role-management-access-reviews-microsoft-entra-id-governance)
+* [Implement Conditional Access policies for Cloud Resources in Azure](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/48-conditional-access)
+* [Azure lighthouse overview](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/49-understand-azure-lighthouse)
+* [Module assessment](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/50-knowledge-check)
+* [Summary](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/51-summary)
+
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)
 #### Fundamentals of AI security

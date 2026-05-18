@@ -192,6 +192,12 @@ learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-acc
 * [Module assessment](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/50-knowledge-check)
 * [Summary](https://learn.microsoft.com/en-us/training/modules/manage-security-controls-identity-access/51-summary)
 
+### Manage Microsoft Entra application access
+
+#### Topics
+* [Introduction](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/1-introduction)
+* [Manage access to enterprise applications in Microsoft Entra ID, including OAuth permission grants](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/2-manage-access-application)
+
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)
 #### Fundamentals of AI security

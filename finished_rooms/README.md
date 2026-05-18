@@ -78,7 +78,7 @@
 * [SOC Fundamentals](https://tryhackme.com/room/socfundamentals/)
 * [Digital Forensics Fundamentals](https://tryhackme.com/room/digitalforensicsfundamentals)
 * [Incident Response Fundamentals](https://tryhackme.com/room/incidentresponsefundamentals)
-
+* [Logs Fundamentals](https://tryhackme.com/room/logsfundamentals)
 ## CryptoHack challenges
 
 ### General

@@ -67,18 +67,23 @@
 * [Shells Overview](https://tryhackme.com/room/shellsoverview)
 * [Sqlmap: The Basics](https://tryhackme.com/room/sqlmapthebasics)
 
-### Incident Response & Forensics
+#### Incident Response & Forensics
 * [Disk Analysis & Autopsy](https://tryhackme.com/room/autopsy2ze0)
 * [Windows Forensics 1](https://tryhackme.com/room/windowsforensics1)
 * [IR Timeline Analysis](https://tryhackme.com/room/dfirtimelineanalysis)
 * [Incident Response Process](https://tryhackme.com/room/incidentresponseprocess)
 
-### Defensive Security
+#### Defensive Security
 * [Defensive Security Intro](https://tryhackme.com/room/defensivesecurityintro)
 * [SOC Fundamentals](https://tryhackme.com/room/socfundamentals/)
 * [Digital Forensics Fundamentals](https://tryhackme.com/room/digitalforensicsfundamentals)
 * [Incident Response Fundamentals](https://tryhackme.com/room/incidentresponsefundamentals)
 * [Logs Fundamentals](https://tryhackme.com/room/logsfundamentals)
+
+#### Security Solutions
+* [Introduction to SIEM](https://tryhackme.com/room/introtosiem)
+
+
 ## CryptoHack challenges
 
 ### General

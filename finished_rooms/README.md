@@ -203,6 +203,9 @@ learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-acc
 * [Manage access to enterprise applications in Microsoft Entra ID, including OAuth permission grants](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/2-manage-access-application)
 * [Manage app registrations in Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/3-manage-application-registrations-microsoft-entra-id)
 * [Configure app registration permission scopes](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/4-configure-application-expose-web-api)
+* [Manage app registration permission consent](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/5-permissions-consent)
+* [Manage and use service principals](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/6-application-service-principal-objects-microsoft-entra-id)
+* [Manage managed identities for Azure resources](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/7-managed-identities)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

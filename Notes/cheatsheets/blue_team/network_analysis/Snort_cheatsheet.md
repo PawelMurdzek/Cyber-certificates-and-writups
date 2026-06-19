@@ -89,7 +89,7 @@ snort -Q --daq afpacket -c /etc/snort/snort.conf -i eth0:eth1
 | `-r <pcap>` | Read/replay a pcap (offline mode) |
 | `-i <iface>` | Listen on interface |
 | `-T` | Test configuration and exit |
-| `-A <mode>` | Alert mode: `console`, `cmg`, `fast`, `full`, `none`, `unsock` |
+| `-A <mode>` | Alert mode. **Snort 2:** `console`, `cmg`, `fast`, `full`, `none`, `unsock`. **Snort 3:** `alert_fast`, `alert_full`, `alert_csv`, `alert_json`, `alert_syslog`, `none` |
 | `-q` | Quiet — suppress banner/status |
 | `-l <dir>` | Log directory |
 | `-K <fmt>` | Log format: `ascii`, `pcap`, `none` |
@@ -100,7 +100,7 @@ snort -Q --daq afpacket -c /etc/snort/snort.conf -i eth0:eth1
 | `-D` | Run as a daemon (background) |
 | `-N` | Disable packet logging (alerts only) |
 
-**Alert modes (`-A`)** — `fast` = one-line alerts to file; `full` = full alert with packet headers; `console` = fast format to stdout; `cmg` = console + payload hex dump (great for learning).
+**Alert modes (`-A`)** — *Snort 2:* `fast` = one-line alerts to file; `full` = full alert with packet headers; `console` = fast format to stdout; `cmg` = console + payload hex dump (great for learning). *Snort 3 renames these* to `alert_fast`, `alert_full`, `alert_csv`, `alert_json` (there is no `console`/`cmg` — use `alert_fast` for one-liners). In Snort 3, `alert_fast` prints to stdout by default; if the Lua config enables `alert_fast = { file = true }`, alerts are written to `alert_fast.txt` inside the `-l` directory.
 
 ---
 
@@ -339,11 +339,15 @@ TCP TTL:64 TOS:0x0 ID:54321 IpLen:20 DgmLen:60 DF
 - Line 4+ = decoded packet headers; `******S*` shows which TCP flags are set.
 
 ```bash
-# Default alert file in NIDS mode
+# Snort 2 — default alert file in NIDS mode
 /var/log/snort/alert
 
+# Snort 3 — alert_fast writes here when file output is enabled
+/var/log/snort/alert_fast.txt
+
 # Tail alerts live
-tail -f /var/log/snort/alert
+tail -f /var/log/snort/alert            # Snort 2
+tail -f /var/log/snort/alert_fast.txt   # Snort 3
 ```
 
 ---
@@ -375,7 +379,8 @@ include $RULE_PATH/local.rules
 | Show version | `snort -V` |
 | Sniffer (headers+payload) | `snort -vd` |
 | Packet logger (pcap) | `snort -l ./log -b` |
-| Replay a pcap through rules | `snort -A console -q -c snort.conf -r file.pcap` |
+| Replay a pcap (Snort 2) | `snort -A console -q -c snort.conf -r file.pcap` |
+| Replay a pcap (Snort 3) | `snort -q -l /var/log/snort -r file.pcap -A alert_fast -c snort.lua` |
 | NIDS on interface | `snort -A console -q -c snort.conf -i eth0` |
 | Test config | `snort -T -c snort.conf` |
 | Run only custom rules | `snort -A console -q -c local.rules -r file.pcap` |

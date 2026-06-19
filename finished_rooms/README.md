@@ -83,6 +83,7 @@
 #### Security Solutions
 * [Introduction to SIEM](https://tryhackme.com/room/introtosiem)
 * [Firewall Fundamentals](https://tryhackme.com/room/firewallfundamentals)
+* [IDS Fundamentals](https://tryhackme.com/room/idsfundamentals)
 
 ## CryptoHack challenges
 

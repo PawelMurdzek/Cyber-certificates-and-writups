@@ -207,6 +207,7 @@ learn.microsoft.com/en-gb/training/modules/manage-security-controls-identity-acc
 * [Manage app registration permission consent](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/5-permissions-consent)
 * [Manage and use service principals](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/6-application-service-principal-objects-microsoft-entra-id)
 * [Manage managed identities for Azure resources](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/7-managed-identities)
+* [Recommend when to use and configure a Microsoft Entra Application Proxy, including authentication](https://learn.microsoft.com/en-us/training/modules/manage-application-access-microsoft-entra-id/8-configure-authentication-azure-ad-application-proxy)
 
 ### AI security fundamentals
 * [AI security fundamentals](https://learn.microsoft.com/en-us/collections/j171t3txj6j868)

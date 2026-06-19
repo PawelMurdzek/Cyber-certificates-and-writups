@@ -527,6 +527,7 @@ cat dns.log | zeek-cut query | grep -E '[A-Za-z0-9+/=]{20,}'
 ## See Also
 
 - [[IDS_IPS_Tools]] — Snort / Suricata as alternative IDS engines
+- [[Snort_cheatsheet]] — Signature-based detection deep dive
 - [[Wireshark_cheatsheet]] / [[Tshark_cheatsheet]] — Packet-level analysis
 - [[Tcpdump_cheatsheet]] — Capture PCAPs that Zeek consumes
 - [[SIEM_and_YARA]] — Forward Zeek logs into a SIEM

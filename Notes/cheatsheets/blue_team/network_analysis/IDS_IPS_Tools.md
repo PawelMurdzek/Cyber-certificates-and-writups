@@ -6,7 +6,7 @@ Passive network sniffer / PCAP analyzer.
 - **Key Features**: OS fingerprinting, open ports discovery, file extraction/reassembly.
 
 ## Snort
-Open Source IDS/IPS.
+Open Source IDS/IPS. See [[Snort_cheatsheet]] for full rule anatomy, operating modes, detection/flow options, and example rules.
 
 ### Rule Syntax
 ```text
@@ -42,6 +42,7 @@ See [[Zeek_cheatsheet]] for Zeek-specific syntax, scripts, and log parsing.
 
 ## See Also
 
+- [[Snort_cheatsheet]] — Snort deep dive (rules, modes, options)
 - [[Zeek_cheatsheet]] — Zeek deep dive
 - [[Wireshark_cheatsheet]] / [[Tshark_cheatsheet]] — Packet inspection
 - [[Tcpdump_cheatsheet]] — CLI capture

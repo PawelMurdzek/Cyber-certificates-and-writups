@@ -84,6 +84,7 @@
 * [Introduction to SIEM](https://tryhackme.com/room/introtosiem)
 * [Firewall Fundamentals](https://tryhackme.com/room/firewallfundamentals)
 * [IDS Fundamentals](https://tryhackme.com/room/idsfundamentals)
+* [Vulnerability Scanner Overview](https://tryhackme.com/room/vulnerabilityscanneroverview)
 
 ## CryptoHack challenges
 

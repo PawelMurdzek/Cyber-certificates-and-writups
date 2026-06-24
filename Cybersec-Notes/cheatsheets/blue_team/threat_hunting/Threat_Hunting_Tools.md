@@ -58,6 +58,7 @@ PowerShell script for threat hunting via Windows Event Logs.
 
 ## See Also
 
+- [[Capa]] — Capability detection for binaries surfaced during threat hunting
 - [[SIEM_and_YARA]] — Splunk/ELK queries and YARA rule writing
 - [[Log_analysis]] — Parsing logs surfaced during a hunt
 - [[IDS_IPS_Tools]] — Snort/Suricata/Zeek as detection sources

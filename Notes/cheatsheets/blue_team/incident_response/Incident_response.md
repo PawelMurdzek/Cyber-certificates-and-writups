@@ -105,6 +105,7 @@ ls -la /etc/cron.*
 | **FTK Imager** | Imaging & Mounting | Create forensic images (E01, RAW), mount images, capture RAM. |
 | **DumpIt** | Memory Acquisition | Comae/Magnet single-click tool. Produces a raw physical memory dump (`.raw`/`.dmp`) of a live Windows host — feed straight into [[Volatility_and_Linux_Forensics\|Volatility]]. Run as Administrator from a USB / write-blocker. |
 | **Volatility** | Memory Analysis | Open-source memory forensics framework (Vol3 Python). Parses RAM dumps for processes, network sockets, injected code, registry hives, credentials. See [[Volatility_and_Linux_Forensics]]. |
+| **capa** | Capability Detection | Automatically detects capabilities (APIs, instructions, patterns) in files (PE, ELF, .NET, shellcode) and maps them to MITRE ATT&CK. See [[Capa]]. |
 | **Registry Viewer** | Registry Analysis | View registry hives, reporting. (AccessData). |
 | **Registry Explorer** | Registry Analysis | Eric Zimmerman's tool. Parse hives, plugins, recover deleted keys. |
 | **RegRipper** | Registry Analysis | Extract specific registry data via plugins (CLI/GUI). |

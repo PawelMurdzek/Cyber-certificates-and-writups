@@ -177,6 +177,7 @@ for ref in refs:
 | Plugin | Purpose |
 |:-------|:--------|
 | **FindCrypt** | Detect crypto constants |
+| **capa explorer** | Run capa rules on analyzed files to identify binary capabilities (see [[Capa]]) |
 | **Ghidra2IDA** | Export to IDA format |
 | **BinExport** | Export for BinDiff |
 | **GhidraBridge** | Python scripting |
@@ -199,3 +200,4 @@ for ref in refs:
 - [Ghidra Official](https://ghidra-sre.org/)
 - [Ghidra Cheat Sheet](https://ghidra-sre.org/CheatSheet.html)
 - [Ghidra Course](https://hackaday.io/course/172292-introduction-to-reverse-engineering-with-ghidra)
+- [[Capa]] — Cheatsheet for capability detection rules and CLI usage

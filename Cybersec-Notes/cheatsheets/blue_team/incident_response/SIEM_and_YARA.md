@@ -54,6 +54,7 @@ rule Suspicious_Strings {
 
 ## See Also
 
+- [[Capa]] — Capability detection via YAML rules (comparison to YARA signature matching)
 - [[Log_analysis]] — More SPL/KQL examples and detection patterns
 - [[Threat_Hunting_Tools]] — Sigma → SIEM rule conversion
 - [[Malware_Analysis_Basics]] — Where YARA fits in the malware workflow

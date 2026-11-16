@@ -86,6 +86,9 @@
 * [IDS Fundamentals](https://tryhackme.com/room/idsfundamentals)
 * [Vulnerability Scanner Overview](https://tryhackme.com/room/vulnerabilityscanneroverview)
 
+#### Defensive Security Tooling
+* [CyberChef: The Basics](https://tryhackme.com/room/cyberchefbasics)
+
 ## CryptoHack challenges
 
 ### General
